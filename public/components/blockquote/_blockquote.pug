@@ -1,0 +1,8 @@
+//- Blockquote
+	@param {object} data - blockquote parameters
+	@param {string} data.quote - qote text
+	@param {string} data.cite - cite text
+mixin blockquote ( data )
+	blockquote.blockquote&attributes( attributes )
+		p: q= data.quote
+		.blockquote-footer: cite= data.cite

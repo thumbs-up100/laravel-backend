@@ -1,0 +1,12 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+
+// Variables
+$badge-padding-y: .4em;
+$badge-padding-x: .7em;
+$badge-pill-padding-x: .85em;
+
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/badge";

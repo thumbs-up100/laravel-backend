@@ -1,0 +1,30 @@
+.scroller {
+	scrollbar-width: thin;
+	scrollbar-color: #15171c rgba(21, 23, 28, 0.1);
+}
+
+.scroller::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background: transparent;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+	background: rgba(21, 23, 28, 0.5);
+}
+
+.mobile .scroller::-webkit-scrollbar, .scroller:hover::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+}
+
+.scroller.scroller-vertical {
+	overflow-y: auto;
+	overflow-y: overlay;
+}
+
+.scroller.scroller-horizontal {
+	overflow-x: auto;
+	overflow-x: overlay;
+}
+

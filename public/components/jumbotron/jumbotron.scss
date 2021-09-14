@@ -1,0 +1,15 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+$jumbotron-padding: 1.2rem;
+$jumbotron-bg: $gray-800;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/jumbotron";
+
+.jumbotron {
+	padding: $jumbotron-padding;
+	margin: 0;
+}

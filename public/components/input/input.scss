@@ -1,0 +1,414 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+$input-color: $white;
+$input-bg: $gray-800;
+$input-border-color: $border-color;
+$input-focus-bg: $input-bg;
+$input-disabled-bg: $light;
+$input-placeholder-color: $input-color;
+$input-focus-color: $input-color;
+$input-focus-border-color: $input-border-color;
+$input-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($gray-400, .25);
+$input-border-radius: px-to-rem( 6px );
+
+$input-font-size-sm: px-to-rem( 14px );
+$input-padding-x-sm: $input-padding-x;
+
+$input-padding-y-md: px-to-rem( 8px );
+
+$input-font-size-lg: px-to-rem( 18px );
+$input-line-height-lg: px-to-rem( 24px );
+$input-height-lg: px-to-rem( 60px );
+$input-padding-x-lg: $input-padding-x;
+$input-padding-y-lg: px-to-rem( 16px );
+
+$input-readonly-color: $primary;
+
+$input-group-addon-color: $input-color;
+$input-group-addon-bg: $input-bg;
+$input-group-addon-border-color: $input-border-color;
+
+$custom-control-indicator-bg: $input-bg;
+
+$custom-switch-width-sm: $custom-switch-width * 0.75;
+$custom-switch-height-sm: $custom-control-indicator-size * 0.75;
+$custom-switch-indicator-size-sm: calc( #{$custom-switch-height-sm} - #{$custom-control-indicator-border-width * 4} );
+$custom-switch-indicator-border-radius-sm: $custom-switch-indicator-border-radius * 0.75;
+
+$custom-switch-width-lg: $custom-switch-width * 1.25;
+$custom-switch-height-lg: $custom-control-indicator-size * 1.25;
+$custom-switch-indicator-size-lg: calc( #{$custom-switch-height-lg} - #{$custom-control-indicator-border-width * 4} );
+$custom-switch-indicator-border-radius-lg: $custom-switch-indicator-border-radius * 1.25;
+
+$custom-file-color: $input-color;
+$custom-file-bg: $input-bg;
+$custom-file-border-color: $input-border-color;
+$custom-file-border-radius: $input-border-radius;
+$custom-file-button-bg: $dark;
+$custom-file-button-color: $input-color;
+
+
+$input-border-radius-sm: px-to-rem( 20px );
+
+// Select caret
+$select-default-indicator-color: $body-color;
+$select-default-background: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 3'%3e%3cpath fill='#{$select-default-indicator-color}' d='M0 0 h4 l-2,3 z'/%3e%3c/svg%3e"), "#", "%23");
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/custom-forms";
+@import "../bootstrap/scss/forms";
+@import "../bootstrap/scss/input-group";
+@import "../daterangepicker/_daterangepicker";
+
+// Base style
+label {
+	cursor: pointer;
+	line-height: $line-height-base;
+}
+
+.form-group {
+	margin-bottom: 0;
+}
+
+.form-control {
+	text-overflow: ellipsis;
+	letter-spacing: 0.02em;
+
+	&[readonly] {
+		background: $input-bg;
+		color: $input-readonly-color;
+
+		&::placeholder {
+			color: $input-readonly-color;
+		}
+	}
+}
+
+.form-control-md {
+	padding: $input-padding-y-md $input-padding-x;
+	height:  calc(#{$input-line-height * 1em} + #{$input-padding-y-md * 2} + #{$input-height-border});
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus{
+	-webkit-text-fill-color: $input-color;
+	-webkit-box-shadow: 0 0 0 1000px $input-bg inset;
+}
+
+.form-control-plaintext {
+	&::-webkit-input-placeholder {
+		color: $input-color;
+	}
+}
+
+textarea {
+	min-height: $input-height;
+	max-height: px-to-rem( 250px );
+	overflow-y: auto;
+	overflow-y: overlay;
+	scrollbar-width: thin;
+	scrollbar-color: rgba($black,1) rgba($black,.1);
+
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgba( $dark, .5);
+	}
+
+	&::-webkit-scrollbar-corner { background-color: transparent;}
+	&::-webkit-resizer { background-color: transparent;}
+
+	.mobile &,
+	&:hover {
+		&::-webkit-scrollbar {
+			width: 3px;
+			height: 3px;
+		}
+	}
+}
+
+// Disabled buttons for input[type='number']
+input[type='number'] {
+	-moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+// Switches sizes
+.custom-switch-sm {
+	padding-left: $custom-switch-width-sm + $custom-control-gutter;
+
+	.custom-control-label {
+		font-size: $font-size-sm;
+		line-height:$custom-switch-height-sm;
+
+		&::before {
+			left: -( $custom-switch-width-sm + $custom-control-gutter );
+			width: $custom-switch-width-sm;
+			height: $custom-switch-height-sm;
+			border-radius: $custom-switch-indicator-border-radius-sm;
+		}
+
+		&::after {
+			left: calc(#{-($custom-switch-width-sm + $custom-control-gutter)} + #{$custom-control-indicator-border-width * 2});
+			width: $custom-switch-indicator-size-sm;
+			height: $custom-switch-indicator-size-sm;
+		}
+	}
+
+	.custom-control-input:checked ~ .custom-control-label {
+		&::after {
+			background-color: $custom-control-indicator-bg;
+			transform: translateX( $custom-switch-width-sm - $custom-switch-height-sm );
+		}
+	}
+}
+
+.custom-switch-lg {
+	padding-left: $custom-switch-width-lg + $custom-control-gutter;
+
+	.custom-control-label {
+		font-size: $font-size-lg;
+		line-height: $custom-switch-height-lg;
+
+		&::before {
+			left: -( $custom-switch-width-lg + $custom-control-gutter );
+			width: $custom-switch-width-lg;
+			height: $custom-switch-height-lg;
+			border-radius: $custom-switch-indicator-border-radius-lg;
+		}
+
+		&::after {
+			left: calc( #{-( $custom-switch-width-lg + $custom-control-gutter )} + 2px );
+			width: $custom-switch-indicator-size-lg;
+			height: $custom-switch-indicator-size-lg;
+		}
+	}
+
+	.custom-control-input:checked ~ .custom-control-label {
+		&::after {
+			background-color: $custom-control-indicator-bg;
+			transform: translateX( $custom-switch-width-lg - $custom-switch-height-lg );
+		}
+	}
+}
+
+// Switches mode
+.custom-switch-square {
+	.custom-control-label {
+		&::before,
+		&::after {
+			border-radius: 0;
+		}
+	}
+}
+
+// Custom check strike label
+.custom-check {
+	.custom-control-input:checked ~ .custom-control-label {
+		text-decoration: line-through;
+	}
+}
+
+// Custom select
+.custom-select {
+	padding-right: $custom-select-padding-x + $custom-select-indicator-padding;
+}
+
+select,
+select.form-control {
+	padding-right: px-to-rem( 17px );
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: $select-default-background;
+	background-repeat: no-repeat;
+	background-position: calc( 100% - 8px ) center;
+	background-size: 8px 10px;
+	cursor: pointer;
+
+	> option {
+		cursor: pointer;
+	}
+
+	&[multiple] {
+		background-image: none;
+	}
+}
+
+// Custom file picker
+.custom-file-input {
+	cursor: pointer;
+}
+
+// Color themes
+@each $theme, $color in $theme-colors {
+	.form-control-#{$theme} {
+		$input-focus-border-color: lighten($color, 25%);
+		$input-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .25);
+		border-color: $color;
+		@include form-control-focus();
+
+		// custom file picker
+		~ .custom-file-label {
+			border-color: $color;
+
+			&::after {
+				color: color-yiq( $color );
+				@include gradient-bg( $color );
+			}
+		}
+
+		&:focus ~ .custom-file-label {
+			border-color: $color;
+			box-shadow: 0 0 0 $input-btn-focus-width rgba( $color, .25 );
+		}
+
+		&:disabled ~ .custom-file-label {
+			background-color: $custom-file-disabled-bg;
+		}
+	}
+
+	// custom controls
+	.custom-checkbox-#{$theme},
+	.custom-radio-#{$theme},
+	.custom-switch-#{$theme} {
+		$custom-control-indicator-active-bg: lighten($color, 7%);
+
+		.custom-control-input {
+			&:checked ~ .custom-control-label::before {
+				border-color: $color;
+				@include gradient-bg($color);
+			}
+
+			&:focus ~ .custom-control-label::before {
+				border-color: $color;
+
+				@if $enable-shadows {
+					box-shadow: $input-box-shadow, $input-focus-box-shadow;
+				} @else {
+					box-shadow: $input-focus-box-shadow;
+				}
+			}
+
+			&:focus:not(:checked) ~ .custom-control-label::before {
+				border-color: $color;
+			}
+
+			&:not(:disabled):active ~ .custom-control-label::before {
+				color: $custom-control-indicator-active-color;
+				background-color: $custom-control-indicator-active-bg;
+				border-color: $custom-control-indicator-active-bg;
+			}
+
+			&:indeterminate ~ .custom-control-label::before {
+				border-color: $color;
+			}
+		}
+
+		.custom-control-label::before {
+			border-color: $color;
+		}
+	}
+
+	.custom-switch-#{$theme} {
+		.custom-control-label::after {
+			background: $color;
+		}
+	}
+
+	.custom-checkbox-#{$theme}-fill {
+		$custom-control-indicator-active-bg: lighten($color, 7%);
+
+		.custom-control-input {
+			&:checked ~ .custom-control-label::before {
+				border-color: $color;
+				@include gradient-bg($color);
+			}
+
+			&:focus ~ .custom-control-label::before {
+				border-color: $color;
+
+				@if $enable-shadows {
+					box-shadow: $input-box-shadow, $input-focus-box-shadow;
+				} @else {
+					box-shadow: $input-focus-box-shadow;
+				}
+			}
+
+			&:focus:not(:checked) ~ .custom-control-label::before {
+				border-color: $color;
+			}
+
+			&:not(:disabled):active ~ .custom-control-label::before {
+				color: $custom-control-indicator-active-color;
+				background-color: $custom-control-indicator-active-bg;
+				border-color: $custom-control-indicator-active-bg;
+			}
+
+			&:indeterminate ~ .custom-control-label::before {
+				border-color: $color;
+			}
+		}
+
+		.custom-control-label::before {
+			border-color: $color;
+			background: $color;
+		}
+	}
+}
+
+// Custom input group
+.input-group-ellipsis {
+	flex-wrap: nowrap;
+
+	.input-group-text {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+
+// Spacing
+* + .form-group {
+	margin-top: 15px;
+}
+
+// Data table context
+.data-table {
+	.multiple-search {
+		min-width: px-to-rem( 120px );
+	}
+}
+
+
+// form control context in bg-gradient
+.bg-gradient {
+	.input-group-text, .form-control {
+		color: $white;
+		background: rgba( $input-bg, .35 );
+
+		&::placeholder {
+			color: $white;
+		}
+	}
+}

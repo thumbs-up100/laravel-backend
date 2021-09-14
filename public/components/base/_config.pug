@@ -1,0 +1,455 @@
+-
+	var
+	logo = {
+	default: 'images/logo-272x84.png',
+	name: 'PART'
+	},
+	menu = [
+			{
+				title: 'Menu',
+				link: 'menu-1',
+				icon: 'linearicons-icons', 
+				submenu: [
+					{
+						title: 'Dashboard', 
+						link: 'index.html'
+					},
+					{
+						title: 'Calendar'
+					},
+					{
+						title: 'Documentation',
+					
+						dropdown: [
+							{
+								title: 'Bootstrap Components',
+								link: 'documentation.html#bootstrap-components',
+								dropdown: [
+									{
+										title: 'Button',
+										link: 'documentation.html#button'
+									},
+									{
+										title: 'Badge',
+										link: 'documentation.html#badge'
+									},
+									{
+										title: 'Code',
+										link: 'documentation.html#code'
+									},
+									{
+										title: 'Media Object',
+										link: 'documentation.html#media'
+									},
+									{
+										title: 'Card',
+										link: 'documentation.html#card'
+									},
+									{
+										title: 'Table',
+										link: 'documentation.html#table'
+									},
+									{
+										title: 'Progress',
+										link: 'documentation.html#progress'
+									},
+									{
+										title: 'Close',
+										link: 'documentation.html#close'
+									},
+									{
+										title: 'Pagination',
+										link: 'documentation.html#pagination'
+									},
+									{
+										title: 'Alert',
+										link: 'documentation.html#alert'
+									},
+									{
+										title: 'Dropdown',
+										link: 'documentation.html#dropdown'
+									},
+									{
+										title: 'Nav',
+										link: 'documentation.html#nav'
+									},
+									{
+										title: 'Tooltip',
+										link: 'documentation.html#tooltip'
+									},
+									{
+										title: 'Modal',
+										link: 'documentation.html#modal'
+									},
+									{
+										title: 'Jumbotron',
+										link: 'documentation.html#jumbotron'
+									},
+									{
+										title: 'Input',
+										link: 'documentation.html#input'
+									}
+								]
+							},
+							{
+								title: 'Plugins',
+								link: 'documentation.html#plugins',
+								dropdown: [
+									{
+										title: 'Nprogress',
+										link: 'documentation.html#Nprogress'
+									},
+									{
+										title: 'Highlight.js',
+										link: 'documentation.html#highlight'
+									},
+									{
+										title: 'Dual Listbox',
+										link: 'documentation.html#dual-listbox'
+									},
+									{
+										title: 'Bootstrap Maxlength',
+										link: 'documentation.html#maxlength'
+									},
+									{
+										title: 'Typeahead.js',
+										link: 'documentation.html#typeahead'
+									},
+									{
+										title: 'Select2',
+										link: 'documentation.html#select2'
+									},
+									{
+										title: 'jQuery UI Spinner',
+										link: 'documentation.html#spinner'
+									},
+									{
+										title: 'Time Spinner',
+										link: 'documentation.html#time-spinner'
+									},
+									{
+										title: 'Date Range Picker',
+										link: 'documentation.html#daterangepiker'
+									},
+									{
+										title: 'Bootstrap Date/Timepicker',
+										link: 'documentation.html#datetimepicker'
+									},
+									{
+										title: 'Tags Manager',
+										link: 'documentation.html#tag-manager'
+									},
+									{
+										title: 'Bootstrap Colorpicker',
+										link: 'documentation.html#colorpicker'
+									},
+									{
+										title: 'jQuery Masked Input',
+										link: 'documentation.html#maskedinput'
+									},
+									{
+										title: 'CKeditor',
+										link: 'documentation.html#ckeditor'
+									},
+									{
+										title: 'Summernote',
+										link: 'documentation.html#summernote'
+									},
+									{
+										title: 'Markdown.js',
+										link: 'documentation.html#markdown'
+									},
+									{
+										title: 'Nestable jQuery Plugin',
+										link: 'documentation.html#nestable'
+									},
+									{
+										title: 'jsTree',
+										link: 'documentation.html#jstree'
+									},
+									{
+										title: 'Cropper.js',
+										link: 'documentation.html#cropper'
+									},
+									{
+										title: 'Tower File Input',
+										link: 'documentation.html#fileupload'
+									},
+									{
+										title: 'EasyZoom',
+										link: 'documentation.html#easyzoom'
+									},
+									{
+										title: 'xZoom',
+										link: 'documentation.html#xzoom'
+									},
+									{
+										title: 'Slick Slider',
+										link: 'documentation.html#slick'
+									},
+									{
+										title: 'DropzoneJS',
+										link: 'documentation.html#dropzone'
+									},
+									{
+										title: 'PNotify',
+										link: 'documentation.html#pnotify'
+									},
+									{
+										title: 'Driver.js',
+										link: 'documentation.html#driver'
+									},
+									{
+										title: 'αCountdown',
+										link: 'documentation.html#countdown'
+									},
+									{
+										title: 'αCounter & αProgressCircle',
+										link: 'documentation.html#progress-circle'
+									},
+									{
+										title: 'Particles.js',
+										link: 'documentation.html#particles'
+									},
+									{
+										title: 'Lightgallery',
+										link: 'documentation.html#lightgallery'
+									},
+									{
+										title: 'jVectorMap',
+										link: 'documentation.html#jvectormap'
+									},
+									{
+										title: 'Flot',
+										link: 'documentation.html#flotchart'
+									},
+									{
+										title: 'RD Navbar',
+										link: 'documentation.html#rd-navbar'
+									},
+									{
+										title: 'Highcharts',
+										link: 'documentation.html#highcharts'
+									},
+									{
+										title: 'MultiSwitch',
+										link: 'documentation.html#multiswitch'
+									}
+								]
+							}
+						]
+					},
+				]
+			},
+			{
+				title: 'Tools',
+				link: 'menu-2',
+				icon: 'linearicons-cog',
+				submenu: [
+					{
+						title: 'Admin plugins',
+						link: '#',
+						dropdown: [
+							{
+								title: 'Admin panels'
+							},
+							{
+								title: 'Admin modals'
+							},
+							{
+								title: 'Admin Dock'
+							}
+						]
+					},
+					{
+						title: 'Admin layouts',
+						link: '#',
+					
+						dropdown: [
+							{
+								title: 'Navbar'
+							},
+							{
+								title: 'Topbar',
+								link: '#',
+								dropdown: [
+								
+									{ title: 'Topbar Menu' }
+								]
+							},
+							{
+								title: 'Content Body',
+								link: '#',
+								dropdown: [
+									{ title: 'Blank Starter' },
+									{ title: 'Jumbotron' },
+									{ title: 'Content Tabs' }
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				title: 'System',
+				link: 'menu-3',
+				icon: 'linearicons-cart',
+				submenu: [
+					{
+						title: 'Info Panels', 
+						link: '#',
+						dropdown: [
+							{
+								title: 'Tile Widgets'
+							},
+							{
+								title: 'Panel Widgets'
+							},
+							{
+								title: 'Admin Widgets'
+							}
+						]
+					},
+					{
+						title: 'E-commerce',
+						link: '#',
+						dropdown: [
+							{
+								title: 'Ecommerce Dashboard'
+							},
+							{
+								title: 'Products'
+							},
+							{
+								title: 'Orders'
+							},
+							{
+								title: 'Customers'
+							},
+							{
+								title: 'Store Settings'
+							}
+						]
+					}
+				]
+			},
+			{
+				title: 'Elements',
+				link: 'menu-4',
+				icon: 'linearicons-copy',
+				submenu: [
+					{
+						title: 'UI Elements',
+						link: '#',
+						dropdown: [
+							{ title: 'Alerts' },
+							{ title: 'Animations' },
+							{ title: 'Buttons' },
+							{ title: 'Typography' },
+							{ title: 'Panel' },
+							{ title: 'Progress Bars' },
+							{ title: 'Tabs' },
+							{ title: 'Icons' },
+							{ title: 'Grid' }
+						]
+					},
+					{
+						title: 'Form Elements',
+						link: '#',
+					
+						dropdown: [
+							{ title: 'Basic Inputs' },
+							{ title: 'Plugin Inputs' },
+							{ title: 'Editors' },
+							{ title: 'Treeview' },
+							{ title: 'Nestable' },
+							{ title: 'Image tools' },
+							{ title: 'Uploaders' },
+							{ title: 'Notifications' },
+							{ title: 'Content Sliders' }
+						]
+					},
+					{
+						title: 'Plugins',
+						link: '#',
+						dropdown: [
+							{
+								title: 'Maps',
+								link: '#',
+								dropdown: [
+									{ title: 'Google Maps' },
+									{ title: 'jVector Map' }
+								]
+							},
+							{
+								title: 'Charts',
+								link: '#',
+								dropdown: [
+									{ title: 'Highcharts' },
+									{ title: 'Flotcharts' }
+								]
+							},
+							{
+								title: 'Tables',
+								link: '#',
+								dropdown: [
+									{ title: 'Basic Tables' },
+									{ title: 'Data Tables' },
+									{ title: 'Pricing Tables' }
+								]
+							},
+							{
+								title: 'Misc',
+								link: '#',
+								dropdown: [
+									{ title: 'Site Tour' },
+									{ title: 'Session Timeout' },
+									{ title: 'Page Progress Loader' }
+								]
+							}
+						]
+					},
+					{
+						title: 'Pages',
+						link: '#',
+						dropdown: [
+							{
+								title: 'Utility',
+								link: '#',
+								dropdown:[
+									{ title: 'Confirmation' },
+									{ title: 'Login' },
+									{ title: 'Register' },
+									{ title: 'Screenlock' },
+									{ title: 'Password Reset' },
+									{ title: 'Coming Soon' },
+									{ title: '404' },
+									{ title: '500' }
+								]
+							},
+							{
+								title: 'Basic',
+								link: '#',
+								dropdown: [
+									{ title: 'Search Results' },
+									{ title: 'Profile' },
+									{ title: 'Timeline' },
+									{ title: 'FAQ' },
+									{ title: 'Calendar' },
+									{ title: 'Messages' },
+									{ title: 'Messages Compose' },
+									{ title: 'Gallery' },
+									{ title: 'Printable Invoice' }
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+
+	homePage = menu[0].submenu[0],
+	pageName = homePage.title,
+	pageClass = null,
+	htmlClass = [ 'rd-navbar-sidebar-active' ],
+	breadcrumbs = [];

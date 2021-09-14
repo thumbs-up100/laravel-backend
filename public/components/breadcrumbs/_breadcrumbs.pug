@@ -1,0 +1,20 @@
+//- Breadcrumbs
+	@param {Array} path - navigation path
+	@example +breadcrumbs([ { title:'About Us', link:'about-us.html' }, { title:'Team member' } ])
+mixin breadcrumbs( path )
+	// Breadcrumbs
+	nav( aria-label='breadcrumb' )
+	ul.breadcrumb&attributes( attributes )
+		li.breadcrumb-item
+			a( href= homePage.link )
+				span.breadcrumbs-icon( class= homePage.icon || null )
+				span= homePage.title
+
+		if ( path.length && path[ 0 ].title.toLowerCase() !== homePage.title.toLowerCase() )
+			- for ( var i = 0; i < path.length; i++ )
+				- var pathItem = path[i];
+				li.breadcrumb-item
+					if ( i === path.length - 1 || pathItem.link === '#' )
+						= pathItem.title
+					else
+						a( href= pathItem.link )= pathItem.title 

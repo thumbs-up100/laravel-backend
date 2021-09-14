@@ -1,0 +1,48 @@
+.search-match {
+	padding: 0 0.2em;
+	background-color: rgba(158, 108, 253, 0.2);
+}
+
+.search-result-meta {
+	font-size: 0.9em;
+}
+
+.search-result-meta > * {
+	vertical-align: middle;
+}
+
+* + .search-result {
+	margin-top: 1.875rem;
+	padding-top: 1.875rem;
+	border-top: 1px dashed #444951;
+}
+
+.search-result + .search-result {
+	margin-top: 1.5625rem;
+	padding-top: 1.5625rem;
+	border-top: 1px dashed #2d3035;
+}
+
+* + .search-result-meta {
+	margin-top: 0.5rem;
+}
+
+.search-result * + p {
+	margin-top: 0.5rem;
+}
+
+.search-result-title + .search-result-meta {
+	margin-top: 0.625rem;
+}
+
+.search-aside {
+	width: 100%;
+	padding: 20px 15px;
+}
+
+@media (min-width: 1600px) {
+	.search-aside {
+		padding: 2.5rem 1.875rem;
+	}
+}
+

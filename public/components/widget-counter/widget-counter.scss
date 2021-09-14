@@ -1,0 +1,216 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$widget-bg: $gray-800;
+$widget-border-radius: px-to-rem( 6px );
+$widget-shadow: $box-shadow;
+
+$widget-counter-simple-padding: px-to-rem( 35px, 30px );
+$widget-counter-boxed-bg: $gray-800;
+$widget-footer-bg: $gray-700;
+
+$widget-counter-body-padding: px-to-rem( 45px, 20px );
+
+$widget-counter-footer-border-color: $gray-600;
+$widget-counter-footer-padding: px-to-rem( 30px, 20px );
+
+// Widget counter
+.widget-counter {
+	border-radius: $widget-border-radius;
+	background: $widget-bg;
+	box-shadow: $widget-shadow;
+}
+
+// Widget counter simple
+.widget-counter-simple,
+.widget-counter-simple-fill {
+	position: relative;
+	padding: $widget-counter-simple-padding;
+	overflow: hidden;
+
+	.widget-counter-text {
+		margin-top: 0;
+	}
+
+	.widget-counter-icon {
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		font-size: px-to-rem( 80px );
+		line-height: 1;
+		color: $gray-500;
+		transform: translateY( -50% );
+	}
+}
+.widget-counter-title {
+
+	.widget-counter-title-subtext {
+		display: inline-block;
+		font-size: px-to-rem( 14px );
+		line-height: 1;
+		padding-left: px-to-rem( 10px );
+
+		> span {
+			font-size: px-to-rem( 18px );
+		}
+
+		@include media-breakpoint-up( xl ) {
+			padding-top: px-to-rem( 10px );
+		}
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.widget-counter-simple-#{$color} {
+		.widget-counter-title {
+			color: $value;
+		}
+	}
+
+	.widget-counter-simple-#{$color}-fill {
+		color: color-yiq( $value );
+		background: linear-gradient(-300.37deg, lighten($value, 10%), darken($value, 10%));;
+
+		.widget-counter-title {
+			color: color-yiq( $value );
+		}
+
+		.widget-counter-text {
+			color: color-yiq( $value );
+		}
+
+		.widget-counter-icon {
+			color: color-yiq( $value );
+		}
+	}
+}
+
+// Widget counter boxed
+.widget-counter-boxed {
+	text-align: center;
+	background-color: $widget-counter-boxed-bg;
+	padding: 0;
+	overflow: hidden;
+
+	.widget-counter-text {
+		margin-top: 0;
+	}
+
+	.widget-counter-body {
+		padding: $widget-counter-body-padding;
+	}
+
+	.widget-counter-footer {
+		padding: $widget-counter-footer-padding;
+		background: $widget-footer-bg;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-family: $font-family-sec;
+		letter-spacing: .07em;
+
+		> * {
+			display: inline-block;
+			padding-right: px-to-rem( 5px );
+		}
+	}
+
+	.widget-counter-icon {
+		font-size: px-to-rem( 80px );
+		line-height: 1;
+		color: $gray-600;
+	}
+
+	.widget-counter-icon-rounded {
+		display: inline-block;
+		width: px-to-rem( 100px );
+		height: px-to-rem( 100px );
+		font-size: px-to-rem( 60px );
+		line-height: px-to-rem( 100px );
+		border-radius: 50%;
+		background-color: rgba( $body-color, .1 );
+		box-shadow: 0px 9px 30px rgba(13, 13, 14, 0.45);
+	}
+}
+
+* + .widget-counter-title { margin-top: px-to-rem( 7px ); }
+.widget-counter-icon-rounded + .widget-counter-title { margin-top: px-to-rem( 15px ); }
+
+[class*='widget-counter-boxed-'] {
+	.widget-counter-footer {
+		border-top: 0;
+	}
+
+	.widget-counter-text,
+	.widget-counter-footer-icon {
+		color: inherit;
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.widget-counter-boxed-#{$color} {
+
+		.widget-counter-footer {
+			background-color: rgba( $value, .1 );
+			color: $value;
+		}
+
+		.widget-counter-icon-rounded {
+			background-color: $value;
+			color: color-yiq( $value );
+		}
+	}
+}
+
+
+// widget counter with icon
+.widget-counter-with-icon {
+	display: flex;
+	justify-content: flex-start;
+
+	.widget-icon {
+		position: relative;
+		width: px-to-rem( 58px );
+		height: px-to-rem( 58px );
+		border-radius: 50%;
+		background: $gray-100;
+		margin-right: px-to-rem( 15px );
+
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: px-to-rem( 25px );
+			line-height: 1;
+			transform: translate( -50%, -50% );
+		}
+	}
+}
+
+.widget-counter-with-icon-title {
+	display: flex;
+	align-items: flex-start;
+}
+
+.widget-counter-with-icon-title-subtext {
+	padding-top: px-to-rem( 5px );
+	padding-left: px-to-rem( 10px );
+	font-size: px-to-rem( 14px );
+	line-height: 1;
+}
+
+* + .widget-counter-with-icon-text {
+	margin-top: 0;
+}
+
+@each $color, $value in $theme-colors {
+	.widget-counter-with-icon-#{$color} {
+		.widget-icon {
+			color: $value;
+			background: rgba( $value, .12 );
+		}
+	}
+}

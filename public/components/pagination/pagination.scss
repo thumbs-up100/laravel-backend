@@ -1,0 +1,36 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// variables
+$pagination-bg: $gray-700;
+$pagination-border-color: $dark;
+$pagination-color: $white;
+$pagination-hover-bg: $dark;
+$pagination-hover-color: $pagination-color;
+$pagination-hover-border-color: $pagination-border-color;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/pagination";
+
+.page-item {
+	.page-link {
+		transition: ease-in-out .2s;
+		&:hover {
+			z-index: 0;
+		}
+	}
+
+	&.disabled .page-link {
+		opacity: .4;
+	}
+	
+	&.active {
+		.page-link {
+			&:hover {
+				z-index: 2;
+			}
+		}
+	}
+}

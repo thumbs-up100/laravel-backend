@@ -1,0 +1,597 @@
+.table {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #a5a7a9;
+}
+
+.table th,
+.table td {
+	padding: 0.75rem;
+	vertical-align: top;
+	border-top: 1px solid #2d3035;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #2d3035;
+}
+
+.table tbody + tbody {
+	border-top: 2px solid #2d3035;
+}
+
+.table-sm th,
+.table-sm td {
+	padding: 0.3rem;
+}
+
+.table-bordered {
+	border: 1px solid #2d3035;
+}
+
+.table-bordered th,
+.table-bordered td {
+	border: 1px solid #2d3035;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+	border-bottom-width: 2px;
+}
+
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+	border: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+	color: #a5a7a9;
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+	background-color: #9e6cfd;
+}
+
+.table-primary th,
+.table-primary td,
+.table-primary thead th,
+.table-primary tbody + tbody {
+	border-color: #a678fd;
+}
+
+.table-hover .table-primary:hover {
+	background-color: #8d53fd;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+	background-color: #8d53fd;
+}
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+	background-color: #ff574d;
+}
+
+.table-secondary th,
+.table-secondary td,
+.table-secondary thead th,
+.table-secondary tbody + tbody {
+	border-color: #ff645b;
+}
+
+.table-hover .table-secondary:hover {
+	background-color: #ff3f34;
+}
+
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+	background-color: #ff3f34;
+}
+
+.table-success,
+.table-success > th,
+.table-success > td {
+	background-color: #04cf9e;
+}
+
+.table-success th,
+.table-success td,
+.table-success thead th,
+.table-success tbody + tbody {
+	border-color: #18d3a6;
+}
+
+.table-hover .table-success:hover {
+	background-color: #04b68b;
+}
+
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+	background-color: #04b68b;
+}
+
+.table-info,
+.table-info > th,
+.table-info > td {
+	background-color: #3ec5ff;
+}
+
+.table-info th,
+.table-info td,
+.table-info thead th,
+.table-info tbody + tbody {
+	border-color: #4dcaff;
+}
+
+.table-hover .table-info:hover {
+	background-color: #25bdff;
+}
+
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+	background-color: #25bdff;
+}
+
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+	background-color: #fac12e;
+}
+
+.table-warning th,
+.table-warning td,
+.table-warning thead th,
+.table-warning tbody + tbody {
+	border-color: #fac63f;
+}
+
+.table-hover .table-warning:hover {
+	background-color: #f9ba15;
+}
+
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+	background-color: #f9ba15;
+}
+
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+	background-color: #ff4444;
+}
+
+.table-danger th,
+.table-danger td,
+.table-danger thead th,
+.table-danger tbody + tbody {
+	border-color: #ff5353;
+}
+
+.table-hover .table-danger:hover {
+	background-color: #ff2b2b;
+}
+
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+	background-color: #ff2b2b;
+}
+
+.table-light,
+.table-light > th,
+.table-light > td {
+	background-color: #35383d;
+}
+
+.table-light th,
+.table-light td,
+.table-light thead th,
+.table-light tbody + tbody {
+	border-color: #45484d;
+}
+
+.table-hover .table-light:hover {
+	background-color: #292b2f;
+}
+
+.table-hover .table-light:hover > td,
+.table-hover .table-light:hover > th {
+	background-color: #292b2f;
+}
+
+.table-dark,
+.table-dark > th,
+.table-dark > td {
+	background-color: #15171c;
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th,
+.table-dark tbody + tbody {
+	border-color: #282a2e;
+}
+
+.table-hover .table-dark:hover {
+	background-color: #0a0b0d;
+}
+
+.table-hover .table-dark:hover > td,
+.table-hover .table-dark:hover > th {
+	background-color: #0a0b0d;
+}
+
+.table-active,
+.table-active > th,
+.table-active > td {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover > td,
+.table-hover .table-active:hover > th {
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table .thead-dark th {
+	color: #fff;
+	background-color: #1f2227;
+	border-color: #30353c;
+}
+
+.table .thead-light th {
+	color: #292c32;
+	background-color: #e0e0e0;
+	border-color: #2d3035;
+}
+
+.table-dark {
+	color: #fff;
+	background-color: #1f2227;
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+	border-color: #30353c;
+}
+
+.table-dark.table-bordered {
+	border: 0;
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.table-dark.table-hover tbody tr:hover {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+@media (max-width: 575.98px) {
+	.table-responsive-sm {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.table-responsive-sm > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.table-responsive-md {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.table-responsive-md > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.table-responsive-lg {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.table-responsive-lg > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 1199.98px) {
+	.table-responsive-xl {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.table-responsive-xl > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 1599.98px) {
+	.table-responsive-xxl {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.table-responsive-xxl > .table-bordered {
+		border: 0;
+	}
+}
+
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.table-responsive > .table-bordered {
+	border: 0;
+}
+
+.table {
+	margin-bottom: 0;
+}
+
+.table thead th, .table tfoot th {
+	font-family: "Poppins", sans-serif;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	font-weight: 500;
+	padding: 1rem 0.75rem;
+}
+
+.table:not(.table-bordered) th {
+	border-top: none;
+}
+
+.table tbody td {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.table-vertical-align td, .table-vertical-align th {
+	vertical-align: middle;
+}
+
+.table-align-1 th:nth-child(1),
+.table-align-1 td:nth-child(1) {
+	text-align: center;
+}
+
+.data-table {
+	width: 100% !important;
+}
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+	background-color: #9e6cfd;
+}
+
+.table-primary th,
+.table-primary td,
+.table-primary thead th,
+.table-primary tbody + tbody {
+	border-color: #a678fd;
+}
+
+.table-hover .table-primary:hover {
+	background-color: #8d53fd;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+	background-color: #8d53fd;
+}
+
+.table-primary {
+	color: #fff;
+}
+
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+	background-color: #ff574d;
+}
+
+.table-secondary th,
+.table-secondary td,
+.table-secondary thead th,
+.table-secondary tbody + tbody {
+	border-color: #ff645b;
+}
+
+.table-hover .table-secondary:hover {
+	background-color: #ff3f34;
+}
+
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+	background-color: #ff3f34;
+}
+
+.table-secondary {
+	color: #fff;
+}
+
+.table-success,
+.table-success > th,
+.table-success > td {
+	background-color: #04cf9e;
+}
+
+.table-success th,
+.table-success td,
+.table-success thead th,
+.table-success tbody + tbody {
+	border-color: #18d3a6;
+}
+
+.table-hover .table-success:hover {
+	background-color: #04b68b;
+}
+
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+	background-color: #04b68b;
+}
+
+.table-success {
+	color: #fff;
+}
+
+.table-info,
+.table-info > th,
+.table-info > td {
+	background-color: #3ec5ff;
+}
+
+.table-info th,
+.table-info td,
+.table-info thead th,
+.table-info tbody + tbody {
+	border-color: #4dcaff;
+}
+
+.table-hover .table-info:hover {
+	background-color: #25bdff;
+}
+
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+	background-color: #25bdff;
+}
+
+.table-info {
+	color: #fff;
+}
+
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+	background-color: #fac12e;
+}
+
+.table-warning th,
+.table-warning td,
+.table-warning thead th,
+.table-warning tbody + tbody {
+	border-color: #fac63f;
+}
+
+.table-hover .table-warning:hover {
+	background-color: #f9ba15;
+}
+
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+	background-color: #f9ba15;
+}
+
+.table-warning {
+	color: #fff;
+}
+
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+	background-color: #ff4444;
+}
+
+.table-danger th,
+.table-danger td,
+.table-danger thead th,
+.table-danger tbody + tbody {
+	border-color: #ff5353;
+}
+
+.table-hover .table-danger:hover {
+	background-color: #ff2b2b;
+}
+
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+	background-color: #ff2b2b;
+}
+
+.table-danger {
+	color: #fff;
+}
+
+.table-light,
+.table-light > th,
+.table-light > td {
+	background-color: #35383d;
+}
+
+.table-light th,
+.table-light td,
+.table-light thead th,
+.table-light tbody + tbody {
+	border-color: #45484d;
+}
+
+.table-hover .table-light:hover {
+	background-color: #292b2f;
+}
+
+.table-hover .table-light:hover > td,
+.table-hover .table-light:hover > th {
+	background-color: #292b2f;
+}
+
+.table-light {
+	color: #fff;
+}
+
+.table-dark,
+.table-dark > th,
+.table-dark > td {
+	background-color: #15171c;
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th,
+.table-dark tbody + tbody {
+	border-color: #282a2e;
+}
+
+.table-hover .table-dark:hover {
+	background-color: #0a0b0d;
+}
+
+.table-hover .table-dark:hover > td,
+.table-hover .table-dark:hover > th {
+	background-color: #0a0b0d;
+}
+
+.table-dark {
+	color: #fff;
+}

@@ -1,0 +1,51 @@
+//@import "../bootstrap/scss/functions";
+//@import "../base/functions";
+//@import "../base/variables";
+//@import "../bootstrap/scss/variables";
+//@import "../bootstrap/scss/mixins";
+@import "../input/input.scss";
+// Base
+.twitter-typeahead {
+	width: 100%;
+}
+
+// Drop down menu
+.tt-menu {
+	width: 100%;
+
+	.tt-dataset {
+		overflow-y: auto;
+		max-height: 200px;
+		background: $input-bg;
+		border: $input-border-width solid $input-border-color;
+		border-top: 0;
+		border-radius:  0 0 $input-border-radius $input-border-radius;
+	}
+
+	.tt-suggestion {
+		padding: $input-padding-y $input-padding-x;
+		cursor: pointer;
+
+		&:hover {
+			background: $light;
+		}
+	}
+}
+
+// Color themes
+@each $theme, $color in $theme-colors {
+	.form-control-#{$theme} ~ .tt-menu {
+		.tt-dataset {
+			border-color: $color;
+		}
+
+		.tt-suggestion{
+			display: block;
+
+			&:hover {
+				background: $color;
+				color: color-yiq( $color );
+			}
+		}
+	}
+}

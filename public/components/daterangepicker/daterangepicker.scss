@@ -1,0 +1,134 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$dtrp-bg: $gray-800;
+$dtrp-color: $white;
+$dtrp-border-color: $gray-900;
+
+$dtrp-bg-hover: $gray-600;
+$dtrp-bg-range: lighten( $dtrp-bg, 10% );
+
+@import "../daterangepicker/_daterangepicker";
+
+.daterangepicker {
+	color: $dtrp-color;
+	background-color: $dtrp-bg;
+	border-color: $dtrp-border-color;
+	z-index: $zindex-dropdown;
+
+	&:before {
+		border-bottom-color: $dtrp-border-color;
+	}
+
+	&:after {
+		border-bottom-color: $dtrp-bg;
+	}
+
+	// inner calendar
+	.calendar-table {
+		background-color: $dtrp-bg;
+		border-color: $dtrp-bg;
+	}
+
+	// prev/next arrows
+	.calendar-table {
+		.next,
+		.prev {
+			span {
+				border-color: $body-color;
+			}
+			&:hover {
+				background: $primary;
+				span {
+					border-color: $dtrp-color;
+				}
+			} 
+		}
+
+		td {
+			font-size: px-to-rem( 16px );
+		}
+	}
+
+	// hover dates
+	td.available:hover,
+	th.available:hover {
+		background-color: $dtrp-bg-hover;
+	}
+	
+	th.month {
+		color: $primary;
+		font-size: px-to-rem( 15px );
+		letter-spacing: 0.02em;
+		font-weight: 400;
+	}
+	
+	th:not( .month ) {
+		font-size: px-to-rem( 12px );
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		color: $body-color;
+	}
+
+	// prev/next month days
+	td.off,
+	td.off.in-range,
+	td.off.start-date,
+	td.off.end-date {
+		color: $body-color;
+		background-color: transparent;
+	}
+
+	// dates in range
+	td.in-range {
+		color: $dtrp-color;
+		background-color: $dtrp-bg-range;
+	}
+
+	// active dates
+	td.active,
+	td.active:hover {
+		color: $primary;
+		background-color: transparent;
+	}
+
+	// dates list
+	.ranges li {
+		&.active {
+			background-color: $primary;
+		}
+		&:hover {
+			background-color: $dtrp-bg-hover;
+		}
+	}
+
+	// dates buttons
+	.drp-buttons {
+		margin-bottom: -8px;
+		border-top: 1px solid $dtrp-border-color;
+
+		.btn {
+			margin-left: 0;
+		}
+
+		> * {
+			margin-right: 8px;
+			margin-bottom: 8px;
+			vertical-align: middle;
+		}
+	}
+}
+
+// Color themes
+@each $theme, $color in $theme-colors {
+	.form-control-#{$theme} ~ .daterangepicker {
+		td.active,
+		.ranges li.active{
+			background: $color;
+			color: color-yiq( $color );
+		}
+	}
+}

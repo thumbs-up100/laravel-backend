@@ -1,0 +1,65 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$blockquote-padding: px-to-rem(10px, 20px);
+$blockquote-small-font-size:  $small-font-size;
+$blockquote-font-size:        $font-size-base * 1.1;
+$blockquote-small-color: $gray-500;
+
+@import "../bootstrap/scss/mixins";
+
+// Blockquotes
+.blockquote {
+	padding: $blockquote-padding;
+	@include font-size($blockquote-font-size);
+	border-left: 5px solid;
+}
+
+.blockquote-footer {
+	display: block;
+	@include font-size($blockquote-small-font-size);
+	color: $blockquote-small-color;
+
+	&::before {
+		content: "\2014\00A0"; // em dash, nbsp
+	}
+}
+
+// Offsets
+* + .blockquote {
+	margin-top: 20px;
+}
+
+// Modifiers
+.blockquote-reverse {
+	text-align: right;
+	border-left: 0;
+	border-right: 5px solid;
+}
+
+.blockquote-thin {
+	border-width: 3px;
+}
+
+.blockquote-rounded {
+	border-radius: 11px;
+}
+
+// Color themes
+@each $color, $value in $theme-colors {
+	.blockquote-#{$color} {
+		border-color: $value;
+	}
+}
+
+// Markdown context
+.md-editor {
+	blockquote {
+		padding: px-to-rem(10px, 20px);
+		@include font-size($blockquote-font-size);
+		border-left: 5px solid $primary;
+	}
+}

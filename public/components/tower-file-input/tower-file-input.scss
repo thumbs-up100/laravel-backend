@@ -1,0 +1,48 @@
+﻿.tower-file-input {
+	display: none;
+	height: 0.1px;
+	width: 0.1px;
+	opacity: 0;
+}
+
+.tower-file-details {
+	position: relative;
+	border-radius: .25rem;
+	margin-top: 0.5rem;
+
+	.tower-file-list, img {
+		border: 1px solid #ddd;
+		display: inline-block;
+	}
+
+	img {
+		padding: .375rem;
+		max-width: 100%;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 2rem;
+		height: 0;
+		width: 0;
+	}
+
+	&::before {
+		top: -0.6rem;
+		border: 5px solid transparent;
+		border-bottom-color: #ddd;
+	}
+
+	&::after {
+		top: calc(-0.6rem + 1px);
+		border: 5px solid transparent;
+		border-bottom-color: white;
+	}
+}
+
+.tower-file-list {
+	padding: .375rem .75rem .375rem;
+	list-style-type: none;
+}

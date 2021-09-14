@@ -1,0 +1,87 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Core variables and mixins
+@import "lightgallery/lg-variables";
+@import "lightgallery/lg-mixins";
+@import "lightgallery/lg-fonts";
+@import "lightgallery/lg-theme-default";
+@import "lightgallery/lg-thumbnail";
+@import "lightgallery/lg-video";
+@import "lightgallery/lg-autoplay";
+@import "lightgallery/lg-zoom";
+@import "lightgallery/lg-pager";
+@import "lightgallery/lg-fullscreen";
+@import "lightgallery/lg-share";
+@import "lightgallery/lg-transitions";
+
+// Core
+@import "lightgallery/lg-core";
+
+// Base
+.lightgallery-item {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	transition: ease-in-out .2s;
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba( $black, .45 );
+		transform: translateY( -100% );
+		transition: ease-in-out .2s;
+		opacity: 0;
+	}
+
+	&:after {
+		position: absolute;
+		content: '\e311';
+		font-family: 'lg';
+		font-size: px-to-rem( 30px );
+		color: $white;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -500% );
+		transition: ease-in-out .2s;
+		opacity: 0;
+	}
+
+	&:hover {
+		&:before {
+			transform: translateY( 0 );
+			opacity: 1;
+		}
+
+		&:after {
+			transform: translate( -50%, -50% );
+			opacity: 1;
+		}
+	}
+}
+
+.lg-outer .lg-thumb {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Mobile styles
+@include media-breakpoint-down(sm) {
+	// Hide zooming toggles
+	#lg-zoom-in,
+	#lg-zoom-out {
+		display: none;
+	}
+
+	// Reduce toolbar buttons width
+	.lg-toolbar .lg-icon {
+		width: 40px;
+	}
+}

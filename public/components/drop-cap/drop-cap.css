@@ -1,0 +1,86 @@
+.drop-cap::first-letter {
+	float: left;
+	padding: 0.3125rem;
+	margin-right: 0.3125rem;
+	font-family: 'Droid Serif', serif;
+	font-size: 3em;
+	font-weight: 800;
+	line-height: .7;
+	border-radius: 0.375rem;
+}
+
+.drop-cap-fill::first-letter {
+	margin-right: 0.625rem;
+}
+
+.drop-cap-primary::first-letter {
+	color: #9e6cfd;
+}
+
+.drop-cap-primary.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #9e6cfd;
+}
+
+.drop-cap-secondary::first-letter {
+	color: #ff574d;
+}
+
+.drop-cap-secondary.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #ff574d;
+}
+
+.drop-cap-success::first-letter {
+	color: #04cf9e;
+}
+
+.drop-cap-success.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #04cf9e;
+}
+
+.drop-cap-info::first-letter {
+	color: #3ec5ff;
+}
+
+.drop-cap-info.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #3ec5ff;
+}
+
+.drop-cap-warning::first-letter {
+	color: #fac12e;
+}
+
+.drop-cap-warning.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #fac12e;
+}
+
+.drop-cap-danger::first-letter {
+	color: #ff4444;
+}
+
+.drop-cap-danger.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #ff4444;
+}
+
+.drop-cap-light::first-letter {
+	color: #35383d;
+}
+
+.drop-cap-light.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #35383d;
+}
+
+.drop-cap-dark::first-letter {
+	color: #15171c;
+}
+
+.drop-cap-dark.drop-cap-fill::first-letter {
+	color: #fff;
+	background-color: #15171c;
+}

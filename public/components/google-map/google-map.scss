@@ -1,0 +1,34 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Base
+.google-panorama,
+.google-map {
+	height: 250px;
+	width: 100%;
+
+	img {
+		margin-top: 0;
+		vertical-align: top;
+	}
+
+	@include media-breakpoint-up(lg) {
+		height: 570px;
+	}
+}
+
+// Map in the context of panel
+.panel {
+	.google-panorama,
+	.google-map {
+		height: 250px;
+
+		@include media-breakpoint-up(lg) {
+			height: 350px;
+		}
+	}
+
+}

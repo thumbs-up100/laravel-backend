@@ -1,0 +1,19 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/breadcrumb";
+
+//variables
+$breadcrumb-bg : transparent;
+$breadcrumb-border-radius: 0;
+
+.breadcrumb {
+	background-color: $breadcrumb-bg;
+	@include border-radius($breadcrumb-border-radius);
+}
+
+.breadcrumbs-icon {
+	margin-right: px-to-rem( 3px );
+}

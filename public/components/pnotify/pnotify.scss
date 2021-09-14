@@ -1,0 +1,29 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+div.ui-pnotify.ui-pnotify-with-icon {
+	.ui-pnotify-title,
+	.ui-pnotify-text {
+		margin-left: 27px;
+	}
+}
+
+.ui-pnotify-icon, .ui-pnotify-icon span {
+	font-size: 1.06rem;
+	line-height: 1;
+}
+
+div.ui-pnotify-icon-bs4 > span {
+	position: relative;
+	top: 2px;
+}
+
+div.ui-pnotify .ui-pnotify-shadow {
+	box-shadow: $box-shadow;
+}
+
+// Opacity mode
+.ui-pnotify.translucent.ui-pnotify-fade-in {opacity: 0.5;}

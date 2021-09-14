@@ -1,0 +1,161 @@
+// Toggles
+.navbar-toggle {
+	position: relative;
+	display: block;
+	border: none;
+	font-size: 25px;
+	width: 30px;
+	height: 30px;
+	line-height: 1;
+	opacity: 1;
+	visibility: visible;
+	background: transparent;
+	color: $navbar-toggle-color;
+	transition: .25s ease-in-out;
+
+	&::before,
+	&::after {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transition: .25s, color 0s;
+	}
+
+	&::before {
+		transform: translate( -50%, -50% ) rotate(0) scale(1);
+		opacity: 1;
+	}
+
+	&::after {
+		content: '\ec2a';
+		transform: translate( -50%, -50% ) rotate(90deg)  scale(0);
+		font-family: 'Linearicons';
+		opacity: 0;
+	}
+
+	&:hover {
+		color: $navbar-toggle-hover-color;
+	}
+
+	&.active {
+		&::before {
+			transform: translate( -50%, -50% ) rotate(-90deg)  scale(0);
+			opacity: 0;
+		}
+
+		&::after {
+			transform: translate( -50%, -50% ) rotate(0deg)  scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+.navbar-toggle-sidebar {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35px;
+	height: 35px;
+	font-size: 35px;
+	line-height: 1;
+	border: none;
+	background: none;
+	color: $navbar-sidebar-color;
+	transition: .2s ease-in-out;
+
+	&:hover {
+		color: $navbar-toggle-hover-color;
+	}
+}
+
+.navbar-toggle-search {
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-toggle-search-cell {
+	display: none;
+}
+
+
+// Toggle badge
+.navbar-badge {
+	position: absolute;
+	bottom: 43%;
+	left: 54%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15px;
+	height: 15px;
+	min-width: 0;
+	padding: 2px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: none;
+	transition: .2s ease-in-out;
+}
+
+.navbar-toggle.active + .navbar-badge {
+	width: 0;
+	height: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+
+// Media
+@include media-breakpoint-down( xs ) {
+	.navbar-toggle-search-cell {
+		display: block;
+	}
+
+	.navbar-panel.active {
+		.navbar-toggle:not(.navbar-toggle-search) {
+			width: 0;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.navbar-badge {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+
+@include media-breakpoint-up( xl ) {
+	.navbar-toggle {
+		font-size: 27px;
+	}
+
+	.navbar-toggle-sidebar {
+		left: 8px;
+		color:  $navbar-sidebar-color;
+
+		&:hover, &.navbar-sidebar-active {
+			background: transparent;
+			color: $navbar-toggle-hover-color;
+		}
+	}
+
+	html:not(.navbar-sidebar-active) .navbar-sidebar-wrap:not(:hover) {
+		.navbar-toggle-sidebar {
+			left: 13px;
+		}
+	}
+
+	.navbar-sidebar-active,
+	html:not(.navbar-sidebar-active) .navbar-sidebar-wrap:hover {
+		.navbar-toggle-sidebar {
+			left: 13px;
+		}
+	}
+}

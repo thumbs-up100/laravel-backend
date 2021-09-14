@@ -1,0 +1,132 @@
+// Headings
+body {
+	letter-spacing: 0.02em;
+}
+
+#{headings()} {
+	margin: 0;
+	letter-spacing: 0;
+}
+
+h1, .h1 {
+	font-size: px-to-rem( 30px );
+	line-height: 1.2;
+
+	@include media-breakpoint-up( xl ) {
+		font-size: $h1-font-size;
+		line-height: $h1-line-height;
+	}
+}
+
+h2, .h2 {
+	font-size: px-to-rem( 26px );
+	line-height: 1.2;
+
+	@include media-breakpoint-up( xl ) {
+		font-size: $h2-font-size;
+		line-height: $h2-line-height;
+	}
+}
+
+h3, .h3 {
+	font-size: px-to-rem( 22px );
+	line-height: 1.25;
+
+	@include media-breakpoint-up( xl ) {
+		font-size: $h3-font-size;
+		line-height: $h3-line-height;
+	}
+}
+
+h4, .h4 {
+	font-size: px-to-rem( 19px );
+	line-height: 1.2;
+
+	@include media-breakpoint-up( xl ) {
+		font-size: $h4-font-size;
+		line-height: $h4-line-height;
+	}
+}
+
+h5, .h5 {
+	font-size: px-to-rem( 17px );
+	line-height: 1.2;
+
+	@include media-breakpoint-up( xl ) {
+		font-size: $h5-font-size;
+		line-height: $h5-line-height;
+	}
+}
+
+h6, .h6 {
+	font-size: px-to-rem( 14px );
+	line-height: 1.2;
+
+	@include media-breakpoint-up( xl ) {
+		font-size: $h6-font-size;
+		line-height: $h6-line-height;
+	}
+}
+
+// Link
+a {
+	transition: color .2s;
+}
+
+// Text accent
+.text-accent {
+	position: relative;
+	font-size: px-to-rem( 75px );
+	line-height: 1.1;
+	font-weight: 900;
+	color: $info;
+	letter-spacing: -0.035em;
+
+	@include media-breakpoint-up( sm ) {
+		font-size: px-to-rem( 100px );
+	}
+
+	@include media-breakpoint-up( md ) {
+		font-size: px-to-rem( 130px );
+	}
+
+	@include media-breakpoint-up( lg ) {
+		font-size: px-to-rem( 165px );
+	}
+
+	@include media-breakpoint-up( xl ) {
+		font-size: px-to-rem( 200px );
+	}
+}
+
+// text gray
+@each $color, $value in $grays {
+	.text-#{$color} {
+		color: $value;
+	}
+}
+
+
+// icon circle
+.icon-circle {
+	position: relative;
+	width: px-to-rem( 48px );
+	height: px-to-rem( 48px );
+	border-radius: 50%;
+
+	span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		font-size: 22px;
+	}
+}
+
+// Color themes
+@each $color, $value in $theme-colors {
+	.icon-circle-#{$color} {
+		color: color-yiq($value);
+		background: $value;
+	}
+}

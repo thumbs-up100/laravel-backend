@@ -1,0 +1,13 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$topbar-border-color: $gray-200;
+
+.topbar {
+	position: relative;
+	padding: 20px 0;
+}

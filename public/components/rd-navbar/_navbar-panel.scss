@@ -1,0 +1,91 @@
+// Panel
+.navbar-panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: stretch;
+	padding: 5px 5px 5px 50px;
+	min-height: 67px;
+	transition: padding-left .25s ease-in-out;
+	background: $navbar-panel-bg;
+	box-shadow: $box-shadow;
+}
+
+.navbar-panel-inner {
+	position: relative;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	border-radius: 10px;
+}
+
+.navbar-panel-cell {
+	position: relative;
+	padding: 0 5px;
+	opacity: 1;
+	visibility: visible;
+	transition: .25s ease-in-out;
+}
+
+.navbar-panel-spacer {
+	display: flex;
+	align-items: stretch;
+	flex-grow: 1;
+	align-self: stretch;
+}
+
+
+// Media
+@include media-breakpoint-down( xs ) {
+	.navbar-panel.active {
+		.navbar-panel-cell {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up( xl ) {
+	.navbar-panel {
+		min-height: 70px;
+		padding: 8px 15px 8px 85px;
+		will-change: transform;
+		background: $navbar-panel-bg;
+		transition: $navbar-transition;
+	}
+
+	.navbar-panel-cell {
+		padding: 0 13px;
+	}
+
+	.navbar-sidebar-active {
+		.navbar-panel {
+			padding-left: 265px;
+		}
+	}
+
+	.rd-navbar:not(.rd-navbar--is-stuck) {
+		.navbar-panel {
+			min-height: $navbar-panel-height;
+			padding-top: 24px;
+			padding-bottom: 14px;
+			box-shadow: none;
+		}
+	}
+}
+
+@include media-breakpoint-up( xxl ) {
+	.navbar-panel {
+		padding-left: 60px;
+	}
+
+	.navbar-sidebar-active {
+		.navbar-panel {
+			padding-left: 270px;
+		}
+	}
+}
+

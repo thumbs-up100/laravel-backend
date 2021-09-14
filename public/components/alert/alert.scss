@@ -1,0 +1,119 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+//variables
+$alert-border-width-large: $alert-border-width + 4px;
+
+$alert-padding-y: px-to-rem( 20px );
+$alert-padding-x: px-to-rem( 20px );
+
+$alert-padding-y-sm: $alert-padding-y * 0.8;
+$alert-padding-x-sm: $alert-padding-x * 0.8;
+$alert-font-size-sm: $font-size-base * 0.8;
+
+$alert-padding-y-lg: $alert-padding-y * 1.2;
+$alert-padding-x-lg: $alert-padding-x * 1.2;
+$alert-font-size-lg: $font-size-base * 1.2;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/alert";
+
+// Base styles
+.alert {
+	margin-bottom: 0;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	border-width: 0;
+
+	#{headings()} {
+		color: inherit;
+	}
+
+	a {
+		color: inherit;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+// Alert sizes
+.alert-sm {
+	padding: $alert-padding-y-sm $alert-padding-x-sm;
+	font-size: $alert-font-size-sm;
+
+	&.alert-dismissible {
+		padding-right: $alert-font-size-sm + $alert-padding-x-sm * 2;
+	}
+}
+
+.alert-lg {
+	padding: $alert-padding-y-lg $alert-padding-x-lg;
+	font-size: $alert-font-size-lg;
+
+	&.alert-dismissible {
+		padding-right: $alert-font-size-lg + $alert-padding-x-lg * 2;
+	}
+}
+
+// Alert border styles
+.alert-border-left {
+	border-left-width: $alert-border-width-large;
+}
+.alert-border-right {
+	border-right-width: $alert-border-width-large;
+}
+.alert-border-top {
+	border-top-width: $alert-border-width-large;
+}
+.alert-border-bottom {
+	border-bottom-width: $alert-border-width-large;
+}
+
+// Alert icon
+.alert-icon {
+	padding-right: 0.4em;
+	font-size: px-to-rem( 18px );
+	line-height: 1;
+}
+
+// Offsets
+* + .alert {
+	margin-top: px-to-rem(15px);
+}
+
+// Color themes
+@each $theme, $color in $theme-colors {
+	.alert-#{$theme} {
+		$text-color: if( get-yiq( $color ) >= $yiq-contrasted-threshold, theme-color-level( $theme, $alert-color-level ), color-yiq( $color ) );
+		@include alert-variant( $color, rgba( $color, .2 ), $text-color );
+
+		&.alert-darker {
+			$darker: darken( $color, 10% );
+			$text-color: if( get-yiq( $darker ) >= $yiq-contrasted-threshold, theme-color-level( $theme, $alert-color-level ), color-yiq( $darker ) );
+			@include alert-variant( $darker, darken( $darker, 10% ), $text-color );
+		}
+
+		&.alert-lighter {
+			$lighter: lighten( $color, 10% );
+			$text-color: if( get-yiq( $lighter ) >= $yiq-contrasted-threshold, theme-color-level( $theme, $alert-color-level ), color-yiq( $lighter ) );
+			@include alert-variant( $lighter, darken( $lighter, 10% ), $text-color );
+		}
+	}
+}
+
+.alert-dark {
+	background-color: darken( $dark, 5% );
+}
+
+@each $theme, $color in $theme-colors {
+	.alert-#{$theme}.alert-gradient {
+		$text-color: if( get-yiq( $color ) >= $yiq-contrasted-threshold, theme-color-level( $theme, $alert-color-level ), color-yiq( $color ) );
+		@include alert-variant( darken( $color, 10% ), rgba( $color, .2 ), $text-color );
+		background: linear-gradient( 180deg, $color, lighten( $color, 10% ) ) repeat-x;
+	}
+}

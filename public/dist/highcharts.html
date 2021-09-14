@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active" lang="en">
+  <head>
+    <title>Highcharts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description" content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="components/base/base.css">
+    <script src="components/base/script.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar">
+            <div class="navbar-panel">
+              <div class="navbar-panel-inner">
+                <div class="navbar-panel-cell flex-grow-1">
+                  <div class="navbar-search" id="navbar-search"> 
+                    <input class="navbar-search-input" type="text" placeholder="Search"/>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell navbar-toggle-search-cell"> 
+                  <button class="navbar-toggle navbar-toggle-search mdi-magnify" title="Search" data-multi-switch='{"targets":".navbar-panel","scope":"#navbar-search","isolate":"[data-multi-switch]"}'></button>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-menu" title="Sidebar" data-sidebar-switch="data-sidebar-switch" data-multi-switch='{"targets":".sidebar","scope":".sidebar, [data-sidebar-switch]","isolate":"[data-multi-switch]:not([data-sidebar-switch])"}'></button>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-envelope" title="Chat" data-multi-switch='{"targets":"#subpanel-chat","scope":"#subpanel-chat","isolate":"[data-multi-switch]"}'></button>
+                  <div class="navbar-subpanel" id="subpanel-chat">
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <h4>Chat</h4>
+                      </div>
+                      <div class="navbar-subpanel-body scroller scroller-vertical" style="max-height: 400px;">
+                        <div class="media media-cloud group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body">
+                            <h5 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud flex-row-reverse group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body media-body-right-caret">
+                            <h5 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body">
+                            <h5 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud flex-row-reverse group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body media-body-right-caret">
+                            <h5 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="navbar-subpanel-footer">
+                        <div class="input-group form-group">
+                          <input class="form-control" type="text" placeholder="Enter your message here"/>
+                          <div class="input-group-append">
+                            <button class="btn btn-primary">Send</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-alarm" title="Notifications" data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'></button>
+                  <div class="navbar-badge badge badge-danger badge-pill">1</div>
+                  <div class="navbar-subpanel" id="subpanel-notifications"> 
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <h4>Notifications</h4>
+                      </div>
+                      <div class="navbar-subpanel-body scroller scroller-vertical">
+                        <div class="group-5">
+                                      <div class="alert alert-dismissible alert-primary alert-darker alert-sm" role="alert"><span class="alert-icon fa-telegram"></span><span>Message</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-secondary alert-sm" role="alert"><span class="alert-icon fa-warning"></span><span>Warning</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-danger alert-sm" role="alert"><span class="alert-icon fa-remove"></span><span>Error</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-success alert-sm" role="alert"><span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="navbar-subpanel-footer"><a class="btn btn-primary btn-sm" href="alerts.html">See more</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell">
+                  <div class="navbar-toggle navbar-user" title="User Menu" data-multi-switch='{"targets":"#subpanel-user-menu","scope":"#subpanel-user-menu","isolate":"[data-multi-switch]"}'><img class="rounded" src="images/users/user-09-60x60.jpg" alt=""/></div>
+                  <div class="navbar-subpanel" id="subpanel-user-menu">
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <div class="h3">Alice</div>
+                      </div>
+                      <div class="navbar-subpanel-body p-0 scroller scroller-vertical">
+                        <div class="list-group list-group-flush"><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-user"></span></div>
+                              <div class="media-body">
+                                <h5>My Profile</h5>
+                              </div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-envelope-o"></span></div>
+                              <div class="media-body">
+                                <h5>My Messages</h5>
+                              </div>
+                              <div class="badge badge-warning">12</div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-rocket"></span></div>
+                              <div class="media-body">
+                                <h5>My Activities</h5>
+                              </div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-desktop"></span></div>
+                              <div class="media-body">
+                                <h5>My Tasks</h5>
+                              </div>
+                              <div class="badge badge-success">05</div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-line-chart"></span></div>
+                              <div class="media-body">
+                                <h5>Billing</h5>
+                              </div>
+                            </div></a></div>
+                      </div>
+                      <div class="navbar-subpanel-footer p-2">
+                        <div class="d-flex align-items-center justify-content-between"><a class="btn btn-sm btn-danger" href="#">Sign Out</a><a class="btn btn-sm btn-success" href="#">Upgrade Plan</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-sidebar-wrap">
+              <div class="navbar-sidebar-panel">
+                <button class="navbar-toggle-sidebar linearicons-menu" data-navigation-switch="data-navigation-switch"></button>
+                <div class="navbar-logo"><a class="navbar-logo-link" href="index.html"><img class="navbar-logo-default" src="images/logo-272x84.png" width="136" alt="PART"/></a></div>
+              </div>
+              <div class="navbar-sidebar scroller scroller-vertical">
+                <div class="tabs tabs-horizontal-left">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-1" role="tab" aria-selected="true" title="Menu"><span class="linearicons-icons"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-2" role="tab" aria-selected="false" title="Tools"><span class="linearicons-cog"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-3" role="tab" aria-selected="false" title="System"><span class="linearicons-cart"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-4" role="tab" aria-selected="false" title="Elements"><span class="linearicons-copy"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade active show" id="menu-1" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="index.html" title="Dashboard"><span class="navbar-navigation-text">Dashboard</span></a>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="calendar.html" title="Calendar"><span class="navbar-navigation-text">Calendar</span></a>
+                        </li>
+                        <li class="navbar-navigation-item active"><a class="navbar-navigation-link" href="documentation.html" title="Documentation"><span class="navbar-navigation-text">Documentation</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#bootstrap-components" title="Bootstrap Components"><span class="navbar-navigation-text">Bootstrap Components</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#button" title="Button"><span class="navbar-navigation-text">Button</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#badge" title="Badge"><span class="navbar-navigation-text">Badge</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#code" title="Code"><span class="navbar-navigation-text">Code</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#media" title="Media Object"><span class="navbar-navigation-text">Media Object</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#card" title="Card"><span class="navbar-navigation-text">Card</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#table" title="Table"><span class="navbar-navigation-text">Table</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#progress" title="Progress"><span class="navbar-navigation-text">Progress</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#close" title="Close"><span class="navbar-navigation-text">Close</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#pagination" title="Pagination"><span class="navbar-navigation-text">Pagination</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#alert" title="Alert"><span class="navbar-navigation-text">Alert</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dropdown" title="Dropdown"><span class="navbar-navigation-text">Dropdown</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#nav" title="Nav"><span class="navbar-navigation-text">Nav</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#tooltip" title="Tooltip"><span class="navbar-navigation-text">Tooltip</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#modal" title="Modal"><span class="navbar-navigation-text">Modal</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jumbotron" title="Jumbotron"><span class="navbar-navigation-text">Jumbotron</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#input" title="Input"><span class="navbar-navigation-text">Input</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item active"><a class="navbar-navigation-link" href="documentation.html#plugins" title="Plugins"><span class="navbar-navigation-text">Plugins</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#Nprogress" title="Nprogress"><span class="navbar-navigation-text">Nprogress</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#highlight" title="Highlight.js"><span class="navbar-navigation-text">Highlight.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dual-listbox" title="Dual Listbox"><span class="navbar-navigation-text">Dual Listbox</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#maxlength" title="Bootstrap Maxlength"><span class="navbar-navigation-text">Bootstrap Maxlength</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#typeahead" title="Typeahead.js"><span class="navbar-navigation-text">Typeahead.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#select2" title="Select2"><span class="navbar-navigation-text">Select2</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#spinner" title="jQuery UI Spinner"><span class="navbar-navigation-text">jQuery UI Spinner</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#time-spinner" title="Time Spinner"><span class="navbar-navigation-text">Time Spinner</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#daterangepiker" title="Date Range Picker"><span class="navbar-navigation-text">Date Range Picker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#datetimepicker" title="Bootstrap Date/Timepicker"><span class="navbar-navigation-text">Bootstrap Date/Timepicker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#tag-manager" title="Tags Manager"><span class="navbar-navigation-text">Tags Manager</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#colorpicker" title="Bootstrap Colorpicker"><span class="navbar-navigation-text">Bootstrap Colorpicker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#maskedinput" title="jQuery Masked Input"><span class="navbar-navigation-text">jQuery Masked Input</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#ckeditor" title="CKeditor"><span class="navbar-navigation-text">CKeditor</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#summernote" title="Summernote"><span class="navbar-navigation-text">Summernote</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#markdown" title="Markdown.js"><span class="navbar-navigation-text">Markdown.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#nestable" title="Nestable jQuery Plugin"><span class="navbar-navigation-text">Nestable jQuery Plugin</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jstree" title="jsTree"><span class="navbar-navigation-text">jsTree</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#cropper" title="Cropper.js"><span class="navbar-navigation-text">Cropper.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#fileupload" title="Tower File Input"><span class="navbar-navigation-text">Tower File Input</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#easyzoom" title="EasyZoom"><span class="navbar-navigation-text">EasyZoom</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#xzoom" title="xZoom"><span class="navbar-navigation-text">xZoom</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#slick" title="Slick Slider"><span class="navbar-navigation-text">Slick Slider</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dropzone" title="DropzoneJS"><span class="navbar-navigation-text">DropzoneJS</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#pnotify" title="PNotify"><span class="navbar-navigation-text">PNotify</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#driver" title="Driver.js"><span class="navbar-navigation-text">Driver.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#countdown" title="αCountdown"><span class="navbar-navigation-text">αCountdown</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#progress-circle" title="αCounter &amp; αProgressCircle"><span class="navbar-navigation-text">αCounter &amp; αProgressCircle</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#particles" title="Particles.js"><span class="navbar-navigation-text">Particles.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#lightgallery" title="Lightgallery"><span class="navbar-navigation-text">Lightgallery</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jvectormap" title="jVectorMap"><span class="navbar-navigation-text">jVectorMap</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#flotchart" title="Flot"><span class="navbar-navigation-text">Flot</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#rd-navbar" title="RD Navbar"><span class="navbar-navigation-text">RD Navbar</span></a>
+                                </li>
+                                <li class="navbar-navigation-item active"><a class="navbar-navigation-link" href="documentation.html#highcharts" title="Highcharts"><span class="navbar-navigation-text">Highcharts</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#multiswitch" title="MultiSwitch"><span class="navbar-navigation-text">MultiSwitch</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-2" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Admin plugins"><span class="navbar-navigation-text">Admin plugins</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-panels.html" title="Admin panels"><span class="navbar-navigation-text">Admin panels</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-modals.html" title="Admin modals"><span class="navbar-navigation-text">Admin modals</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-dock.html" title="Admin Dock"><span class="navbar-navigation-text">Admin Dock</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Admin layouts"><span class="navbar-navigation-text">Admin layouts</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="navbar.html" title="Navbar"><span class="navbar-navigation-text">Navbar</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Topbar"><span class="navbar-navigation-text">Topbar</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="topbar-menu.html" title="Topbar Menu"><span class="navbar-navigation-text">Topbar Menu</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Content Body"><span class="navbar-navigation-text">Content Body</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="blank-starter.html" title="Blank Starter"><span class="navbar-navigation-text">Blank Starter</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="jumbotron.html" title="Jumbotron"><span class="navbar-navigation-text">Jumbotron</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="content-tabs.html" title="Content Tabs"><span class="navbar-navigation-text">Content Tabs</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-3" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Info Panels"><span class="navbar-navigation-text">Info Panels</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="tile-widgets.html" title="Tile Widgets"><span class="navbar-navigation-text">Tile Widgets</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="panel-widgets.html" title="Panel Widgets"><span class="navbar-navigation-text">Panel Widgets</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-widgets.html" title="Admin Widgets"><span class="navbar-navigation-text">Admin Widgets</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="E-commerce"><span class="navbar-navigation-text">E-commerce</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="ecommerce-dashboard.html" title="Ecommerce Dashboard"><span class="navbar-navigation-text">Ecommerce Dashboard</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="products.html" title="Products"><span class="navbar-navigation-text">Products</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="orders.html" title="Orders"><span class="navbar-navigation-text">Orders</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="customers.html" title="Customers"><span class="navbar-navigation-text">Customers</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="store-settings.html" title="Store Settings"><span class="navbar-navigation-text">Store Settings</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-4" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="UI Elements"><span class="navbar-navigation-text">UI Elements</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="alerts.html" title="Alerts"><span class="navbar-navigation-text">Alerts</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="animations.html" title="Animations"><span class="navbar-navigation-text">Animations</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="buttons.html" title="Buttons"><span class="navbar-navigation-text">Buttons</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="typography.html" title="Typography"><span class="navbar-navigation-text">Typography</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="panel.html" title="Panel"><span class="navbar-navigation-text">Panel</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="progress-bars.html" title="Progress Bars"><span class="navbar-navigation-text">Progress Bars</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="tabs.html" title="Tabs"><span class="navbar-navigation-text">Tabs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="icons.html" title="Icons"><span class="navbar-navigation-text">Icons</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="grid.html" title="Grid"><span class="navbar-navigation-text">Grid</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Form Elements"><span class="navbar-navigation-text">Form Elements</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="basic-inputs.html" title="Basic Inputs"><span class="navbar-navigation-text">Basic Inputs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="plugin-inputs.html" title="Plugin Inputs"><span class="navbar-navigation-text">Plugin Inputs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="editors.html" title="Editors"><span class="navbar-navigation-text">Editors</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="treeview.html" title="Treeview"><span class="navbar-navigation-text">Treeview</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="nestable.html" title="Nestable"><span class="navbar-navigation-text">Nestable</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="image-tools.html" title="Image tools"><span class="navbar-navigation-text">Image tools</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="uploaders.html" title="Uploaders"><span class="navbar-navigation-text">Uploaders</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="notifications.html" title="Notifications"><span class="navbar-navigation-text">Notifications</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="content-sliders.html" title="Content Sliders"><span class="navbar-navigation-text">Content Sliders</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Plugins"><span class="navbar-navigation-text">Plugins</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Maps"><span class="navbar-navigation-text">Maps</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="google-maps.html" title="Google Maps"><span class="navbar-navigation-text">Google Maps</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="jvector-map.html" title="jVector Map"><span class="navbar-navigation-text">jVector Map</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Charts"><span class="navbar-navigation-text">Charts</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="highcharts.html" title="Highcharts"><span class="navbar-navigation-text">Highcharts</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="flotcharts.html" title="Flotcharts"><span class="navbar-navigation-text">Flotcharts</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Tables"><span class="navbar-navigation-text">Tables</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="basic-tables.html" title="Basic Tables"><span class="navbar-navigation-text">Basic Tables</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="data-tables.html" title="Data Tables"><span class="navbar-navigation-text">Data Tables</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="pricing-tables.html" title="Pricing Tables"><span class="navbar-navigation-text">Pricing Tables</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Misc"><span class="navbar-navigation-text">Misc</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="site-tour.html" title="Site Tour"><span class="navbar-navigation-text">Site Tour</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="session-timeout.html" title="Session Timeout"><span class="navbar-navigation-text">Session Timeout</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="page-progress-loader.html" title="Page Progress Loader"><span class="navbar-navigation-text">Page Progress Loader</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Pages"><span class="navbar-navigation-text">Pages</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Utility"><span class="navbar-navigation-text">Utility</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="confirmation.html" title="Confirmation"><span class="navbar-navigation-text">Confirmation</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="login.html" title="Login"><span class="navbar-navigation-text">Login</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="register.html" title="Register"><span class="navbar-navigation-text">Register</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="screenlock.html" title="Screenlock"><span class="navbar-navigation-text">Screenlock</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="password-reset.html" title="Password Reset"><span class="navbar-navigation-text">Password Reset</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="coming-soon.html" title="Coming Soon"><span class="navbar-navigation-text">Coming Soon</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="404.html" title="404"><span class="navbar-navigation-text">404</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="500.html" title="500"><span class="navbar-navigation-text">500</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Basic"><span class="navbar-navigation-text">Basic</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="search-results.html" title="Search Results"><span class="navbar-navigation-text">Search Results</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="profile.html" title="Profile"><span class="navbar-navigation-text">Profile</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="timeline.html" title="Timeline"><span class="navbar-navigation-text">Timeline</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="faq.html" title="FAQ"><span class="navbar-navigation-text">FAQ</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="calendar.html" title="Calendar"><span class="navbar-navigation-text">Calendar</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="messages.html" title="Messages"><span class="navbar-navigation-text">Messages</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="messages-compose.html" title="Messages Compose"><span class="navbar-navigation-text">Messages Compose</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="gallery.html" title="Gallery"><span class="navbar-navigation-text">Gallery</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="printable-invoice.html" title="Printable Invoice"><span class="navbar-navigation-text">Printable Invoice</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="bg-800 section-sm">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col-sm-5 col-md-4 col-lg-4">
+              <h3>Highcharts</h3>
+              <ul class="list-unstyled list-md mt-2">
+                <li><span class="fa-exclamation-circle pr-2"></span><b>Author:</b><span> Highsoft AS</span></li>
+                <li><span class="fa-exclamation-circle pr-2"></span><b>License:</b><a href="https://highcharts.com/license"> www.highcharts.com/license</a></li>
+                <li><span class="fa-exclamation-circle pr-2"></span><b>Website:</b><a href="https://highcharts.com"> www.highcharts.com</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-7 col-lg-6">
+              <p>Highcharts makes it easy for developers to set up interactive charts in their web pages. Create interactive charts easily for your web projects. Used by tens of thousands of developers and over 80% out of the world's 500 largest companies. Highcharts is the simplest yet most flexible charting API on the market. It makes it easy to add interactive, mobile-optimized charts to your web and mobile projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-sm section-transparent">
+        <div class="container-fluid">
+          <div class="row row-30">
+            <!-- Basic column chart-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Basic Column Chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container highcharts-container-lg" data-highcharts-options="{&quot;chart&quot;:{&quot;type&quot;:&quot;column&quot;,&quot;marginTop&quot;:30,&quot;marginBottom&quot;:30},&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#9e6cfd&quot;,&quot;#fac12e&quot;,&quot;#fac12e&quot;,&quot;#04cf9e&quot;,&quot;#04cf9e&quot;],&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;enabled&quot;:false},&quot;xAxis&quot;:{&quot;lineWidth&quot;:0,&quot;tickColor&quot;:&quot;#2d3035&quot;,&quot;tickLength&quot;:5,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#A5A7A9&quot;,&quot;fontSize&quot;:&quot;16px&quot;}}},&quot;yAxis&quot;:{&quot;max&quot;:20,&quot;gridLineWidth&quot;:0,&quot;title&quot;:{&quot;text&quot;:null},&quot;labels&quot;:{&quot;enabled&quot;:false}},&quot;tooltip&quot;:{&quot;style&quot;:{&quot;fontSize&quot;:&quot;16px&quot;},&quot;headerFormat&quot;:&quot;&quot;,&quot;footerFormat&quot;:&quot;&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;padding&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;pointFormat&quot;:&quot; {series.name}: &lt;span style=\&quot;color:{point.color}\&quot;&gt;{point.y}&lt;/span&gt;&quot;},&quot;plotOptions&quot;:{&quot;column&quot;:{&quot;colorByPoint&quot;:true,&quot;borderColor&quot;:&quot;transparent&quot;,&quot;borderRadius&quot;:6}},&quot;series&quot;:[{&quot;name&quot;:&quot;Tokyo&quot;,&quot;data&quot;:[12,14,20,19,8,12,14,20,5,16,8,12,14,20,19,5,16,8,12,14,20,19,5,16,8]}]}"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Line detail chart-->
+            <div class="col-md-12">
+              <div class="panel" data-highcharts-double="container" data-file="./components/highcharts/highcharts.json">
+                <div class="panel-header">
+                  <h4 class="panel-title">Line detail chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container-double-detail" data-highcharts-double="detail"></div>
+                </div>
+                <div class="panel-footer">
+                  <div data-highcharts-double="master" style="height:100px;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Filterable column chart-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Filterable Column Chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#fac12e&quot;,&quot;#3ec5ff&quot;,&quot;#04cf9e&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;column&quot;,&quot;zoomType&quot;:&quot;x&quot;,&quot;panning&quot;:true,&quot;panKey&quot;:&quot;shift&quot;},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#A5A7A9&quot;,&quot;fontWeight&quot;:&quot;normal&quot;,&quot;fontSize&quot;:&quot;16px&quot;},&quot;itemHoverStyle&quot;:{&quot;color&quot;:&quot;#c9c9c9&quot;}},&quot;tooltip&quot;:{&quot;style&quot;:{&quot;fontSize&quot;:&quot;16px&quot;},&quot;headerFormat&quot;:&quot;&quot;,&quot;footerFormat&quot;:&quot;&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;padding&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;pointFormat&quot;:&quot; {series.name}: &lt;span style=\&quot;color:{point.color}\&quot;&gt;{point.y}&lt;/span&gt;&quot;},&quot;xAxis&quot;:{&quot;lineColor&quot;:&quot;#2d3035&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#A5A7A9&quot;,&quot;fontSize&quot;:&quot;16px&quot;}},&quot;categories&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]},&quot;yAxis&quot;:{&quot;tickInterval&quot;:20,&quot;gridLineColor&quot;:&quot;#2d3035&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#A5A7A9&quot;,&quot;fontSize&quot;:&quot;16px&quot;}},&quot;title&quot;:{&quot;enabled&quot;:false}},&quot;series&quot;:[{&quot;name&quot;:&quot;Yahoo&quot;,&quot;data&quot;:[33,25,18,14,85,65,55,70,74,63,25,36]},{&quot;name&quot;:&quot;CNN&quot;,&quot;data&quot;:[35,27,28,34,45,85,50,60,34,33,45,36]},{&quot;name&quot;:&quot;Yahoo&quot;,&quot;data&quot;:[33,25,26,66,25,65,65,85,54,63,75,66]},{&quot;name&quot;:&quot;Facebook&quot;,&quot;data&quot;:[50,25,18,36,45,65,75,70,74,43,55,76]}],&quot;plotOptions&quot;:{&quot;column&quot;:{&quot;borderColor&quot;:&quot;transparent&quot;,&quot;borderRadius&quot;:6}},&quot;responsive&quot;:{&quot;rules&quot;:[{&quot;condition&quot;:{&quot;maxWidth&quot;:575},&quot;chartOptions&quot;:{&quot;title&quot;:{&quot;text&quot;:&quot;Traffic&quot;},&quot;yAxis&quot;:{&quot;title&quot;:{&quot;text&quot;:&quot;&quot;}}}}]}}" style="height:400px;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Pie Chart-->
+            <div class="col-xxl-6">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Pie Chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#ff574d&quot;,&quot;#04cf9e&quot;,&quot;#3ec5ff&quot;,&quot;#fac12e&quot;,&quot;#ff4444&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;pie&quot;},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#A5A7A9&quot;,&quot;fontWeight&quot;:&quot;normal&quot;,&quot;fontSize&quot;:&quot;16px&quot;},&quot;itemHoverStyle&quot;:{&quot;color&quot;:&quot;#fff&quot;}},&quot;tooltip&quot;:{&quot;pointFormat&quot;:&quot;{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;},&quot;plotOptions&quot;:{&quot;pie&quot;:{&quot;allowPointSelect&quot;:true,&quot;cursor&quot;:&quot;pointer&quot;,&quot;borderColor&quot;:&quot;transparent&quot;,&quot;dataLabels&quot;:{&quot;enabled&quot;:false},&quot;showInLegend&quot;:true}},&quot;series&quot;:[{&quot;name&quot;:&quot;Brands&quot;,&quot;colorByPoint&quot;:true,&quot;data&quot;:[{&quot;name&quot;:&quot;Chrome&quot;,&quot;y&quot;:61.41,&quot;sliced&quot;:true,&quot;selected&quot;:true},{&quot;name&quot;:&quot;Internet Explorer&quot;,&quot;y&quot;:11.84},{&quot;name&quot;:&quot;Firefox&quot;,&quot;y&quot;:10.85},{&quot;name&quot;:&quot;Edge&quot;,&quot;y&quot;:4.67},{&quot;name&quot;:&quot;Safari&quot;,&quot;y&quot;:4.18},{&quot;name&quot;:&quot;Other&quot;,&quot;y&quot;:7.05}]}]}" style="height:400px;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Donut Chart-->
+            <div class="col-xxl-6">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Donut Chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container highcharts-container-lg" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#ff574d&quot;,&quot;#04cf9e&quot;,&quot;#3ec5ff&quot;,&quot;#fac12e&quot;,&quot;#ff4444&quot;],&quot;title&quot;:{&quot;text&quot;:&quot;Browser shares 2019&quot;,&quot;align&quot;:&quot;center&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#fff&quot;}},&quot;tooltip&quot;:{&quot;pointFormat&quot;:&quot;{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;},&quot;plotOptions&quot;:{&quot;pie&quot;:{&quot;dataLabels&quot;:{&quot;enabled&quot;:true,&quot;style&quot;:{&quot;fontSize&quot;:&quot;16px&quot;}},&quot;borderColor&quot;:&quot;transparent&quot;,&quot;center&quot;:[&quot;50%&quot;,&quot;50%&quot;]}},&quot;series&quot;:[{&quot;type&quot;:&quot;pie&quot;,&quot;name&quot;:&quot;Browser share&quot;,&quot;innerSize&quot;:&quot;70%&quot;,&quot;data&quot;:[[&quot;Chrome&quot;,58.9],[&quot;Firefox&quot;,13.29],[&quot;Internet Explorer&quot;,13],[&quot;Edge&quot;,3.78],[&quot;Safari&quot;,3.42],{&quot;name&quot;:&quot;Other&quot;,&quot;y&quot;:7.61,&quot;dataLabels&quot;:{&quot;enabled&quot;:false}}],&quot;dataLabels&quot;:{&quot;style&quot;:{&quot;fontWeight&quot;:&quot;normal&quot;,&quot;color&quot;:&quot;#a5a7a9&quot;,&quot;textOutline&quot;:&quot;transparent&quot;}}}]}"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Filterable linear chart-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Filterable linear chart</h4>
+                </div>
+                <div class="panel-body pb-0">
+                  <div class="highcharts-container highcharts-container-lg" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#fac12e&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;line&quot;},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;itemStyle&quot;:{&quot;color&quot;:&quot;#a5a7a9&quot;,&quot;fontWeight&quot;:&quot;normal&quot;,&quot;fontSize&quot;:&quot;16px&quot;},&quot;itemHoverStyle&quot;:{&quot;color&quot;:&quot;#fff&quot;}},&quot;tooltip&quot;:{&quot;pointFormat&quot;:&quot;{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;},&quot;xAxis&quot;:{&quot;lineColor&quot;:&quot;#2d3035&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a5a7a9&quot;,&quot;fontSize&quot;:&quot;16px&quot;}},&quot;categories&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;]},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;tickInterval&quot;:10,&quot;gridLineColor&quot;:&quot;#2d3035&quot;,&quot;labels&quot;:{&quot;style&quot;:{&quot;color&quot;:&quot;#a5a7a9&quot;,&quot;fontSize&quot;:&quot;16px&quot;}},&quot;title&quot;:{&quot;text&quot;:null}},&quot;series&quot;:[{&quot;name&quot;:&quot;Yahoo&quot;,&quot;data&quot;:[7,6,9,14,18,21.5,25.2,26.5,23.3,18.3,13.9,9.6]},{&quot;name&quot;:&quot;CNN&quot;,&quot;data&quot;:[3.9,4.2,5.7,8.5,11.9,15.2,17,16.6,14.2,10.3,6.6,4.8]}]}"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Bar chart-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Bar chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container" data-highcharts-options="{&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#3ec5ff&quot;,&quot;#04cf9e&quot;],&quot;credits&quot;:false,&quot;legend&quot;:{&quot;enabled&quot;:false},&quot;chart&quot;:{&quot;type&quot;:&quot;bar&quot;},&quot;title&quot;:{&quot;text&quot;:null},&quot;xAxis&quot;:{&quot;showEmpty&quot;:false,&quot;tickLength&quot;:80,&quot;offset&quot;:1,&quot;lineColor&quot;:&quot;#2d3035&quot;,&quot;categories&quot;:[&quot;TV&quot;,&quot;Radio&quot;],&quot;title&quot;:{&quot;text&quot;:null},&quot;labels&quot;:{&quot;align&quot;:&quot;right&quot;,&quot;style&quot;:{&quot;color&quot;:&quot;#a5a7a9&quot;,&quot;fontSize&quot;:&quot;16px&quot;}}},&quot;yAxis&quot;:{&quot;min&quot;:0,&quot;gridLineWidth&quot;:0,&quot;showEmpty&quot;:false,&quot;title&quot;:{&quot;text&quot;:null},&quot;labels&quot;:{&quot;enabled&quot;:false}},&quot;tooltip&quot;:{&quot;valueSuffix&quot;:&quot; millions&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;},&quot;plotOptions&quot;:{&quot;bar&quot;:{&quot;borderColor&quot;:&quot;transparent&quot;,&quot;borderRadius&quot;:6}},&quot;series&quot;:[{&quot;name&quot;:&quot;Viewers&quot;,&quot;data&quot;:[100,100]},{&quot;name&quot;:&quot;Women&quot;,&quot;data&quot;:[36,55]},{&quot;name&quot;:&quot;Men&quot;,&quot;data&quot;:[65,45]}]}" style="height:200px;"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Spline area chart-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Spline area chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container" data-highcharts-options="{&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#fac12e&quot;,&quot;#3ec5ff&quot;],&quot;credits&quot;:false,&quot;chart&quot;:{&quot;type&quot;:&quot;areaspline&quot;,&quot;spacing&quot;:0,&quot;margin&quot;:-10},&quot;title&quot;:{&quot;text&quot;:null},&quot;legend&quot;:{&quot;enabled&quot;:false},&quot;xAxis&quot;:{&quot;allowDecimals&quot;:false,&quot;tickColor&quot;:&quot;#EEE&quot;},&quot;yAxis&quot;:{&quot;title&quot;:{&quot;text&quot;:null},&quot;gridLineColor&quot;:&quot;transparent&quot;,&quot;labels&quot;:{&quot;enabled&quot;:false}},&quot;tooltip&quot;:{&quot;valueSuffix&quot;:&quot; millions&quot;,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;},&quot;plotOptions&quot;:{&quot;areaspline&quot;:{&quot;fillOpacity&quot;:0.25,&quot;marker&quot;:{&quot;enabled&quot;:true,&quot;symbol&quot;:&quot;circle&quot;,&quot;radius&quot;:2,&quot;states&quot;:{&quot;hover&quot;:{&quot;enabled&quot;:true}}}}},&quot;series&quot;:[{&quot;name&quot;:&quot;USA&quot;,&quot;data&quot;:[150,260,80,100,150,200,240]},{&quot;name&quot;:&quot;Russia&quot;,&quot;data&quot;:[10,20,40,120,240,180,160]},{&quot;name&quot;:&quot;China&quot;,&quot;data&quot;:[60,100,180,110,100,20,40]}]}"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Sparkline charts-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Sparkline charts</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="table-responsive scroller scroller-horizontal">
+                    <table class="table table-vertical-align">
+                      <thead>
+                        <tr>
+                          <th>State</th>
+                          <th>Income</th>
+                          <th style="width: 300px">Income per quarter</th>
+                          <th>Costs</th>
+                          <th style="width: 300px">Costs per quarter</th>
+                          <th>Result</th>
+                          <th>Result per quarter</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Alabama</td>
+                          <td>254</td>
+                          <td data-sparkline='{"series":[{"data":[71,78,39,66]}]}'></td>
+                          <td>296</td>
+                          <td data-sparkline='{"series":[{"data":[68,52,80,96]}]}'></td>
+                          <td>-42</td>
+                          <td data-sparkline='{"chart":{"type":"column"},"series":[{"data":[3,26,-41,-30]}]}'></td>
+                        </tr>
+                        <tr>
+                          <td>Alaska</td>
+                          <td>246</td>
+                          <td data-sparkline='{"colors":["#fac12e"],"series":[{"data":[87,44,74,41]}]}'></td>
+                          <td>181</td>
+                          <td data-sparkline='{"colors":["#fac12e"],"series":[{"data":[29,54,73,25]}]}'></td>
+                          <td>65</td>
+                          <td data-sparkline='{"colors":["#fac12e"],"chart":{"type":"column"},"series":[{"data":[58,-10,1,16]}]}'></td>
+                        </tr>
+                        <tr>
+                          <td>Arizona</td>
+                          <td>101</td>
+                          <td data-sparkline='{"colors":["#04cf9e"],"series":[{"data":[56,12,8,25]}]}'></td>
+                          <td>191</td>
+                          <td data-sparkline='{"colors":["#04cf9e"],"series":[{"data":[69,14,53,55]}]}'></td>
+                          <td>-90</td>
+                          <td data-sparkline='{"colors":["#04cf9e"],"chart":{"type":"column"},"series":[{"data":[-13,-2,-45,-30]}]}'></td>
+                        </tr>
+                        <tr>
+                          <td>Arkansas</td>
+                          <td>303</td>
+                          <td data-sparkline='{"series":[{"data":[81,50,78,94]}]}'></td>
+                          <td>76</td>
+                          <td data-sparkline='{"series":[{"data":[36,15,14,11]}]}'></td>
+                          <td>227</td>
+                          <td data-sparkline='{"chart":{"type":"column"},"series":[{"data":[45,35,64,83]}]}'></td>
+                        </tr>
+                        <tr>
+                          <td>California</td>
+                          <td>200</td>
+                          <td data-sparkline='{"series":[{"data":[61,80,10,49]}]}'></td>
+                          <td>217</td>
+                          <td data-sparkline='{"series":[{"data":[100,8,52,57]}]}'></td>
+                          <td>-17</td>
+                          <td data-sparkline='{"chart":{"type":"column"},"series":[{"data":[-39,72,-42,-8]}]}'></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Column graph chart-->
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-header">
+                  <h4 class="panel-title">Column graph chart</h4>
+                </div>
+                <div class="panel-body">
+                  <div class="highcharts-container" data-highcharts-options="{&quot;credits&quot;:false,&quot;colors&quot;:[&quot;#9e6cfd&quot;,&quot;#fac12e&quot;,&quot;#04cf9e&quot;],&quot;chart&quot;:{&quot;type&quot;:&quot;column&quot;},&quot;legend&quot;:{&quot;enabled&quot;:false},&quot;title&quot;:{&quot;text&quot;:null},&quot;xAxis&quot;:{&quot;lineWidth&quot;:0,&quot;tickLength&quot;:0,&quot;minorTickLength&quot;:0,&quot;title&quot;:{&quot;text&quot;:null},&quot;labels&quot;:{&quot;enabled&quot;:false}},&quot;yAxis&quot;:{&quot;gridLineWidth&quot;:0,&quot;title&quot;:{&quot;text&quot;:null},&quot;labels&quot;:{&quot;enabled&quot;:false}},&quot;tooltip&quot;:{&quot;headerFormat&quot;:&quot;&lt;span style=\&quot;font-size:10px\&quot;&gt;{point.key}&lt;/span&gt;&lt;table&gt;&quot;,&quot;pointFormat&quot;:&quot;&lt;tr&gt;&lt;td style=\&quot;color:{series.color}; padding: 0\&quot;&gt;{series.name}: &lt;/td&gt;&lt;td style=\&quot;padding:0\&quot;&gt;&lt;b&gt;{point.y:.1f} mm&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&quot;,&quot;footerFormat&quot;:&quot;&lt;/table&gt;&quot;,&quot;shared&quot;:true,&quot;useHTML&quot;:true,&quot;borderRadius&quot;:6,&quot;backgroundColor&quot;:&quot;#fff&quot;,&quot;borderWidth&quot;:0},&quot;plotOptions&quot;:{&quot;column&quot;:{&quot;groupPadding&quot;:0.05,&quot;pointPadding&quot;:0.25,&quot;borderWidth&quot;:0,&quot;borderRadius&quot;:6}},&quot;series&quot;:[{&quot;name&quot;:&quot;Behance&quot;,&quot;data&quot;:[30]},{&quot;name&quot;:&quot;Twitter&quot;,&quot;data&quot;:[60]},{&quot;name&quot;:&quot;Facebook&quot;,&quot;data&quot;:[90]},{&quot;name&quot;:&quot;Dribble&quot;,&quot;data&quot;:[120]}]}"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer-small">
+        <div class="container-fluid">
+          <p><span class="d-inline-block pr-2">PART</span>© 2019. Design by Zemez</p>
+        </div>
+      </footer>
+      <div class="sidebar scroller">
+        <div class="panel">
+          <div class="panel-header">
+            <h4 class="panel-title"><span class="panel-icon fa-trophy"></span><span>Right Sidebar Content</span></h4>
+          </div>
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ac tortor eu viverra. Etiam ipsum neque, fermentum quis sagittis nec, hendrerit id diam. Mauris a tincidunt odio. Sed porttitor ex pulvinar, tristique sapien sed, malesuada nunc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

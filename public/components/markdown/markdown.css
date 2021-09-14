@@ -1,0 +1,207 @@
+.md-editor {
+	display: block;
+	border: 1px solid #2d3035;
+}
+
+.md-editor > textarea {
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 1rem;
+	outline: 0;
+	outline: thin dotted  \9;
+	/* IE6-9 */
+	margin: 0;
+	display: block;
+	padding: 0.625rem;
+	width: 100%;
+	border: 0;
+	border-top: 1px dashed #2d3035;
+	border-bottom: 1px dashed #2d3035;
+	border-radius: 0;
+	box-shadow: none;
+	color: #a5a7a9;
+	background: #1f2227;
+}
+
+.md-editor .btn-default,
+.md-editor .btn-primary {
+	color: #fff;
+	background-color: #15171c;
+	border-color: #15171c;
+}
+
+.md-editor .btn-default:hover,
+.md-editor .btn-primary:hover {
+	color: #fff;
+	background-color: #050506;
+	border-color: black;
+}
+
+.md-editor .btn-default:focus, .md-editor .btn-default.focus,
+.md-editor .btn-primary:focus,
+.md-editor .btn-primary.focus {
+	box-shadow: 0 0 0 0.2rem rgba(56, 58, 62, 0.5);
+}
+
+.md-editor .btn-default.disabled, .md-editor .btn-default:disabled,
+.md-editor .btn-primary.disabled,
+.md-editor .btn-primary:disabled {
+	color: #fff;
+	background-color: #15171c;
+	border-color: #15171c;
+}
+
+.md-editor .btn-default:not(:disabled):not(.disabled):active, .md-editor .btn-default:not(:disabled):not(.disabled).active,
+.show > .md-editor .btn-default.dropdown-toggle,
+.md-editor .btn-primary:not(:disabled):not(.disabled):active,
+.md-editor .btn-primary:not(:disabled):not(.disabled).active,
+.show >
+.md-editor .btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: black;
+	border-color: black;
+}
+
+.md-editor .btn-default:not(:disabled):not(.disabled):active:focus, .md-editor .btn-default:not(:disabled):not(.disabled).active:focus,
+.show > .md-editor .btn-default.dropdown-toggle:focus,
+.md-editor .btn-primary:not(:disabled):not(.disabled):active:focus,
+.md-editor .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show >
+.md-editor .btn-primary.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(56, 58, 62, 0.5);
+}
+
+.md-header,
+.md-footer {
+	background: #1f2227;
+}
+
+.md-header {
+	padding: 6px 4px;
+	margin-bottom: -6px;
+}
+
+.md-header > .btn-group {
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+
+.md-footer {
+	padding: 0.9375rem 0.625rem;
+}
+
+.md-preview {
+	padding: 0.625rem;
+	background: #1f2227;
+	border-top: 1px dashed #2d3035;
+	border-bottom: 1px dashed #2d3035;
+	min-height: 0.625rem;
+	overflow: auto;
+	transition: .2s;
+}
+
+.md-controls {
+	margin-left: auto;
+	padding: 3px;
+}
+
+.md-control {
+	right: 5px;
+	color: rgba(255, 255, 255, 0.8);
+	padding: 0.1875rem 0.1875rem 0.1875rem 0.625rem;
+}
+
+.md-control:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.md-fullscreen-mode {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 16;
+	padding: 15px;
+	color: #a5a7a9;
+	background: #1f2227;
+	border: 0;
+}
+
+.md-fullscreen-mode .md-footer {
+	display: none !important;
+}
+
+.md-fullscreen-mode .md-input,
+.md-fullscreen-mode .md-preview {
+	width: 100% !important;
+	height: 100% !important;
+	resize: none !important;
+	margin: 0 auto;
+	font-size: 20px;
+	padding: 20px;
+	line-height: 1.6em;
+	box-shadow: none;
+	border: 0;
+}
+
+.md-fullscreen-mode .md-preview {
+	overflow: auto;
+	background: #1f2227;
+}
+
+.md-fullscreen-mode .md-header {
+	background: none;
+	text-align: center;
+}
+
+.md-fullscreen-mode .md-control {
+	display: none;
+}
+
+.md-fullscreen-mode .md-fullscreen-controls {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	text-align: right;
+	z-index: 16;
+	display: block;
+}
+
+.md-fullscreen-mode .md-fullscreen-controls a {
+	color: rgba(255, 255, 255, 0.8);
+	clear: right;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+.md-fullscreen-mode .md-fullscreen-controls a:hover {
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.md-fullscreen-mode .md-editor {
+	height: 100%;
+	position: relative;
+}
+
+@media (min-width: 992px) {
+	.md-fullscreen-mode {
+		padding: 30px 30px 15px;
+	}
+	.md-fullscreen-mode .md-fullscreen-controls {
+		top: 20px;
+		right: 20px;
+	}
+}
+
+.md-fullscreen-controls {
+	display: none;
+}
+
+.md-nooverflow {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+

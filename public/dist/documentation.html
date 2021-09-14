@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active" lang="en">
+  <head>
+    <title>Documentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description" content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="components/base/base.css">
+    <script src="components/base/script.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar">
+            <div class="navbar-panel">
+              <div class="navbar-panel-inner">
+                <div class="navbar-panel-cell flex-grow-1">
+                  <div class="navbar-search" id="navbar-search"> 
+                    <input class="navbar-search-input" type="text" placeholder="Search"/>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell navbar-toggle-search-cell"> 
+                  <button class="navbar-toggle navbar-toggle-search mdi-magnify" title="Search" data-multi-switch='{"targets":".navbar-panel","scope":"#navbar-search","isolate":"[data-multi-switch]"}'></button>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-menu" title="Sidebar" data-sidebar-switch="data-sidebar-switch" data-multi-switch='{"targets":".sidebar","scope":".sidebar, [data-sidebar-switch]","isolate":"[data-multi-switch]:not([data-sidebar-switch])"}'></button>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-envelope" title="Chat" data-multi-switch='{"targets":"#subpanel-chat","scope":"#subpanel-chat","isolate":"[data-multi-switch]"}'></button>
+                  <div class="navbar-subpanel" id="subpanel-chat">
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <h4>Chat</h4>
+                      </div>
+                      <div class="navbar-subpanel-body scroller scroller-vertical" style="max-height: 400px;">
+                        <div class="media media-cloud group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body">
+                            <h5 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud flex-row-reverse group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body media-body-right-caret">
+                            <h5 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body">
+                            <h5 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud flex-row-reverse group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body media-body-right-caret">
+                            <h5 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="navbar-subpanel-footer">
+                        <div class="input-group form-group">
+                          <input class="form-control" type="text" placeholder="Enter your message here"/>
+                          <div class="input-group-append">
+                            <button class="btn btn-primary">Send</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-alarm" title="Notifications" data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'></button>
+                  <div class="navbar-badge badge badge-danger badge-pill">1</div>
+                  <div class="navbar-subpanel" id="subpanel-notifications"> 
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <h4>Notifications</h4>
+                      </div>
+                      <div class="navbar-subpanel-body scroller scroller-vertical">
+                        <div class="group-5">
+                                      <div class="alert alert-dismissible alert-primary alert-darker alert-sm" role="alert"><span class="alert-icon fa-telegram"></span><span>Message</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-secondary alert-sm" role="alert"><span class="alert-icon fa-warning"></span><span>Warning</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-danger alert-sm" role="alert"><span class="alert-icon fa-remove"></span><span>Error</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-success alert-sm" role="alert"><span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="navbar-subpanel-footer"><a class="btn btn-primary btn-sm" href="alerts.html">See more</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell">
+                  <div class="navbar-toggle navbar-user" title="User Menu" data-multi-switch='{"targets":"#subpanel-user-menu","scope":"#subpanel-user-menu","isolate":"[data-multi-switch]"}'><img class="rounded" src="images/users/user-09-60x60.jpg" alt=""/></div>
+                  <div class="navbar-subpanel" id="subpanel-user-menu">
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <div class="h3">Alice</div>
+                      </div>
+                      <div class="navbar-subpanel-body p-0 scroller scroller-vertical">
+                        <div class="list-group list-group-flush"><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-user"></span></div>
+                              <div class="media-body">
+                                <h5>My Profile</h5>
+                              </div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-envelope-o"></span></div>
+                              <div class="media-body">
+                                <h5>My Messages</h5>
+                              </div>
+                              <div class="badge badge-warning">12</div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-rocket"></span></div>
+                              <div class="media-body">
+                                <h5>My Activities</h5>
+                              </div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-desktop"></span></div>
+                              <div class="media-body">
+                                <h5>My Tasks</h5>
+                              </div>
+                              <div class="badge badge-success">05</div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-line-chart"></span></div>
+                              <div class="media-body">
+                                <h5>Billing</h5>
+                              </div>
+                            </div></a></div>
+                      </div>
+                      <div class="navbar-subpanel-footer p-2">
+                        <div class="d-flex align-items-center justify-content-between"><a class="btn btn-sm btn-danger" href="#">Sign Out</a><a class="btn btn-sm btn-success" href="#">Upgrade Plan</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-sidebar-wrap">
+              <div class="navbar-sidebar-panel">
+                <button class="navbar-toggle-sidebar linearicons-menu" data-navigation-switch="data-navigation-switch"></button>
+                <div class="navbar-logo"><a class="navbar-logo-link" href="index.html"><img class="navbar-logo-default" src="images/logo-272x84.png" width="136" alt="PART"/></a></div>
+              </div>
+              <div class="navbar-sidebar scroller scroller-vertical">
+                <div class="tabs tabs-horizontal-left">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-1" role="tab" aria-selected="true" title="Menu"><span class="linearicons-icons"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-2" role="tab" aria-selected="false" title="Tools"><span class="linearicons-cog"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-3" role="tab" aria-selected="false" title="System"><span class="linearicons-cart"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-4" role="tab" aria-selected="false" title="Elements"><span class="linearicons-copy"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade active show" id="menu-1" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="index.html" title="Dashboard"><span class="navbar-navigation-text">Dashboard</span></a>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="calendar.html" title="Calendar"><span class="navbar-navigation-text">Calendar</span></a>
+                        </li>
+                        <li class="navbar-navigation-item active"><a class="navbar-navigation-link" href="documentation.html" title="Documentation"><span class="navbar-navigation-text">Documentation</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#bootstrap-components" title="Bootstrap Components"><span class="navbar-navigation-text">Bootstrap Components</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#button" title="Button"><span class="navbar-navigation-text">Button</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#badge" title="Badge"><span class="navbar-navigation-text">Badge</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#code" title="Code"><span class="navbar-navigation-text">Code</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#media" title="Media Object"><span class="navbar-navigation-text">Media Object</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#card" title="Card"><span class="navbar-navigation-text">Card</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#table" title="Table"><span class="navbar-navigation-text">Table</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#progress" title="Progress"><span class="navbar-navigation-text">Progress</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#close" title="Close"><span class="navbar-navigation-text">Close</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#pagination" title="Pagination"><span class="navbar-navigation-text">Pagination</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#alert" title="Alert"><span class="navbar-navigation-text">Alert</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dropdown" title="Dropdown"><span class="navbar-navigation-text">Dropdown</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#nav" title="Nav"><span class="navbar-navigation-text">Nav</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#tooltip" title="Tooltip"><span class="navbar-navigation-text">Tooltip</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#modal" title="Modal"><span class="navbar-navigation-text">Modal</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jumbotron" title="Jumbotron"><span class="navbar-navigation-text">Jumbotron</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#input" title="Input"><span class="navbar-navigation-text">Input</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#plugins" title="Plugins"><span class="navbar-navigation-text">Plugins</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#Nprogress" title="Nprogress"><span class="navbar-navigation-text">Nprogress</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#highlight" title="Highlight.js"><span class="navbar-navigation-text">Highlight.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dual-listbox" title="Dual Listbox"><span class="navbar-navigation-text">Dual Listbox</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#maxlength" title="Bootstrap Maxlength"><span class="navbar-navigation-text">Bootstrap Maxlength</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#typeahead" title="Typeahead.js"><span class="navbar-navigation-text">Typeahead.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#select2" title="Select2"><span class="navbar-navigation-text">Select2</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#spinner" title="jQuery UI Spinner"><span class="navbar-navigation-text">jQuery UI Spinner</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#time-spinner" title="Time Spinner"><span class="navbar-navigation-text">Time Spinner</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#daterangepiker" title="Date Range Picker"><span class="navbar-navigation-text">Date Range Picker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#datetimepicker" title="Bootstrap Date/Timepicker"><span class="navbar-navigation-text">Bootstrap Date/Timepicker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#tag-manager" title="Tags Manager"><span class="navbar-navigation-text">Tags Manager</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#colorpicker" title="Bootstrap Colorpicker"><span class="navbar-navigation-text">Bootstrap Colorpicker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#maskedinput" title="jQuery Masked Input"><span class="navbar-navigation-text">jQuery Masked Input</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#ckeditor" title="CKeditor"><span class="navbar-navigation-text">CKeditor</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#summernote" title="Summernote"><span class="navbar-navigation-text">Summernote</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#markdown" title="Markdown.js"><span class="navbar-navigation-text">Markdown.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#nestable" title="Nestable jQuery Plugin"><span class="navbar-navigation-text">Nestable jQuery Plugin</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jstree" title="jsTree"><span class="navbar-navigation-text">jsTree</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#cropper" title="Cropper.js"><span class="navbar-navigation-text">Cropper.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#fileupload" title="Tower File Input"><span class="navbar-navigation-text">Tower File Input</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#easyzoom" title="EasyZoom"><span class="navbar-navigation-text">EasyZoom</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#xzoom" title="xZoom"><span class="navbar-navigation-text">xZoom</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#slick" title="Slick Slider"><span class="navbar-navigation-text">Slick Slider</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dropzone" title="DropzoneJS"><span class="navbar-navigation-text">DropzoneJS</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#pnotify" title="PNotify"><span class="navbar-navigation-text">PNotify</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#driver" title="Driver.js"><span class="navbar-navigation-text">Driver.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#countdown" title="αCountdown"><span class="navbar-navigation-text">αCountdown</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#progress-circle" title="αCounter &amp; αProgressCircle"><span class="navbar-navigation-text">αCounter &amp; αProgressCircle</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#particles" title="Particles.js"><span class="navbar-navigation-text">Particles.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#lightgallery" title="Lightgallery"><span class="navbar-navigation-text">Lightgallery</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jvectormap" title="jVectorMap"><span class="navbar-navigation-text">jVectorMap</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#flotchart" title="Flot"><span class="navbar-navigation-text">Flot</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#rd-navbar" title="RD Navbar"><span class="navbar-navigation-text">RD Navbar</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#highcharts" title="Highcharts"><span class="navbar-navigation-text">Highcharts</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#multiswitch" title="MultiSwitch"><span class="navbar-navigation-text">MultiSwitch</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-2" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Admin plugins"><span class="navbar-navigation-text">Admin plugins</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-panels.html" title="Admin panels"><span class="navbar-navigation-text">Admin panels</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-modals.html" title="Admin modals"><span class="navbar-navigation-text">Admin modals</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-dock.html" title="Admin Dock"><span class="navbar-navigation-text">Admin Dock</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Admin layouts"><span class="navbar-navigation-text">Admin layouts</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="navbar.html" title="Navbar"><span class="navbar-navigation-text">Navbar</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Topbar"><span class="navbar-navigation-text">Topbar</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="topbar-menu.html" title="Topbar Menu"><span class="navbar-navigation-text">Topbar Menu</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Content Body"><span class="navbar-navigation-text">Content Body</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="blank-starter.html" title="Blank Starter"><span class="navbar-navigation-text">Blank Starter</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="jumbotron.html" title="Jumbotron"><span class="navbar-navigation-text">Jumbotron</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="content-tabs.html" title="Content Tabs"><span class="navbar-navigation-text">Content Tabs</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-3" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Info Panels"><span class="navbar-navigation-text">Info Panels</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="tile-widgets.html" title="Tile Widgets"><span class="navbar-navigation-text">Tile Widgets</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="panel-widgets.html" title="Panel Widgets"><span class="navbar-navigation-text">Panel Widgets</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-widgets.html" title="Admin Widgets"><span class="navbar-navigation-text">Admin Widgets</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="E-commerce"><span class="navbar-navigation-text">E-commerce</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="ecommerce-dashboard.html" title="Ecommerce Dashboard"><span class="navbar-navigation-text">Ecommerce Dashboard</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="products.html" title="Products"><span class="navbar-navigation-text">Products</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="orders.html" title="Orders"><span class="navbar-navigation-text">Orders</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="customers.html" title="Customers"><span class="navbar-navigation-text">Customers</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="store-settings.html" title="Store Settings"><span class="navbar-navigation-text">Store Settings</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-4" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="UI Elements"><span class="navbar-navigation-text">UI Elements</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="alerts.html" title="Alerts"><span class="navbar-navigation-text">Alerts</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="animations.html" title="Animations"><span class="navbar-navigation-text">Animations</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="buttons.html" title="Buttons"><span class="navbar-navigation-text">Buttons</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="typography.html" title="Typography"><span class="navbar-navigation-text">Typography</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="panel.html" title="Panel"><span class="navbar-navigation-text">Panel</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="progress-bars.html" title="Progress Bars"><span class="navbar-navigation-text">Progress Bars</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="tabs.html" title="Tabs"><span class="navbar-navigation-text">Tabs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="icons.html" title="Icons"><span class="navbar-navigation-text">Icons</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="grid.html" title="Grid"><span class="navbar-navigation-text">Grid</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Form Elements"><span class="navbar-navigation-text">Form Elements</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="basic-inputs.html" title="Basic Inputs"><span class="navbar-navigation-text">Basic Inputs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="plugin-inputs.html" title="Plugin Inputs"><span class="navbar-navigation-text">Plugin Inputs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="editors.html" title="Editors"><span class="navbar-navigation-text">Editors</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="treeview.html" title="Treeview"><span class="navbar-navigation-text">Treeview</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="nestable.html" title="Nestable"><span class="navbar-navigation-text">Nestable</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="image-tools.html" title="Image tools"><span class="navbar-navigation-text">Image tools</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="uploaders.html" title="Uploaders"><span class="navbar-navigation-text">Uploaders</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="notifications.html" title="Notifications"><span class="navbar-navigation-text">Notifications</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="content-sliders.html" title="Content Sliders"><span class="navbar-navigation-text">Content Sliders</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Plugins"><span class="navbar-navigation-text">Plugins</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Maps"><span class="navbar-navigation-text">Maps</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="google-maps.html" title="Google Maps"><span class="navbar-navigation-text">Google Maps</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="jvector-map.html" title="jVector Map"><span class="navbar-navigation-text">jVector Map</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Charts"><span class="navbar-navigation-text">Charts</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="highcharts.html" title="Highcharts"><span class="navbar-navigation-text">Highcharts</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="flotcharts.html" title="Flotcharts"><span class="navbar-navigation-text">Flotcharts</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Tables"><span class="navbar-navigation-text">Tables</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="basic-tables.html" title="Basic Tables"><span class="navbar-navigation-text">Basic Tables</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="data-tables.html" title="Data Tables"><span class="navbar-navigation-text">Data Tables</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="pricing-tables.html" title="Pricing Tables"><span class="navbar-navigation-text">Pricing Tables</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Misc"><span class="navbar-navigation-text">Misc</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="site-tour.html" title="Site Tour"><span class="navbar-navigation-text">Site Tour</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="session-timeout.html" title="Session Timeout"><span class="navbar-navigation-text">Session Timeout</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="page-progress-loader.html" title="Page Progress Loader"><span class="navbar-navigation-text">Page Progress Loader</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Pages"><span class="navbar-navigation-text">Pages</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Utility"><span class="navbar-navigation-text">Utility</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="confirmation.html" title="Confirmation"><span class="navbar-navigation-text">Confirmation</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="login.html" title="Login"><span class="navbar-navigation-text">Login</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="register.html" title="Register"><span class="navbar-navigation-text">Register</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="screenlock.html" title="Screenlock"><span class="navbar-navigation-text">Screenlock</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="password-reset.html" title="Password Reset"><span class="navbar-navigation-text">Password Reset</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="coming-soon.html" title="Coming Soon"><span class="navbar-navigation-text">Coming Soon</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="404.html" title="404"><span class="navbar-navigation-text">404</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="500.html" title="500"><span class="navbar-navigation-text">500</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Basic"><span class="navbar-navigation-text">Basic</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="search-results.html" title="Search Results"><span class="navbar-navigation-text">Search Results</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="profile.html" title="Profile"><span class="navbar-navigation-text">Profile</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="timeline.html" title="Timeline"><span class="navbar-navigation-text">Timeline</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="faq.html" title="FAQ"><span class="navbar-navigation-text">FAQ</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="calendar.html" title="Calendar"><span class="navbar-navigation-text">Calendar</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="messages.html" title="Messages"><span class="navbar-navigation-text">Messages</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="messages-compose.html" title="Messages Compose"><span class="navbar-navigation-text">Messages Compose</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="gallery.html" title="Gallery"><span class="navbar-navigation-text">Gallery</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="printable-invoice.html" title="Printable Invoice"><span class="navbar-navigation-text">Printable Invoice</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="jumbotron">
+        <h1>List of Components</h1>
+      </section>
+      <section class="section-sm" id="bootstrap-components">
+        <div class="container-fluid">
+          <h2 class="text-center">Bootstrap Components</h2>
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <div class="panel" id="button">
+                <div class="panel-header">
+                  <h4 class="panel-title">Button</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Buttons are used in forms in the first place.</p>
+                  <p>Style sheets linking occurs when the <code>.btn</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <button class="btn btn-primary btn-block mt-1">Button</button>
+                  <p>See more button examples on the following page: <a href="buttons.html">Buttons</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;button class=&quot;btn btn-primary btn-block&quot;&gt;Button&lt;/button&gt;</pre>
+                  <p>The component has predefined styles (class modifiers), each of which has its own semantic goal.</p>
+                  <p>Color modifiers:</p>
+                  <ul>
+                    <li>primary - <code>.btn-primary</code>, <code>.btn-outline-primary</code></li>
+                    <li>secondary - <code>.btn-secondary</code>, <code>.btn-outline-secondary</code></li>
+                    <li>success - <code>.btn-success</code>, <code>.btn-outline-success</code></li>
+                    <li>info - <code>.btn-info</code>, <code>.btn-outline-info</code></li>
+                    <li>warning - <code>.btn-warning</code>, <code>.btn-outline-warning</code></li>
+                    <li>danger - <code>.btn-danger</code>, <code>.btn-outline-danger</code></li>
+                    <li>light - <code>.btn-light</code>, <code>.btn-outline-light</code></li>
+                    <li>dark - <code>.btn-dark</code>, <code>.btn-outline-dark</code></li>
+                  </ul>
+                  <p>Size modifiers:</p>
+                  <ul>
+                    <li>small button - <code>.btn-sm</code></li>
+                    <li>large button - <code>.btn-lg</code></li>
+                  </ul>
+                  <p>A modifier <code>.btn-block</code> makes a block out of a button. It occupies the full width of a parent element.</p>
+                  <p>Active (<code>:active</code>) and disabled (<code>&#91;disabled&#93;</code>) states of a button are also provided. They can be artificially set using <code>.active</code> and <code>.disabled</code> classes correspondingly.</p>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/buttons">Bootstrap Buttons</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="badge">
+                <div class="panel-header">
+                  <h4 class="panel-title">Badge</h4>
+                </div>
+                <div class="panel-body">
+                  <p>
+                    Badge is used as a small counter or label.
+                    Style sheets linking occurs when the <code>.badge</code> primary class is present on the page.
+                  </p>
+                  <p>Component example:</p>
+                  <div class="group-5 mt-1"><span class="badge badge-primary">Badge</span><span class="badge badge-warning">8</span></div>
+                  <p>See more badge examples on the following page: <a href="typography.html">Typography</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;span class=&quot;badge badge-primary&quot;&gt;Badge&lt;/span&gt;</pre>
+                  <p>The component has its own modifiers. Color modifiers:</p>
+                  <ul>
+                    <li>primary - <code>.badge-primary</code></li>
+                    <li>secondary - <code>.badge-secondary</code></li>
+                    <li>success - <code>.badge-success</code></li>
+                    <li>info - <code>.badge-info</code></li>
+                    <li>warning - <code>.badge-warning</code></li>
+                    <li>danger - <code>.badge-danger</code></li>
+                    <li>light - <code>.badge-light</code></li>
+                    <li>dark - <code>.badge-dark</code></li>
+                  </ul>
+                  <p>Modifier <code>.badge-pill</code> makes a badge round.</p>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/badge">Bootstrap Badges</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="code">
+                <div class="panel-header">
+                  <h4 class="panel-title">Code</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Code component is a set of styles for changing the appearance of <code>&#60;code&#62;</code>, <code>&#60;kbd&#62;</code> and <code>&#60;pre&#62;</code> tags. In addition to <code>&#60;code&#62;</code> , there is a <code>.code-bg</code> class, which adds a background and inner paddings. Style sheets linking occurs when the <code>&#60;code&#62;</code> tag is present on the page.</p>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/content/code">Bootstrap Code</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="media">
+                <div class="panel-header">
+                  <h4 class="panel-title">Media Object</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Media object is an object where an image is located next to the text content (message, tweet, post). Style sheets linking occurs when the <code>.media</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <div class="media group-10">
+                    <div class="media-item"><img src="https://via.placeholder.com/50x50" width="50" height="50" alt=""></div>
+                    <div class="media-body">
+                      <h4>Media heading</h4>
+                      <div>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                    </div>
+                  </div>
+                  <p>Code example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;media&quot;&gt;
+  &lt;img class=&quot;mr-3&quot; src=&quot;.../64x64&quot; alt=&quot;Generic placeholder image&quot;&gt;
+  &lt;div class=&quot;media-body&quot;&gt;
+    &lt;h5 class=&quot;mt-0&quot;&gt;Media heading&lt;/h5&gt;
+    Cras sit amet nibh libero, in gravida nulla.
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://bootstrap-4.ru/docs/4.1/layout/media-object">Bootstrap Media Object</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="card">
+                <div class="panel-header">
+                  <h4 class="panel-title">Card</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Card is a flexible and expandable container of content. It includes heading and footer options, a wide range of content, contextual background colors and powerful display options. Style sheets linking occurs when the <code>.card</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <div class="card" style="max-width: 300px;"><img class="card-img-top" src="https://via.placeholder.com/300x150/" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary mt-2" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                  <p>Code example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;card&quot;&gt;
+  &lt;img class=&quot;card-img-top&quot; src=&quot;https://via.placeholder.com/300x150/&quot; alt=&quot;Card image cap&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/card">Bootstrap Card</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="table">
+                <div class="panel-header">
+                  <h4 class="panel-title">Table</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Table stylization component. Style sheets linking occurs when the <code>.table</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <table class="table mt-2">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>Bird</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Code example:</p>
+                  <pre class="highlight html">&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;Bird&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/tables">Bootstrap Tables</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="progress">
+                <div class="panel-header">
+                  <h4 class="panel-title">Progress</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Progress bars components are built from two elements of HTML & CSS to set the width and several attributes. We do not use HTML5 <code>&#60;progress&#62;</code> element that allows us to place progress bars vertically as well as animate them and place text labels above them. Style sheets linking occurs when the <code>.progress</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                                <div class="progress-wrap">
+                                  <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                  </div>
+                                </div>
+                  <p>Code example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 25%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/progress">Bootstrap Progress</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="close">
+                <div class="panel-header">
+                  <h4 class="panel-title">Close</h4>
+                </div>
+                <div class="panel-body">
+                  <p>A common icon for hiding content, e.g. modal windows and notifications. Style sheets linking occurs when the <code>.close</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <div class="mt-1">
+                    <button class="close fa-close" style="float: none;"></button>
+                  </div>
+                  <p>Code example:</p>
+                  <pre class="highlight html">&lt;button type=&quot;button&quot; class=&quot;close&quot; aria-label=&quot;Close&quot;&gt;
+  &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+&lt;/button&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/utilities/close-icon">Bootstrap Close</a>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="panel" id="pagination">
+                <div class="panel-header">
+                  <h4 class="panel-title">Pagination</h4>
+                </div>
+                <div class="panel-body">
+                  <P>A pagination component. Style sheets linking occurs when the <code>.pagination</code> primary class is present on the page.</P>
+                  <p>Component example:</p>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination mt-1">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                  <p>Code example:</p>
+                  <pre class="highlight html">&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+  &lt;ul class=&quot;pagination&quot;&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/pagination">Bootstrap Pagination</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="alert">
+                <div class="panel-header">
+                  <h4 class="panel-title">Alert</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Alerts are used as feedback by certain actions of a user or other events. Style sheets linking occurs when the <code>.alert</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                                <div class="alert alert-primary mt-1" role="alert">Attention! This is a multi-purpose alert that's useful anywhere!
+                                </div>
+                  <p>See more alert examples on the following page: <a href="alerts.html">Alerts</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;div class=&quot;alert alert-primary&quot;&gt;
+  Attention! This is a multi-purpose alert that's useful anywhere!
+&lt;/div&gt;</pre>
+                  <p>The component has predefined styles (class modifiers), each of which has its own semantic goal.</p>
+                  <p>Color modifiers:</p>
+                  <ul>
+                    <li>primary - <code>.alert-primary</code></li>
+                    <li>secondary - <code>.alert-secondary</code></li>
+                    <li>success - <code>.alert-success</code></li>
+                    <li>info - <code>.alert-info</code></li>
+                    <li>warning - <code>.alert-warning</code></li>
+                    <li>danger - <code>.alert-danger</code></li>
+                    <li>light - <code>.alert-light</code></li>
+                    <li>dark - <code>.alert-dark</code></li>
+                  </ul>
+                  <p>Modifiers of primary color brightening or darkening (incompatible with gradient modifier):</p>
+                  <ul>
+                    <li>brightening - <code>.alert-lighter</code></li>
+                    <li>darkening - <code>.alert-darker</code></li>
+                  </ul>
+                  <p>Size modifiers:</p>
+                  <ul>
+                    <li>small alert - <code>.alert-sm</code></li>
+                    <li>large alert - <code>.alert-lg</code></li>
+                  </ul>
+                  <p>Border modifiers:</p>
+                  <ul>
+                    <li>left border - <code>.alert-border-left</code></li>
+                    <li>right border - <code>.alert-border-right</code></li>
+                    <li>top border - <code>.alert-border-top</code></li>
+                    <li>bottom border - <code>.alert-border-bottom</code></li>
+                  </ul>
+                  <p><code>.alert-gradient</code> modifier makes a gradient background out of primary background.</p>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/alerts">Bootstrap Alerts</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="dropdown">
+                <div class="panel-header">
+                  <h4 class="panel-title">Dropdown</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Dropdown elements are switchable, contextual elements of surface covering for displaying link lists etc. They are interactive thanks to JavaScript plugin in Bootstrap 4. Switching of a dropdown element is performed on click and not on hover. It is done intentionally.</p>
+                  <p>Plugin and style sheets linking occurs when the <code>.dropdown-toggle</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                                <div class="dropdown">
+                                  <button class="btn dropdown-toggle btn-primary mt-1" data-toggle="dropdown"><span>Dropdown</span>
+                                  </button>
+                                  <div class="dropdown-menu"><a class="dropdown-item" href="javascript:void(0)">Option 1</a><a class="dropdown-item" href="javascript:void(0)">Option 2</a><a class="dropdown-item" href="javascript:void(0)">Option 3</a>
+                                  </div>
+                                </div>
+                  <p>See more button examples on the following page: <a href="buttons.html">Buttons</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn dropdown-toggle btn-primary&quot; data-toggle=&quot;dropdown&quot;&gt;
+    &lt;span&gt;Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;dropdown-menu&quot;&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Option 1&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Option 2&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Option 3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p><code>.dropdown-toggle</code> element is also a <code>button</code> component and it can have the same class modifiers.</p>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/dropdowns">Bootstrap Dropdowns</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="nav">
+                <div class="panel-header">
+                  <h4 class="panel-title">Nav</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Navigation is a page component that allows to transfer between website pages or through the selected content.</p>
+                  <p>Plugin and style sheets linking occurs when the <code>.nav</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <ul class="nav bg-white mt-1">
+                    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                  </ul>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;ul class=&quot;nav&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/navs">Bootstrap Navs</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="tooltip">
+                <div class="panel-header">
+                  <h4 class="panel-title">Tooltip</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Tooltip can be added to any markup element.</p>
+                  <p>Plugin and style sheets linking occurs when an element with the <code>[data-toggle="tooltip"&#93;</code> attribute is present on the page.</p>
+                  <p>Component example:</p>
+                  <button class="btn btn-primary mt-1" data-toggle="tooltip" title="Tooltip">Tooltip</button>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;button class=&quot;btn btn-primary&quot; data-toggle=&quot;tooltip&quot;&gt;Tooltip&lt;/button&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/tooltips">Bootstrap Tooltips</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="modal">
+                <div class="panel-header">
+                  <h4 class="panel-title">Modal</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Bootstrap Modal is a plugin for adding dialog windows, lightboxes, notifications or any other content in a pop-up window.</p>
+                  <p>Plugin and style sheets linking occurs when the <code>.modal</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <button class="btn btn-primary mt-1" data-modal-trigger='{"target":"#modal-sample"}'>Open Modal</button>
+                  <p>See more button examples on the following page: <a href="admin-modals.html">Admin Modals</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/modal">Bootstrap Modals</a>.</p>
+                  <div class="modal fade" id="modal-sample">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Modal title</h5>
+                          <button class="close" data-dismiss="modal">×</button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel" id="jumbotron">
+                <div class="panel-header">
+                  <h4 class="panel-title">Jumbotron</h4>
+                </div>
+                <div class="panel-body">
+                  <p>A component designed for demonstration of website’s key content.</p>
+                  <p>Style sheets linking occurs when the <code>.jumbotron</code> primary class is present on the page.</p>
+                  <p>Component example:</p>
+                  <section class="jumbotron mt-2">
+                    <h1>Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-3">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p><a class="btn btn-primary mt-2" href="#">Learn more</a>
+                  </section>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;section class=&quot;jumbotron mt-2&quot;&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;p class=&quot;lead&quot;&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+  &lt;hr class=&quot;my-3&quot;&gt;
+  &lt;p&gt;It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;&lt;a class=&quot;btn btn-primary mt-2&quot; href=&quot;#&quot;&gt;Learn more&lt;/a&gt;
+&lt;/section&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/jumbotron">Bootstrap Jumbotron</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="input">
+                <div class="panel-header">
+                  <h4 class="panel-title">Input</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Inputs are used in forms in the first place.</p>
+                  <p>Style sheets linking occurs when the element that matches the <code>.form-group, .input-group, .form-check, .custom-control, .form-control</code> selector is present on the page.</p>
+                  <p>Component example:</p>
+                  <input class="form-control mt-1" type="text" placeholder="Type Here...">
+                  <p>See more input examples on the following page: <a href="basic-inputs.html">Basic Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Type Here...&quot;&gt;</pre>
+                  <p>This component is a part of <a href="https://getbootstrap.com">Bootstrap 4</a> framework. Read more about it on the following page: <a href="https://getbootstrap.com/docs/4.1/components/forms">Bootstrap Forms</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-sm" id="plugins">
+        <div class="container-fluid">
+          <h2 class="text-center">Plugins</h2>
+          <div class="row row-30">
+            <div class="col-lg-6">
+              <div class="panel" id="Nprogress">
+                <div class="panel-header">
+                  <h4 class="panel-title">Nprogress</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Nprogress is a progress plugin, which is generally used to display loading of the page content. You can see an example of plugin operation on the following page: <a href="page-progress-loader.html">Page Progress Loader</a>.</p>
+                  <p>The plugin connects immediately after the page loading event (<a href="https://developer.mozilla.org/ru/docs/Web/Events/load">load</a>). In case of an error during script execution on the page, the loading bar will become red (a <code>.bar-danger</code> class will be added).</p>
+                  <p>For <code>.bar</code> loading bar, color modifiers are provided:</p>
+                  <ul>
+                    <li>primary - <code>.bar-primary</code></li>
+                    <li>secondary - <code>.bar-secondary</code></li>
+                    <li>success - <code>.bar-success</code></li>
+                    <li>info - <code>.bar-info</code></li>
+                    <li>warning - <code>.bar-warning</code></li>
+                    <li>danger - <code>.bar-danger</code></li>
+                    <li>light - <code>.bar-light</code></li>
+                    <li>dark - <code>.bar-dark</code></li>
+                  </ul>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/rstacruz/nprogress/#basic-usage">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="dual-listbox">
+                <div class="panel-header">
+                  <h4 class="panel-title">Dual Listbox</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Dual Listbox is an improved version of a simple choice field.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.dual-listbox</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <select class="dual-listbox" multiple="" data-available-title="Available" data-selected-title="Selected">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                      <option value="5">Five</option>
+                      <option value="6">Six</option>
+                      <option value="7">Seven</option>
+                      <option value="8">Eight</option>
+                      <option value="9">Nine</option>
+                      <option value="10">Ten</option>
+                    </select>
+                  </div>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;select class=&quot;dual-listbox&quot; multiple=&quot;&quot; data-available-title=&quot;Available&quot; data-selected-title=&quot;Selected&quot;&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  ...
+&lt;/select&gt;</pre>
+                  <p><code>data-available-title</code> and <code>data-selected-title</code> attributes are used for modifying the headings of available and selected items.</p>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/maykinmedia/dual-listbox#dual-listbox">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="typeahead">
+                <div class="panel-header">
+                  <h4 class="panel-title">Typeahead.js</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Typeahead.js is a plugin for autofilling text fields.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-typehead&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <input class="form-control" type="text" placeholder="States" data-typehead='["Alabama","Alaska","Arizona","Arkansas","California"]'>
+                  </div>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;States&quot; data-typehead='[
+  &quot;Alabama&quot;,
+  &quot;Alaska&quot;,
+  &quot;Arizona&quot;,
+  &quot;Arkansas&quot;,
+  &quot;California&quot;
+]'&gt;</pre>
+                  <p>The <code>data-typehead</code> attribute is used to indicate autofilling options as a line array.</p>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/twitter/typeahead.js#typeaheadjs">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="spinner">
+                <div class="panel-header">
+                  <h4 class="panel-title">jQuery UI Spinner</h4>
+                </div>
+                <div class="panel-body">
+                  <p>jQuery UI Spinner is a plugin for an improved input of numerical values in fields with up/down buttons that can be stylized.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-spinner&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <input class="form-control ui-spinner-input" data-spinner type="number" name="spinner" value="5">
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control ui-spinner-input&quot; data-spinner type=&quot;number&quot; name=&quot;spinner&quot; value=&quot;5&quot;&gt;</pre>
+                  <p>This template provides a <code>data-spinner</code> attribute for Spinner that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input ... data-spinner='{ &quot;min&quot;: 0, &quot;step&quot;: 5 }'&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://api.jqueryui.com/spinner/">jQuery UI</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="daterangepiker">
+                <div class="panel-header">
+                  <h4 class="panel-title">Date Range Picker</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Date Range Picker is a plugin for choosing a time range with stylization feature.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[name="daterange"&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <input class="form-control" type="text" name="daterange">
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; name=&quot;daterange&quot;&gt;</pre>
+                  <p>This template provides a <code>data-predefined</code> attribute for Date Range Picker that allows to enable preset time ranges, such as:</p>
+                  <ul>
+                    <li>Today</li>
+                    <li>Yesterday</li>
+                    <li>Last 7 Days</li>
+                    <li>Last 30 Days</li>
+                    <li>This Month</li>
+                    <li>Last Month</li>
+                  </ul>
+                  <p>Modifying time ranges can be done via the <code>ranges</code> parameter of a <code>daterangepicker</code> component initialization in <code>components/base/script.js</code> file.</p>
+                  <p>All available parameters of the plugin can be viewed on <a href="http://www.daterangepicker.com">Date Range Picker</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="tag-manager">
+                <div class="panel-header">
+                  <h4 class="panel-title">Tags Manager</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Tags Manager is a jQuery plugin for creating tag input fields.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.tag-manager</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="tag-manager mt-1" data-tag-manager='{"prefilled":["admin","template","sample"],"tagClass":"badge badge-success"}'>
+                    <input class="form-control tag-manager-input" type="text" placeholder="Create a new tag...">
+                    <div class="tag-manager-container"></div>
+                  </div>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;tag-manager&quot;&gt;
+  &lt;input class=&quot;form-control tag-manager-input&quot; type=&quot;text&quot; placeholder=&quot;Create a new tag...&quot;&gt;
+  &lt;div class=&quot;tag-manager-container&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-tag-manager</code> attribute for Tags Manager that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;tag-manager&quot; data-tag-manager='{ &quot;prefilled&quot;: [ &quot;admin&quot;, &quot;template&quot;, &quot;sample&quot; ] }'&gt;...&lt;/div&gt;</pre>
+                  <p><code>tagManager</code> component implies a mandatory availability of <code>.tag-manager-input</code> and <code>.tag-manager-container</code> elements in it.</p>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/max-favilli/tagmanager">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="maskedinput">
+                <div class="panel-header">
+                  <h4 class="panel-title">jQuery Masked Input</h4>
+                </div>
+                <div class="panel-body">
+                  <p>jQuery Masked Input is a plugin that allows to set a template of the input field value.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-masked&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <input class="form-control mt-1" type="text" data-masked="99/99/9999" placeholder="11/11/1111">
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; data-masked=&quot;99/99/9999&quot; placeholder=&quot;11/11/1111&quot;&gt;</pre>
+                  <p>This template provides a <code>data-masked</code> attribute for jQuery Masked Input that accepts a string with an entered value template, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input ... data-masked=&quot;99/99/9999&quot;&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/digitalBush/jquery.maskedinput#overview">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="summernote">
+                <div class="panel-header">
+                  <h4 class="panel-title">Summernote</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Summernote is a simple <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> editor based on Bootstrap.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.summernote</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="summernote" data-summernote-opts>Hello summernote.</div>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="editors.html">Editors</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;summernote&quot;&gt;Hello summernote.&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-summernote-opts</code> attribute for Summernote that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;summernote&quot; data-summernote-opts='{ &quot;airMode&quot;: true }'&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://summernote.org/getting-started/">Summernote</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="nestable">
+                <div class="panel-header">
+                  <h4 class="panel-title">Nestable jQuery Plugin</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Nestable jQuery Plugin is an hierarchical list plugin with drag-and-drop elements.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.nestable</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="dd nestable">
+                      <ol class="dd-list">
+                        <li class="dd-item">
+                          <div class="dd-handle">Item 1</div>
+                          <ol class="dd-list">
+                            <li class="dd-item">
+                              <div class="dd-handle">Item 2</div>
+                            </li>
+                            <li class="dd-item">
+                              <div class="dd-handle">Item 3</div>
+                            </li>
+                            <li class="dd-item">
+                              <div class="dd-handle">Item 4</div>
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="nestable.html">Nestable</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;dd nestable&quot;&gt;
+  &lt;ol class=&quot;dd-list&quot;&gt;
+    &lt;li class=&quot;dd-item&quot;&gt;
+      &lt;div class=&quot;dd-handle&quot;&gt;Item 1&lt;/div&gt;
+      &lt;ol class=&quot;dd-list&quot;&gt;
+        &lt;li class=&quot;dd-item&quot;&gt;
+          &lt;div class=&quot;dd-handle&quot;&gt;Item 2&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dd-item&quot;&gt;
+          &lt;div class=&quot;dd-handle&quot;&gt;Item 3&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dd-item&quot;&gt;
+          &lt;div class=&quot;dd-handle&quot;&gt;Item 4&lt;/div&gt;
+        &lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/dbushell/Nestable">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="cropper">
+                <div class="panel-header">
+                  <h4 class="panel-title">Cropper.js</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Cropper.js is a plugin for cropping images.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-cropper-container&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1" data-cropper-container>
+                    <div class="img-container"><img src="images/logo-300x300.png" alt="Sample Picture"></div>
+                    <div class="mt-1 text-center">
+                      <div class="btn-group">
+                        <button class="btn btn-success fa-arrows" data-cropper='{"setDragMode":"move"}' title="Drag mode: move"></button>
+                        <button class="btn btn-success fa-crop" data-cropper='{"setDragMode":"crop"}' title="Drag mode: crop"></button>
+                        <button class="btn btn-success fa-search-plus" data-cropper='{"zoom":0.1}' title="Zoom: +0.1"></button>
+                        <button class="btn btn-success fa-search-minus" data-cropper='{"zoom":-0.1}' title="Zoom: -0.1"></button>
+                        <button class="btn btn-success fa-refresh" data-cropper='{"reset":null}' title="Reset"></button>
+                      </div>
+                    </div>
+                  </div>
+                  <p>An extended example of plugin operation can be seen on the following page: <a href="image-tools.html">Image Tools</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div data-cropper-container&gt;
+  &lt;div class=&quot;img-container&quot;&gt;&lt;img src=&quot;images/logo-300x300.png&quot; alt=&quot;Sample Picture&quot;&gt;&lt;/div&gt;
+  &lt;button data-cropper='{ &quot;setDragMode&quot;: &quot;move&quot; }'&gt;Drag mode: move&lt;/button&gt;
+  &lt;button data-cropper='{ &quot;setDragMode&quot;: &quot;crop&quot; }'&gt;Drag mode: crop&lt;/button&gt;
+  &lt;button data-cropper='{ &quot;zoom&quot;: 0.1 }'&gt;Zoom: +0.1&lt;/button&gt;
+  &lt;button data-cropper='{ &quot;zoom&quot;: -0.1 }'&gt;Zoom: -0.1&lt;/button&gt;
+  &lt;button data-cropper='{ &quot;reset&quot;: null }'&gt;Reset&lt;/button&gt;
+&lt;/div&gt;</pre>
+                  <p><code>cropper</code> component implies a mandatory availability of an element matching the <code>.img-container img</code> selector.</p>
+                  <p>The template provides a <code>data-cropper</code> attribute for managing the Cropper.js plugin. It accepts a JSON object with parameters matching methods of the plugin, and parameter values that will be passed to a method, e.g.: <code>data-cropper='{ "setDragMode": "move" }'</code> matches <code>cropper.setDragMode( 'move' )</code>. This attribute works only with the elements that are located in a <code>data-cropper-container</code> container.</p>
+                  <p>Next values of a <code>data-cropper</code> attribute that apply to buttons are provided:</p>
+                  <ul>
+                    <li><code>{ "setDragMode": "move" }</code></li>
+                    <li><code>{ "setDragMode": "crop" }</code></li>
+                    <li><code>{ "zoom": 0.1 }</code></li>
+                    <li><code>{ "zoom": -0.1 }</code></li>
+                    <li><code>{ "rotate": -45 }</code></li>
+                    <li><code>{ "rotate": 45 }</code></li>
+                    <li><code>{ "scaleX": -1 }</code></li>
+                    <li><code>{ "scaleY": -1 }</code></li>
+                    <li><code>{ "disable": null }</code></li>
+                    <li><code>{ "enable": null }</code></li>
+                    <li><code>{ "clear": null }</code></li>
+                    <li><code>{ "reset": null }</code></li>
+                    <li><code>{ "destroy": null }</code></li>
+                    <li><code>{ "setAspectRatio": 1.7777777777777777 }</code></li>
+                    <li><code>{ "setAspectRatio": 1.3333333333333333 }</code></li>
+                    <li><code>{ "setAspectRatio": 1 }</code></li>
+                    <li><code>{ "setAspectRatio": 0.6666666666666666 }</code></li>
+                    <li><code>{ "setAspectRatio": null }</code></li>
+                    <li><code>{ "viewMode": 0 }</code></li>
+                    <li><code>{ "viewMode": 1 }</code></li>
+                    <li><code>{ "viewMode": 2 }</code></li>
+                    <li><code>{ "viewMode": 3 }</code></li>
+                    <li><code>{ "getCroppedCanvas": { maxWidth: 4096, maxHeight: 4096 }, target: "#modal" }</code></li>
+                    <li><code>{ "getCroppedCanvas": { width: 160, height: 90 }, target: "#modal" }</code></li>
+                    <li><code>{ "getCroppedCanvas": { width: 320, height: 180 }, target: "#modal" }</code></li>
+                    <li><code>{ "getData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "setData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "getContainerData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "getImageData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "getCanvasData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "setCanvasData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "getCropBoxData": null, target: "#cropper-input" }</code></li>
+                    <li><code>{ "setCropBoxData": null, target: "#cropper-input" }</code></li>
+                  </ul>
+                  <p>Next values of a <code>data-cropper</code> attribute that apply to checkboxes are provided:</p>
+                  <ul>
+                    <li><code>{ "responsive": "checkbox" }</code></li>
+                    <li><code>{ "restore": "checkbox" }</code></li>
+                    <li><code>{ "checkCrossOrigin": "checkbox" }</code></li>
+                    <li><code>{ "checkOrientation": "checkbox" }</code></li>
+                    <li><code>{ "modal": "checkbox" }</code></li>
+                    <li><code>{ "guides": "checkbox" }</code></li>
+                    <li><code>{ "center": "checkbox" }</code></li>
+                    <li><code>{ "highlight": "checkbox" }</code></li>
+                    <li><code>{ "background": "checkbox" }</code></li>
+                    <li><code>{ "autoCrop": "checkbox" }</code></li>
+                    <li><code>{ "movable": "checkbox" }</code></li>
+                    <li><code>{ "rotatable": "checkbox" }</code></li>
+                    <li><code>{ "scalable": "checkbox" }</code></li>
+                    <li><code>{ "zoomable": "checkbox" }</code></li>
+                    <li><code>{ "zoomOnTouch": "checkbox" }</code></li>
+                    <li><code>{ "zoomOnWheel": "checkbox" }</code></li>
+                    <li><code>{ "cropBoxMovable": "checkbox" }</code></li>
+                    <li><code>{ "cropBoxResizable": "checkbox" }</code></li>
+                    <li><code>{ "toggleDragModeOnDblclick": "checkbox" }</code></li>
+                  </ul>
+                  <p>All available plugin parameters and their description can be viewed in <a href="https://github.com/fengyuanchen/cropperjs#cropperjs">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="easyzoom">
+                <div class="panel-header">
+                  <h4 class="panel-title">EasyZoom</h4>
+                </div>
+                <div class="panel-body">
+                  <p>EasyZoom is a jQuery plugin for zooming and panning images.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.easyzoom</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="easyzoom easyzoom--overlay text-center"><a href="images/img-01-1440x660.jpg"><img src="images/img-01-720x330.jpg" alt=""></a></div>
+                  </div>
+                  <p>An additional example of plugin operation is available on the following page: <a href="image-tools.html">Image Tools</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;easyzoom easyzoom--overlay&quot;&gt;
+  &lt;a href=&quot;images/img-01-1440x660.jpg&quot;&gt;
+    &lt;img src=&quot;images/img-01-720x330.jpg&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/i-like-robots/EasyZoom">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="slick">
+                <div class="panel-header">
+                  <h4 class="panel-title">Slick Slider</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Slick Slider is a jQuery plugin for creating a content carousel.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.slick-slider</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="slick-slider" data-slick-sm='{"slidesToShow":1,"slidesToScroll":1}' data-slick='{"arrows":false,"dots":true,"slidesToShow":2}'>
+                      <div>
+                        <div class="slide-content">
+                          <h1>1</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slide-content">
+                          <h1>2</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slide-content">
+                          <h1>3</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slide-content">
+                          <h1>4</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slide-content">
+                          <h1>5</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="slide-content">
+                          <h1>6</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="content-sliders.html">Content Sliders</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;slick-slider&quot;&gt;
+  &lt;div&gt;&lt;div class=&quot;slide-content&quot;&gt;...&lt;/div&gt;&lt;/div&gt;
+  ...
+  &lt;div&gt;&lt;div class=&quot;slide-content&quot;&gt;...&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-slick</code> attribute for Slick Slider that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;slick-slider&quot; data-slick='{&quot;dots&quot;:true,&quot;arrows&quot;:true}'&gt;...&lt;/div&gt;</pre>
+                  <p>Also, there are attributes for specifying the carousel responsiveness according to breakpoints:</p>
+                  <ul>
+                    <li><code>data-slick-sm</code> - 576px</li>
+                    <li><code>data-slick-md</code> - 768px</li>
+                    <li><code>data-slick-lg</code> - 992px</li>
+                    <li><code>data-slick-xl</code> - 1200px</li>
+                    <li><code>data-slick-xxl</code> - 1600px</li>
+                  </ul>
+                  <p>An example with responsive attributes:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;slick-slider&quot; data-slick='{&quot;dots&quot;:true,&quot;arrows&quot;:true}' data-slick-sm='{&quot;arrows&quot;:false}'&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="http://kenwheeler.github.io/slick/">Slick Slider</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="pnotify">
+                <div class="panel-header">
+                  <h4 class="panel-title">PNotify</h4>
+                </div>
+                <div class="panel-body">
+                  <p>PNotify is a notification plugin. The plugin and style sheets connect immediately after the page loading event (<a href="https://developer.mozilla.org/ru/docs/Web/Events/load">window load</a>).</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <button class="btn btn-success" data-pnotify>Show notification sample</button>
+                  </div>
+                  <p>More examples are available on the following page: <a href="notifications.html">Notifications</a>. The plugin is configured globally in the <code>pnotify</code> component initialization, in <code>components/base/script.js</code> file.</p>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/sciactive/pnotify#table-of-contents">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="particles">
+                <div class="panel-header">
+                  <h4 class="panel-title">Particles.js</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Particles.js is a plugin for creating canvas with moving particles.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>#particles-container</code> selector is present on the page.</p>
+                  <p>An example of plugin operation is available on the following page: <a href="404.html">404</a>.</p>
+                  <p>This template provides a <code>data-particles</code> attribute for Particles.js that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div id=&quot;particles-container&quot; data-particles='{ &quot;color&quot;: { &quot;value&quot;: &quot;#85e2ff&quot; } }'&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/VincentGarreau/particles.js/">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="jvectormap">
+                <div class="panel-header">
+                  <h4 class="panel-title">jVectorMap</h4>
+                </div>
+                <div class="panel-body">
+                  <p>jVectorMap is jQuery plugin for creating vector maps.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.jvector-map-wrap</code> selector is present on the page.</p>
+                  <p>An example of map operation is available on the following page: <a href="jvector-map.html">jVectorMap</a>.</p>
+                  <p>В шаблоне для jVectorMap предусмотрен атрибут <code>data-jvector-map</code> который может принимать JSON объект карты.</p>
+                  <p>This template provides a <code>data-jvector-map</code> attribute for jVectorMap that can accept a JSON object with the vector map.</p>
+                  <p>You can read detailed information about this plugin on <a href="http://jvectormap.com/">jVectorMap</a> official website.</p>
+                </div>
+              </div>
+              <div class="panel" id="rd-navbar">
+                <div class="panel-header">
+                  <h4 class="panel-title">RD Navbar</h4>
+                </div>
+                <div class="panel-body">
+                  <p>RD Navbar is a jQuery plugin for creating a navigation panel.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.rd-navbar</code> selector is present on the page.</p>
+                  <p>An example of plugin operation is available on the following page: <a href="navbar.html">Navbar</a>.</p>
+                  <p>An example of the simplest markup:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;rd-navbar-wrap&quot;&gt;
+  &lt;nav class=&quot;rd-navbar&quot;&gt;
+    &lt;ul class=&quot;rd-navbar-nav&quot;&gt;
+      &lt;li class=&quot;rd-navbar-nav-item&quot;&gt;&lt;a class=&quot;rd-navbar-link&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;rd-navbar-nav-item&quot;&gt;&lt;a class=&quot;rd-navbar-link&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;rd-navbar-nav-item&quot;&gt;&lt;a class=&quot;rd-navbar-link&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;rd-navbar-nav-item&quot;&gt;&lt;a class=&quot;rd-navbar-link&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</pre>
+                  <p>All RD Navbar parameters are configured only in initialization.</p>
+                  <p>All available parameters of the plugin can be viewed on <a href="http://cms.devoffice.com/coding-dev/rd-navbar/documentation">RD Navbar</a> website.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="panel" id="highlight">
+                <div class="panel-header">
+                  <h4 class="panel-title">Highlight.js</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Highlight.js is a tool for highlighting the code syntax.</p>
+                  <p>Plugin linking occurs when the element that matches the <code>.highlight</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4 col-lg-6&quot;&gt;Your Column1 Content&lt;/div&gt;
+    &lt;div class=&quot;col-md-4 col-lg-6&quot;&gt;Your Column1 Content&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;pre class=&quot;highlight html&quot;&gt;
+  ...
+&lt;/pre&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/highlightjs/highlight.js#highlightjs">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="maxlength">
+                <div class="panel-header">
+                  <h4 class="panel-title">Bootstrap Maxlength</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Bootstrap Maxlength is used for displaying maximum acceptable symbol length in a text field.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[maxlength&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <input class="form-control" type="text" maxlength="25" placeholder="Type Here...">
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; maxlength=&quot;25&quot; placeholder=&quot;Type Here...&quot;&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/mimo84/bootstrap-maxlength/#configurable-options">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="select2">
+                <div class="panel-header">
+                  <h4 class="panel-title">Select2</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Select2 is an improved select field that can be stylized.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.select2</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <select class="select2" name="country" data-placeholder="Country">
+                      <option label="placeholder"></option>
+                      <option>USA</option>
+                      <option>UK</option>
+                      <option>Ukraine</option>
+                      <option>Australia</option>
+                      <option>Korea</option>
+                      <option>Japan</option>
+                      <option>Germany</option>
+                      <option>Belarus</option>
+                      <option>Poland</option>
+                    </select>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;select class=&quot;select2&quot; name=&quot;country&quot; data-placeholder=&quot;Country&quot;&gt;
+  &lt;option label=&quot;placeholder&quot;&gt;&lt;/option&gt;
+  &lt;option&gt;USA&lt;/option&gt;
+  &lt;option&gt;UK&lt;/option&gt;
+  &lt;option&gt;Ukraine&lt;/option&gt;
+  &lt;option&gt;Australia&lt;/option&gt;
+  &lt;option&gt;Korea&lt;/option&gt;
+  &lt;option&gt;Japan&lt;/option&gt;
+  &lt;option&gt;Germany&lt;/option&gt;
+  &lt;option&gt;Belarus&lt;/option&gt;
+  &lt;option&gt;Poland&lt;/option&gt;
+&lt;/select&gt;</pre>
+                  <p>This template provides the following attributes for Select2:</p>
+                  <ul>
+                    <li><code>data-placeholder</code> - generated field placeholder;</li>
+                    <li><code>data-minimum-results-search</code> - minimal amount of displayed options;</li>
+                    <li><code>data-container-class</code> - additional class for content of a generated component;</li>
+                    <li><code>data-dropdown-class</code> - additional class for a dropdown of the generated component.</li>
+                  </ul>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/select2/select2#select2">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="time-spinner">
+                <div class="panel-header">
+                  <h4 class="panel-title">Time Spinner</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Time Spinner is a modified jQuery UI Spinner for specifying time.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-time-spinner&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <input class="form-control ui-spinner-input" data-time-spinner type="text" name="spinner" value="08:30 PM">
+                  </div>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control ui-spinner-input&quot; data-time-spinner type=&quot;text&quot; name=&quot;spinner&quot; value=&quot;08:30 PM&quot;&gt;</pre>
+                </div>
+              </div>
+              <div class="panel" id="datetimepicker">
+                <div class="panel-header">
+                  <h4 class="panel-title">Bootstrap Date/Timepicker</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Bootstrap Date/Timepicker is a plugin for choosing date and time with stylization feature.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-datetimepicker&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <input class="form-control" type="text" name="datetime" data-datetimepicker>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; name=&quot;datetime&quot; data-datetimepicker&gt;</pre>
+                  <p>This template provides a <code>data-datetimepicker</code> attribute for Bootstrap Date/Timepicker that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input ... data-datetimepicker='{ &quot;format&quot;: &quot;LT&quot;, &quot;inline&quot;: true, &quot;target&quot;: &quot;#time3&quot; }'&gt;</pre>
+                  <p><code>inline: true</code> parameter in <code>data-datetimepicker</code> attribute implies a mandatory availability of <code>target</code> parameter with field selector, where the value will be written.</p>
+                  <p>All available parameters of the plugin can be viewed on <a href="http://eonasdan.github.io/bootstrap-datetimepicker/">Bootstrap Date/Timepicker</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="colorpicker">
+                <div class="panel-header">
+                  <h4 class="panel-title">Bootstrap Colorpicker</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Bootstrap Colorpicker is a modular color selection plugin for Bootstrap 4.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-colorpick&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <input class="form-control mt-1" type="text" readonly value="#FF0000" data-colorpick>
+                  <p>See more plugin operation examples on the following page: <a href="plugin-inputs.html">Plugin Inputs</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;form-control&quot; type=&quot;text&quot; readonly value=&quot;#FF0000&quot; data-colorpick&gt;</pre>
+                  <p>This template provides a <code>data-colorpick</code> attribute for Bootstrap Colorpicker that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input ... data-colorpick='{ &quot;color&quot; :&quot;#00FF00&quot; }'&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://farbelous.io/bootstrap-colorpicker/">Bootstrap Colorpicker</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="ckeditor">
+                <div class="panel-header">
+                  <h4 class="panel-title">CKeditor</h4>
+                </div>
+                <div class="panel-body">
+                  <p>CKeditor is a set of wise <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> editor components.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-ckeditor&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <textarea data-ckeditor name="ckeditor">This is the CKEditor Plugin...</textarea>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="editors.html">Editors</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;textarea data-ckeditor name=&quot;ckeditor&quot;&gt;This is the CKEditor Plugin...&lt;/textarea&gt;</pre>
+                  <p>To specify the editor type, a <code>data-ckeditor</code> attribute with acceptable values is used.</p>
+                  <ul>
+                    <li><code>inline</code></li>
+                    <li><code>balloon</code></li>
+                    <li><code>document</code></li>
+                  </ul>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://ckeditor.com/">CKeditor</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="markdown">
+                <div class="panel-header">
+                  <h4 class="panel-title">Markdown.js</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Markdown.js is a converter and editor of Markdown markup.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.markdown</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="markdown">This is the Markdown Editor! Check out my sweet preview below!</div>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="editors.html">Editors</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;markdown&quot;&gt;This is the Markdown Editor! Check out my sweet preview below!&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-markdown-params</code> attribute for Markdown.js that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;markdown&quot; data-markdown-params='{ &quot;footer&quot;: &quot;Footer Sample&quot; }'&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/evilstreak/markdown-js#markdown-js">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="jstree">
+                <div class="panel-header">
+                  <h4 class="panel-title">jsTree</h4>
+                </div>
+                <div class="panel-body">
+                  <p>jsTree is a jQuery plugin that provides an interactive tree structure of anything.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.jstree</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="jstree">
+                      <ul>
+                        <li>Node 1</li>
+                        <li>Folder 1
+                          <ul>
+                            <li>Node 2.1</li>
+                            <li>Node 2.2</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="treeview.html">Treeview</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;jstree&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Node 1&lt;/li&gt;
+    &lt;li&gt;Folder 1
+      &lt;ul&gt;
+        &lt;li&gt;Node 2.1&lt;/li&gt;
+        &lt;li&gt;Node 2.2&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-jstree-params</code> attribute for jsTree that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;jstree&quot; data-jstree-params='{ &quot;plugins&quot;: [ &quot;checkbox&quot; ] }'&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://www.jstree.com/">jsTree</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="fileupload">
+                <div class="panel-header">
+                  <h4 class="panel-title">Tower File Input</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Tower File Input is a jQuery plugin, which is an improved version of a file field with a feature of image preview.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.tower-file-input</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1 tower-file">
+                    <input class="tower-file-input" id="file1" type="file">
+                    <label class="btn btn-success" for="file1">Select File</label>
+                  </div>
+                  <p>An additional example of plugin operation is available on the following page: <a href="image-tools.html">Image Tools</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;tower-file&quot;&gt;
+  &lt;input class=&quot;tower-file-input&quot; id=&quot;file1&quot; type=&quot;file&quot;&gt;
+  &lt;label class=&quot;btn btn-success&quot; for=&quot;file1&quot;&gt;Select File&lt;/label&gt;
+&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-tfi-opts</code> attribute for File Input that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;input class=&quot;tower-file-input&quot; data-tfi-opts='{ &quot;iconClass&quot;: &quot;mdi-upload&quot; }' ...&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/StrutTower/tower-file-input">GitHub repository</a> or on <a href="https://htmlpreview.github.io/?https://github.com/StrutTower/tower-file-input/blob/master/demo/index.html">Tower File Input</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="xzoom">
+                <div class="panel-header">
+                  <h4 class="panel-title">xZoom</h4>
+                </div>
+                <div class="panel-body">
+                  <p>xZoom is a jQuery plugin for zooming images.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.xzoom</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1"><img class="xzoom" src="images/img-01-720x330.jpg" data-xoriginal="images/img-01-1440x660.jpg" alt="" data-xzoom-opts='{"position":"lens","lensShape":"circle","zoomWidth":300,"zoomHeight":300}'></div>
+                  <p>See more plugin operation examples on the following page: <a href="image-tools.html">Image Tools</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;img class=&quot;xzoom&quot; src=&quot;images/img-01-720x330.jpg&quot; data-xoriginal=&quot;images/img-01-1440x660.jpg&quot; alt=&quot;&quot;&gt;</pre>
+                  <p>This template provides a <code>data-xzoom-opts</code> attribute for xZoom that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;img ... data-xzoom-opts='{ &quot;position&quot;: &quot;lens&quot;, &quot;zoomWidth&quot;: 300, &quot;zoomHeight&quot;: 300 }'&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/payalord/xZoom#xzoom">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="dropzone">
+                <div class="panel-header">
+                  <h4 class="panel-title">DropzoneJS</h4>
+                </div>
+                <div class="panel-body">
+                  <p>DropzoneJS is an open-source library that allows to drag and drop files with a feature of image preview.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.dropzone-form</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <form class="dropzone-form mt-1" action="components/dropzone/dropzone.php" data-dropzone='{"maxFilesize":2,"maxfiles":10}'>Drop Files Here (or click)</form>
+                  <p>An additional example of plugin operation is available on the following page: <a href="uploaders.html">Uploaders</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;form class=&quot;dropzone-form&quot; action=&quot;components/dropzone/dropzone.php&quot;&gt;Drop Files Here (or click)&lt;/form&gt;</pre>
+                  <p>This template provides a <code>data-dropzone</code> attribute for DropzoneJS that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;form class=&quot;dropzone-form &quot; action=&quot;components/dropzone/dropzone.php&quot; data-dropzone='{ &quot;maxFilesize&quot;: 2,&quot;maxfiles&quot;: 10 }'&gt;...&lt;/form&gt;</pre>
+                  <p>A <code>components/dropzone/dropzone.php</code> file is provided exclusively for demonstration of plugin operation.</p>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://www.dropzonejs.com">DropzoneJS</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="driver">
+                <div class="panel-header">
+                  <h4 class="panel-title">Driver.js</h4>
+                </div>
+                <div class="panel-body">
+                  <p data-driver='{"title":"Step 1"}'>Driver.js is a plugin for focusing an object on the page. This plugin allows to implement the site tour feature on any page.</p>
+                  <p data-driver='{"title":"Step 2"}'>Plugin and style sheets linking occurs when the element that matches the <code>[data-driver&#93;</code> selector is present on the page.</p>
+                  <p data-driver='{"title":"Step 3"}'>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <button class="btn btn-success" data-driver-start>Start tour</button>
+                  </div>
+                  <p data-driver='{"title":"Step 4"}'>An additional example of plugin operation is available on the following page: <a href="site-tour.html">Site Tour</a>.</p>
+                  <div data-driver='{"title":"Step 5"}'>
+                    <p>This template provides a <code>data-driver</code> attribute for Driver.js that can accept a JSON object with the plugin parameters, e.g.:</p>
+                    <pre class="highlight html scroller scroller-horizontal">&lt;div ... data-driver='{ &quot;title&quot;: &quot;Click Next&quot;, &quot;description&quot;: &quot;...&quot;, &quot;position&quot;: &quot;top&quot; }'&gt;...&lt;/div&gt;</pre>
+                  </div>
+                  <p data-driver='{"title":"Step 6"}'>An attribute can be added to any visible element on the page. The site tour starts automatically 3 seconds after the page loads or on pressing the element with the <code>data-driver-start</code> attribute if it’s present on the page. The site tour elements are highlighted as they are shown in the document.</p>
+                  <p data-driver='{"title":"End"}'>All available parameters of the plugin can be viewed on <a href="https://kamranahmed.info/driver.js">Driver.js</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="progress-circle">
+                <div class="panel-header">
+                  <h4 class="panel-title">αCounter & αProgressCircle</h4>
+                </div>
+                <div class="panel-body">
+                  <p>αCounter is a simple plugin of an animated counter.</p>
+                  <p>αProgressCircle is a plugin for radial progress bar.</p>
+                  <p>Plugins and style sheets linking occurs when the element that matches the <code>.progress-circle-wrap</code> selector is present on the page.</p>
+                  <p>Both plugins are used together to create a counter with an animated progress bar.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-2">
+                                  <div class="progress-circle-wrap">
+                                    <div class="progress-counter-wrap">
+                                      <div class="progress-counter-value h2"><span class="progress-counter">67</span>
+                                      </div>
+                                    </div>
+                                    <svg class="progress-circle" x="0" y="0" width="160" height="160" viewbox="0 0 160 160">
+                                      <circle class="bg" cx="80" cy="80" r="66"></circle>
+                                      <circle class="fg clipped" cx="80" cy="80" r="66" style="stroke: #0A1089"></circle>
+                                    </svg>
+                                  </div>
+                  </div>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;progress-circle-wrap&quot;&gt;  &lt;div class=&quot;progress-counter-wrap&quot;&gt;    &lt;div class=&quot;progress-counter-value&quot;&gt;      &lt;span class=&quot;progress-counter&quot;&gt;80&lt;/span&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;svg class=&quot;progress-circle&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;160&quot; height=&quot;160&quot; viewbox=&quot;0 0 160 160&quot;&gt;    &lt;circle class=&quot;bg&quot; cx=&quot;80&quot; cy=&quot;80&quot; r=&quot;66&quot;&gt;&lt;/circle&gt;    &lt;circle class=&quot;fg clipped&quot; cx=&quot;80&quot; cy=&quot;80&quot; r=&quot;66&quot; style=&quot;stroke: #28a745&quot;&gt;&lt;/circle&gt;  &lt;/svg&gt;&lt;/div&gt;</pre>
+                  <p>Text from the <code>.progress-counter</code> element is used as a value for calculation.</p>
+                  <p>All available plugin parameters can be viewed in their <a href="https://oxayaza.page.link/gitHub_aCounters">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="lightgallery">
+                <div class="panel-header">
+                  <h4 class="panel-title">Lightgallery</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Lightgallery is a jQuery plugin for creating a gallery.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-lightgallery&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-1">
+                    <div class="d-sm-flex group-10" data-lightgallery><a class="lightgallery-item" href="https://via.placeholder.com/800x600"><img src="https://via.placeholder.com/140x90" alt=""></a><a class="lightgallery-item" href="https://via.placeholder.com/800x600"><img src="https://via.placeholder.com/140x90" alt=""></a><a class="lightgallery-item" href="https://via.placeholder.com/800x600"><img src="https://via.placeholder.com/140x90" alt=""></a></div>
+                  </div>
+                  <p>See more plugin operation examples on the following page: <a href="gallery.html">Gallery</a>.</p>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;d-sm-flex group-10&quot; data-lightgallery&gt;
+  &lt;a class=&quot;lightgallery-item&quot; href=&quot;https://via.placeholder.com/800x600&quot;&gt;
+    &lt;img src=&quot;https://via.placeholder.com/140x90&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;lightgallery-item&quot; href=&quot;https://via.placeholder.com/800x600&quot;&gt;
+    &lt;img src=&quot;https://via.placeholder.com/140x90&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;lightgallery-item&quot; href=&quot;https://via.placeholder.com/800x600&quot;&gt;
+    &lt;img src=&quot;https://via.placeholder.com/140x90&quot; alt=&quot;&quot;&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</pre>
+                  <p>This template provides a <code>data-lightgallery</code> attribute for Lightgallery that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div data-lightgallery='{ &quot;thumbnail&quot;: false }'&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="http://sachinchoolur.github.io/lightGallery#lightgallery">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="flotchart">
+                <div class="panel-header">
+                  <h4 class="panel-title">Flot</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Flot is a library of canvas-graphs.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.flotchart-container</code> selector is present on the page.</p>
+                  <p>Plugin operation examples are available on the following page: <a href="flotcharts.html">Flotcharts</a>.</p>
+                  <p>В шаблоне для Flot предусмотрен атрибут <code>data-flotchart-options</code>, который может принимать JSON объект с параметрами плагина, и <code>data-flotchart-data</code>, который принимает JSON объект с данными графика:</p>
+                  <p>This template provides a <code>data-flotchart-options</code> attribute for Flot that can accept a JSON object with the plugin parameters, and <code>data-flotchart-data</code> that accepts a JSON object with graphic data:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;flotchart-container&quot; data-flotchart-options=&quot;{...}&quot; data-flotchart-data=&quot;{ ... }&quot;&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="http://www.flotcharts.org/">Flotcharts</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="highcharts">
+                <div class="panel-header">
+                  <h4 class="panel-title">Highcharts</h4>
+                </div>
+                <div class="panel-body">
+                  <p>Highcharts is a library of SVG graphs</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.highcharts-container</code> selector is present on the page.</p>
+                  <p>Plugin operation examples are available on the following page: <a href="highcharts.html">Highcharts</a>.</p>
+                  <p>This template provides a <code>data-highcharts-options</code> attribute for Highcharts that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;highcharts-container&quot; data-highcharts-options=&quot;{...}&quot;&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed on <a href="https://www.highcharts.com/">Highcharts</a> website.</p>
+                </div>
+              </div>
+              <div class="panel" id="countdown">
+                <div class="panel-header">
+                  <h4 class="panel-title">αCountdown</h4>
+                </div>
+                <div class="panel-body">
+                  <p>αCountdown is a customizable plugin for a countdown with progress circles</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>.countdown</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <div class="mt-2">
+                                  <div class="countdown" data-to="2020-12-01">
+                                    <div class="countdown-block countdown-block-days">
+                                      <svg class="countdown-circle" x="0" y="0" width="200" height="200" viewbox="0 0 200 200" data-progress-days="">
+                                        <circle class="countdown-circle-bg" cx="100" cy="100" r="90"></circle>
+                                        <circle class="countdown-circle-fg clipped" cx="100" cy="100" r="90"></circle>
+                                      </svg>
+                                      <div class="countdown-wrap">
+                                        <div class="countdown-counter" data-counter-days="">00</div>
+                                        <div class="countdown-title">days</div>
+                                      </div>
+                                    </div>
+                                    <div class="countdown-block countdown-block-hours">
+                                      <svg class="countdown-circle" x="0" y="0" width="200" height="200" viewbox="0 0 200 200" data-progress-hours="">
+                                        <circle class="countdown-circle-bg" cx="100" cy="100" r="90"></circle>
+                                        <circle class="countdown-circle-fg clipped" cx="100" cy="100" r="90"></circle>
+                                      </svg>
+                                      <div class="countdown-wrap">
+                                        <div class="countdown-counter" data-counter-hours="">00</div>
+                                        <div class="countdown-title">hours</div>
+                                      </div>
+                                    </div>
+                                    <div class="countdown-block countdown-block-minutes">
+                                      <svg class="countdown-circle" x="0" y="0" width="200" height="200" viewbox="0 0 200 200" data-progress-minutes="">
+                                        <circle class="countdown-circle-bg" cx="100" cy="100" r="90"></circle>
+                                        <circle class="countdown-circle-fg clipped" cx="100" cy="100" r="90"></circle>
+                                      </svg>
+                                      <div class="countdown-wrap">
+                                        <div class="countdown-counter" data-counter-minutes="">00</div>
+                                        <div class="countdown-title">minutes</div>
+                                      </div>
+                                    </div>
+                                    <div class="countdown-block countdown-block-seconds">
+                                      <svg class="countdown-circle" x="0" y="0" width="200" height="200" viewbox="0 0 200 200" data-progress-seconds="">
+                                        <circle class="countdown-circle-bg" cx="100" cy="100" r="90"></circle>
+                                        <circle class="countdown-circle-fg clipped" cx="100" cy="100" r="90"></circle>
+                                      </svg>
+                                      <div class="countdown-wrap">
+                                        <div class="countdown-counter" data-counter-seconds="">00</div>
+                                        <div class="countdown-title">seconds</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                  </div>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;countdown&quot;&gt;
+  &lt;div class=&quot;countdown-block&quot;&gt;
+    &lt;svg class=&quot;countdown-circle&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;100px&quot; height=&quot;100px&quot; viewbox=&quot;0 0 100 100&quot; data-progress-days&gt;
+      &lt;circle class=&quot;clipped&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;50&quot; &gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+    &lt;h1 class=&quot;countdown-counter&quot; data-counter-days&gt;00&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;countdown-block&quot;&gt;
+    &lt;svg class=&quot;countdown-circle&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;100px&quot; height=&quot;100px&quot; viewbox=&quot;0 0 100 100&quot; data-progress-hours&gt;
+      &lt;circle class=&quot;clipped&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;50&quot; &gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+    &lt;h1 class=&quot;countdown-counter&quot; data-counter-hours&gt;00&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;countdown-block&quot;&gt;
+    &lt;svg class=&quot;countdown-circle&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;100px&quot; height=&quot;100px&quot; viewbox=&quot;0 0 100 100&quot; data-progress-minutes&gt;
+      &lt;circle class=&quot;clipped&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;50&quot; &gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+    &lt;h1 class=&quot;countdown-counter&quot; data-counter-minutes&gt;00&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;countdown-block&quot;&gt;
+    &lt;svg class=&quot;countdown-circle&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;100px&quot; height=&quot;100px&quot; viewbox=&quot;0 0 100 100&quot; data-progress-seconds&gt;
+      &lt;circle class=&quot;clipped&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;50&quot; &gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+    &lt;h1 class=&quot;countdown-counter&quot; data-counter-seconds=&quot;&quot;&gt;00&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+                  <p>This template provides the following attributes for αCountdown:</p>
+                  <ul>
+                    <li><code>data-from</code> - countdown start time (format <code>YYYY-MM-DDTHH:mm:ss.sssZ</code>)</li>
+                    <li><code>data-to</code> - countdown finish time (format <code>YYYY-MM-DDTHH:mm:ss.sssZ</code>)</li>
+                    <li><code>data-count</code> - countdown format (until, since, auto)</li>
+                  </ul>
+                  <p>For example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;div class=&quot;countdown&quot; data-from=&quot;1995-12-17T03:24:00&quot; data-to=&quot;2050-01-01&quot; data-count=&quot;auto&quot;&gt;...&lt;/div&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://oxayaza.page.link/gitHub_aCounters#%CE%B1countdown-usage">GitHub repository</a>.</p>
+                </div>
+              </div>
+              <div class="panel" id="multiswitch">
+                <div class="panel-header">
+                  <h4 class="panel-title">MultiSwitch</h4>
+                </div>
+                <div class="panel-body">
+                  <p>MultiSwitch is a plugin for creating groups of class switches.</p>
+                  <p>Plugin and style sheets linking occurs when the element that matches the <code>[data-multi-switch&#93;</code> selector is present on the page.</p>
+                  <p>Plugin operation example:</p>
+                  <button class="btn btn-success mt-1" data-sidebar-switch data-multi-switch='{"targets":".sidebar","scope":".sidebar, [data-sidebar-switch]","isolate":"[data-multi-switch]:not([data-sidebar-switch])"}'>Toggle Sidebar</button>
+                  <p>Markup example:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;button ... data-multi-switch='{ &quot;targets&quot;: &quot;.target&quot; }'&gt;...&lt;/button&gt;</pre>
+                  <p>This template provides a <code>data-multi-switch</code> attribute for MultiSwitch that can accept a JSON object with the plugin parameters, e.g.:</p>
+                  <pre class="highlight html scroller scroller-horizontal">&lt;button ... data-multi-switch='{ &quot;targets&quot;: &quot;.sidebar&quot;, &quot;scope&quot;: &quot;.sidebar&quot;, &quot;isolate&quot;: &quot;[data-multi-switch]&quot; }'&gt;...&lt;/button&gt;</pre>
+                  <p>All available parameters of the plugin can be viewed in its <a href="https://github.com/OXAYAZA/Multi-Switches#multi-switches">GitHub repository</a>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer-small">
+        <div class="container-fluid">
+          <p><span class="d-inline-block pr-2">PART</span>© 2019. Design by Zemez</p>
+        </div>
+      </footer>
+      <div class="sidebar scroller">
+        <div class="panel">
+          <div class="panel-header">
+            <h4 class="panel-title"><span class="panel-icon fa-trophy"></span><span>Right Sidebar Content</span></h4>
+          </div>
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ac tortor eu viverra. Etiam ipsum neque, fermentum quis sagittis nec, hendrerit id diam. Mauris a tincidunt odio. Sed porttitor ex pulvinar, tristique sapien sed, malesuada nunc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+// Page styles
+html:not(.components-ready) * {
+	transition: 0s;
+}
+
+.page {
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	opacity: 0;
+
+	&.page-revealed {
+		opacity: 1;
+	}
+
+	.rd-navbar-fixed-linked & {
+		padding-top: 60px;
+		padding-left: 0;
+	}
+}
+
+html .page {
+	transition: opacity .25s;
+}
+
+html.components-ready .page {
+	transition: opacity .25s, padding .2s ease-in-out;
+}
+
+// Media
+@include media-breakpoint-up( xl ) {
+	.page {
+		.rd-navbar-fullwidth-linked & {
+			padding-top: 160px;
+			padding-left: 60px;
+			padding-bottom: 125px;
+		}
+
+		.navbar-sidebar-active & {
+			padding-left: 270px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$caret-vertical-align: middle;
+$dropdown-divider-margin-y: $spacer / 3;
+$dropdown-bg: $gray-800;
+$dropdown-color: $body-color;
+$dropdown-link-color: $white;
+$dropdown-divider-bg: $gray-900;
+$dropdown-link-hover-bg: $gray-600;
+$dropdown-link-hover-color: $dropdown-link-color;
+$dropdown-border-color: $gray-900;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/dropdown";
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown-toggle:after {
+	height: $caret-width;
+}
+

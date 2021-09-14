@@ -1,0 +1,38 @@
+//- Button dropdown
+	@param {object} data - dropdown parameters
+	@param {array} data.list - dropdown options list
+	@param {object} item - dropdown list item parameters
+	@param {string} item.text - dropdown list item text
+	@param {string} item.link - dropdown list item link
+	@param {boolean} item.divider - enable divider between list items
+mixin button-dropdown ( data )
+	.dropdown( class= data.addClass )
+		button.btn.dropdown-toggle( data-toggle='dropdown' )&attributes( attributes )
+			if ( data.btnIcon )
+				span.btn-icon( class= data.btnIcon  )
+			span= data.buttonText
+		.dropdown-menu
+			each item in data.list
+				if ( item.divider )
+					.dropdown-divider
+				else if ( item.text )
+					a.dropdown-item( href= item.link || '#' )!= item.text
+
+//- Button dropdown split
+	@param {object} data - dropdown parameters
+	@param {array} data.list - dropdown options list
+	@param {object} item - dropdown list item parameters
+	@param {string} item.text - dropdown list item text
+	@param {string} item.link - dropdown list item link
+	@param {boolean} item.divider - enable divider between list items
+mixin button-dropdown-split ( data )
+	.btn-group
+		button.btn( type='button' )&attributes( attributes )= data.buttonText
+		button.btn.dropdown-toggle.dropdown-toggle-split( data-toggle='dropdown' )&attributes( attributes )
+			span.sr-only Toggle Dropdown
+		.dropdown-menu
+			each item in data.list
+				if ( item.divider )
+					.dropdown-divider
+				else if ( item.text )
+					a.dropdown-item( href= item.link || '#' )= item.text

@@ -1,0 +1,35 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../colorpicker/_colorpicker";
+
+//variables
+$colorpicker-bg: $white;
+
+[data-colorpicker] {
+	min-height: 5px;
+	min-width: 5px;
+	outline: 2px dashed red;
+}
+
+.colorpicker {
+	background-color: $colorpicker-bg;
+}
+
+.colorpicker-popup {
+	z-index: $zindex-popover;
+}
+
+.colorpicker-bar {
+	min-height: 0;
+}
+
+.colorpicker-preview > div {
+	position: static;
+	padding: px-to-rem( 3px );
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

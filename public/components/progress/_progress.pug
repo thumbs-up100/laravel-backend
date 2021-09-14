@@ -1,0 +1,25 @@
+//- Progress
+	@param {string} data.class - progress bar class
+	@param {number} data.value - progress value
+	@param {boolean} data.label - progress label
+	@param {boolean} data.vertical - progress vertical
+mixin progress( data )
+	- if ( data.vertical )
+		.progress.progress-vertical&attributes( attributes )
+			.progress-bar( role='progressbar', style='height: ' + data.value + '%', aria-valuenow= data.value, aria-valuemin='0', aria-valuemax='100', class= data.className )
+				-if( data.label )
+					span.progress-value=data.value + '%'
+				-else
+					|
+	- else
+		.progress-wrap
+			- if ( data.progressTitle )
+				.d-flex.justify-content-between.align-items-end
+					h6.progress-title=data.progressTitle
+					.progress-text=data.progressText
+			.progress&attributes( attributes )
+				.progress-bar( role='progressbar', style='width: ' + data.value + '%', aria-valuenow= data.value, aria-valuemin='0', aria-valuemax='100', class=data.className )
+					-if( data.label )
+						span.progress-value=data.value + '%'
+					-else
+						|

@@ -1,0 +1,30 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../jstree/_jstree";
+
+//variables
+$jstree-search-color: $success;
+$jstree-bg-hover: $gray-600;
+$jstree-bg-clicked: $gray-700;
+
+// Search results
+.jstree-default .jstree-search {
+	color: $jstree-search-color;
+}
+
+.jstree-default {
+	// Hover
+	.jstree-wholerow-hovered,
+	.jstree-hovered {
+		background: $jstree-bg-hover;
+		box-shadow: none;
+	}
+
+	// Focus
+	.jstree-wholerow-clicked,
+	.jstree-clicked {
+		background: $jstree-bg-clicked;
+	}
+}

@@ -1,0 +1,41 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$flotchart-container-height: 250px;
+$flotchart-container-pie-height: 300px;
+
+$flottip-color: $white;
+$flottip-padding: 2px 10px;
+$flottip-bg: rgba( $black, .8 );
+
+// Basic styles
+.flotchart-container {
+	width: 100%;
+	height: $flotchart-container-height;
+
+	&-pie {
+		height: $flotchart-container-pie-height;
+	}
+}
+
+.flotchart-container + .flotchart-container {
+	margin-top: 30px;
+}
+
+// Axis values
+.flot-y-axis,
+.flot-x-axis {
+	fill: $body-color;
+}
+
+// Tooltip
+.flotTip {
+	padding: $flottip-padding;
+	color: $flottip-color;
+	background-color: $flottip-bg;
+	border-radius: $border-radius;
+}

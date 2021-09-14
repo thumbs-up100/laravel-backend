@@ -1,0 +1,92 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Base styles
+.ui-spinner {
+	position: relative;
+	display: block;
+}
+
+.ui-spinner-input {
+	padding-right: 25px;
+	-moz-appearance:textfield;
+
+	&::-webkit-inner-spin-button {
+		display: none;
+	}
+}
+
+.ui-spinner-button {
+	position: absolute;
+	right: 6px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	z-index: 3;
+
+	.ui-button-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0;
+		height: 0;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+	}
+
+	&.ui-spinner-up {
+		top: 5px;
+		.ui-button-icon {
+			border-bottom: 8px solid $border-color;
+		}
+	}
+
+	&.ui-spinner-down {
+		bottom: 5px;
+		.ui-button-icon {
+			border-top: 8px solid $border-color;
+		}
+	}
+}
+
+.input-group {
+	> .ui-spinner {
+		position: relative;
+		flex: 1 1 auto;
+		width: 1%;
+		margin-bottom: 0;
+
+		&:not( :last-child ) {
+			.form-control {
+				@include border-right-radius(0);
+			}
+		}
+
+		&:not( :first-child ) {
+			.form-control {
+				@include border-left-radius(0);
+			}
+		}
+	}
+}
+
+// Color themes
+@each $theme, $color in $theme-colors {
+	.form-control-#{$theme} ~ .ui-spinner-button {
+		&.ui-spinner-up {
+			.ui-button-icon {
+				border-bottom-color: $color;
+			}
+		}
+
+		&.ui-spinner-down {
+			.ui-button-icon {
+				border-top-color: $color;
+			}
+		}
+	}
+}

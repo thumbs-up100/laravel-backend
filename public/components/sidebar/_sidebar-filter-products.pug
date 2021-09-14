@@ -1,0 +1,65 @@
+.sidebar.sidebar-lg.scroller.scroller-vertical
+	.p-4
+		h3 Filter Products
+		hr
+		.row.row-15.align-items-end
+			.col-12
+				.input-group.form-group
+					.input-group-prepend
+						label.input-group-text( for='basic-addon11' )
+							span.fa-tag
+					input#basic-addon11.form-control( type='text', placeholder='Product SKU#' )
+			.col-12
+				.row.row-10
+					.col-12
+						p Price Range($)
+					.col-12
+						.input-group
+							.input-group-prepend
+								span.input-group-text
+									span.fa-usd
+							input.form-control( type='number', value='0' )
+					.col-12
+						.input-group
+							.input-group-prepend
+								span.input-group-text
+									span.fa-usd
+							input.form-control( type='number', value='1000' )
+			.col-12
+				.row.row-10
+					.col-12
+						p Sales Date
+					.col-12
+						.input-group
+							.input-group-prepend
+								span.input-group-text
+									span.fa-calendar
+							input.form-control( type='text', name='datetime', data-datetimepicker!={ widgetPositioning: { horizontal: 'right' } } )
+					.col-12
+						.input-group
+							.input-group-prepend
+								span.input-group-text
+									span.fa-calendar
+							input.form-control( type='text', name='datetime', data-datetimepicker!={ widgetPositioning: { horizontal: 'right' } } )
+			.col-12
+				p Search Categories
+				select.form-control.mt-2
+					option Filter by Categories
+					option 2
+					option 3
+					option 4
+					option 5
+			.col-12
+				p Search Customers
+				select.form-control.mt-2
+					option Filter by Vendor
+					option 2
+					option 3
+					option 4
+					option 5
+			.col-12
+				hr
+				.group-10
+					button.btn.btn-primary( type='submit' ) Search
+					.d-inline-block
+						+checkbox Save Search

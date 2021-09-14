@@ -1,0 +1,32 @@
+.tm-tag .tm-tag-remove {
+	color: inherit;
+	margin-left: 0.25rem;
+	opacity: 0.75;
+	transition: .2s;
+}
+
+.tm-tag .tm-tag-remove:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+
+.tag-manager-container {
+	margin-bottom: -5px;
+	margin-left: -5px;
+}
+
+.tag-manager-container:empty {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.tag-manager-container > * {
+	margin-top: 0;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+* + .tag-manager-container {
+	margin-top: 0.1875rem;
+}
+

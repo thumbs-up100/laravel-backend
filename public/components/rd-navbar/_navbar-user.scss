@@ -1,0 +1,28 @@
+// Navbar user
+.navbar-user {
+	height: auto;
+	overflow: hidden;
+
+	&::before,
+	&::after {
+		content: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	img {
+		display: block;
+	}
+}
+
+
+// Media
+@include media-breakpoint-up( xl ) {
+	.rd-navbar:not(.rd-navbar--is-stuck) {
+		.navbar-user {
+			width: 60px;
+		}
+	}
+}

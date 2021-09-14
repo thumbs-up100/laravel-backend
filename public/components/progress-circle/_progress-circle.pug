@@ -1,0 +1,19 @@
+//- Progress Circle
+	@param {object} data
+	@param {string} data.to
+	@param {string} [data.from]
+	@param {string} [data.count]
+mixin progress-circle( data )
+	.progress-circle-wrap
+		.progress-counter-wrap
+			.progress-counter-value.h2
+				if ( data.prefix )
+					= data.prefix
+				span.progress-counter= data.count
+				if ( data.postfix )
+					= data.postfix
+			if ( data.title )
+				.progress-title.h3!= data.title
+		svg.progress-circle( x='0', y='0', width='160', height='160', viewbox='0 0 160 160' )
+			circle.bg( cx=80, cy=80, r=66 )
+			circle.fg.clipped( cx=80, cy=80, r=66, style=`stroke: ${data.color}` )

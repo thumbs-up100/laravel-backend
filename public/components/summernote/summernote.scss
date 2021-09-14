@@ -1,0 +1,116 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$snote-tollbar-bg: $gray-800;
+
+$snote-editable-color: $body-color;
+$snote-editable-bg: $gray-800;
+
+$snote-codable-color: $body-color;
+$snote-codable-bg: $gray-300;
+
+$snote-toolbar-btn-bg: $dark;
+
+@import "../bootstrap/scss/mixins";
+@import "../summernote/_summernote";
+
+// Disabled popover on first load
+.note-popover.popover {
+	display: none;
+}
+
+// Disabled icon marker in dropdown menu items
+.note-icon-menu-check {
+	display: none;
+}
+
+// Reset default summernote styles
+* + .note-editor.note-frame {
+	margin-top: 0;
+}
+
+// Base styles
+.note-editor {
+	.modal-dialog {
+		margin: $modal-dialog-margin auto;
+	}
+
+	// Frame mode
+	&.note-frame {
+		background-color: $snote-editable-bg;
+
+		.note-editing-area {
+			.note-editable {
+				color: $snote-editable-color;
+				background-color: $snote-editable-bg;
+			}
+
+			.note-codable {
+				color: $snote-codable-color;
+				background-color: $snote-codable-bg;
+			}
+		}
+
+		// Fullscreen mode
+		&.fullscreen {
+			z-index: $zindex-modal;
+
+			.note-editable {
+				background-color: $snote-editable-bg !important;
+			}
+		}
+	}
+}
+
+// Toolbar
+.note-popover .popover-content,
+.card-header.note-toolbar {
+	padding: px-to-rem( 0, 0, 10px, 10px );
+	background-color: $snote-tollbar-bg;
+
+	> .btn-group {
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 10px;
+	}
+
+	.dropdown-menu {
+		min-width: px-to-rem( 75px );
+	}
+}
+
+// Toolbar buttons
+$btn-box-shadow: 0 0 0 transparent;
+.note-btn {
+	@include button-variant( $snote-toolbar-btn-bg, $snote-toolbar-btn-bg );
+}
+
+.note-current-color-button {
+	color: $black !important;
+}
+
+// Toolbar dropdown options
+.note-popover .popover-content .note-color .dropdown-menu .note-palette .note-palette-title,
+.card-header.note-toolbar .note-color .dropdown-menu .note-palette .note-palette-title {
+	border-bottom-color: $border-color;
+}
+
+// Disable border on summernote container
+.summernote-no-border {
+	.note-editor.note-frame {
+		border: 0;
+
+		.note-statusbar {
+			background-color: transparent;
+			border-top: none;
+		}
+	}
+}
+
+// Offsets
+* + .summernote-container {
+	margin-top: px-to-rem( 10px );
+}

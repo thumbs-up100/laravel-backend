@@ -1,0 +1,268 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins/group";
+
+$panel-spacer-y:     px-to-rem( 24px );
+$panel-spacer-x:     px-to-rem( 30px );
+$panel-border-width: 2px;
+$panel-border-color: rgba($black, .125);
+$panel-cap-bg:       transparent;
+$panel-bg:           $gray-800;
+$panel-brad:         $border-radius;
+$panel-footer-bg: $gray-700;
+
+
+// Base styles
+.panel {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: $panel-bg;
+	background-clip: border-box;
+	@include border-radius( $panel-brad );
+}
+
+.panel-body {
+	flex: 1 1 auto;
+	padding: $panel-spacer-y 20px 40px;
+
+	&-border {
+		border: 3px solid $panel-cap-bg;
+	}
+
+	&-bg {
+		color: color-yiq( lighten( $panel-cap-bg, 10% ) );
+		background-color: lighten( $panel-cap-bg, 10% );
+	}
+}
+
+.panel-body + .panel-body {
+	border-top: 1px solid $panel-border-color;
+}
+
+.panel-header {
+	padding: $panel-spacer-y 20px 0;
+	background-color: $panel-cap-bg;
+}
+
+.panel-title {
+	> * {
+		vertical-align: middle;
+	}
+}
+
+.panel-icon {
+	font-size: px-to-rem( 16px );
+	padding-right: 0.4em;
+}
+
+.panel-menu {
+	padding: $panel-spacer-y 20px 0;
+}
+
+.panel-footer {
+	padding: $panel-spacer-y/2 20px;
+	background: $panel-footer-bg;
+	border-radius: 0 0 $border-radius $border-radius;
+}
+
+@include media-breakpoint-up( xxl ) {
+	.panel-body {
+		padding: $panel-spacer-y $panel-spacer-x 40px;
+	}
+	.panel-header {
+		padding: $panel-spacer-y $panel-spacer-x 0;
+	}
+
+	.panel-menu {
+		padding: $panel-spacer-y $panel-spacer-x 0;
+	}
+
+	.panel-footer {
+		padding: $panel-spacer-y/2 $panel-spacer-x;
+	}
+}
+
+
+// Offsets
+.btn-block + .panel {
+	margin-top: px-to-rem( 15px );
+}
+
+h4 + .panel {
+	margin-top: px-to-rem( 20px );
+}
+
+* + .panel {
+	margin-top: px-to-rem( 13px );
+}
+
+.panel + .panel {
+	margin-top: px-to-rem( 30px );
+}
+
+// Header navs
+.panel-nav {
+	.nav {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+	}
+
+	.nav-item + .nav-item {
+		margin-left: -1px;
+	}
+
+	.nav-tabs .nav-link {
+		border-bottom: 0;
+	}
+}
+
+// Modifiers
+.panel-border-top {
+	border-top: 3px solid;
+}
+
+.panel-border-bottom {
+	border-bottom: 3px solid;
+}
+
+.panel-border-left {
+	border-left: 3px solid;
+}
+
+.panel-border-right {
+	border-right: 3px solid;
+}
+
+.panel-bordered {
+	border: 3px solid;
+}
+
+// Color themes
+@each $color, $value in $theme-colors {
+	.panel-#{$color} {
+		background-color: $value;
+
+		.panel-header, .panel-body { 
+			color: color-yiq( $value );
+		}
+
+		.panel-footer {
+			background: darken( $value, 5% );
+		}
+
+		.collapse-link {
+			color: color-yiq( $value );
+
+			&:hover {
+				opacity: .7; 
+			}
+		}
+
+		&.panel-gradient {
+			background: linear-gradient( 0deg, lighten( $value, 12% ), darken( $value, 12% ) );
+		}
+	}
+
+	.panel-border-#{$color} {
+		border-color: $value;
+	}
+}
+
+.panel-dark {
+	background-color: darken( $dark, 5% );
+}
+
+// Panel in the context of accordion
+.accordion {
+	$sizeX: 0.75rem;
+
+	overflow: hidden;
+	@include border-radius( $panel-brad );
+
+	.panel {
+		margin-top: 0;
+		border-radius: 0;
+	}
+
+	.panel-header {
+		position: relative;
+		padding-left: $sizeX * 2.5;
+		padding-bottom: $panel-spacer-y;
+	}
+	
+	.panel-body {
+		padding-top: 0;
+	}
+
+	.collapse-link {
+		transition: .2s;
+		color: $white;
+
+		&:before {
+			position: absolute;
+			left: $sizeX;
+			top: 28px;
+			transform: rotate( 0deg );
+			font-family: 'Linearicons';
+			font-size: px-to-rem( 13px );
+			line-height: inherit;
+			font-weight: 400;
+			will-change: transform;
+			transition: transform .25s;
+		}
+
+		&:before {
+			content: '\ec3c';
+		}
+
+		&[aria-expanded="true"] {
+			&:before {
+				transform: rotate( 90deg );
+			}
+		}
+	}
+}
+
+h4 + .accordion {
+	margin-top: px-to-rem( 15px );
+}
+
+// Panel in the context of timeline
+.panel-timeline {
+	margin: 0;
+	overflow: visible;
+}
+
+@include media-breakpoint-up( md ) {
+	.panel-timeline {
+		.panel-header {
+			&::before {
+				content: '';
+				position: absolute;
+				top: 15px;
+				left: -5px;
+				transform: rotate(45deg);
+				width: 12px;
+				height: 12px;
+				background-color: inherit;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up( lg ) {
+	.timeline-left {
+		.panel-header {
+			&::before {
+				left: auto;
+				right: -5px;
+			}
+		}
+	}
+}

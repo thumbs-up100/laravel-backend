@@ -1,0 +1,41 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$divider-height: 5px;
+
+// Dividers
+.divider {
+	margin: 0;
+}
+
+.divider-dashed {
+	border-top-style: dashed;
+}
+
+.divider-bold {
+	border-top-width: $divider-height;
+}
+
+.divider-primary {
+	border-color: $primary;
+}
+
+// Offsets
+p + .divider {
+	margin-top: px-to-rem( 13px );
+}
+
+h4 + .divider {
+	margin-top: px-to-rem( 15px );
+}
+
+// Search aside context
+.search-aside {
+	* + .divider-bold {
+		margin-top: px-to-rem( 15px );
+	}
+}

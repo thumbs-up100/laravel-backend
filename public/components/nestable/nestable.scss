@@ -1,0 +1,160 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$dd-border-radius: $border-radius;
+$dd-panel-color: $body-color;
+$dd-panel-background: $gray-800;
+$dd-panel-border: $border-width solid darken( $dd-panel-background, 10% );
+$dd-content-color: inherit;
+$dd-content-background: $gray-700;
+
+@import "../bootstrap/scss/mixins";
+
+.dd {
+	position: relative;
+}
+
+.dd-list {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	.dd-list {
+		padding-left: px-to-rem( 30px );
+	}
+}
+
+
+.dd-collapsed .dd-list {
+	display: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+	display: block;
+	min-height: px-to-rem( 20px );
+}
+
+.dd-handle {
+	position: relative;
+	z-index: 1;
+	min-height: px-to-rem( 30px );
+	padding: px-to-rem( 7px, 15px );
+	color: $dd-panel-color;
+	text-decoration: none;
+	font-weight: bold;
+	border: $dd-panel-border;
+	background: $dd-panel-background;
+	border-radius: $dd-border-radius;
+	transition: .2s;
+	cursor: grab;
+}
+
+button[data-action="collapse"] ~ .dd-handle {
+	padding-left: px-to-rem( 42px );
+}
+
+.dd-content {
+	margin-top: -$dd-border-radius;
+	padding: ( px-to-rem( 10px ) + $dd-border-radius) px-to-rem( 15px );
+	color: $dd-content-color;
+	background: $dd-content-background;
+	border: $dd-panel-border;
+	border-top: 0;
+	border-bottom-left-radius: $dd-border-radius;
+	border-bottom-right-radius: $dd-border-radius;
+}
+
+.dd-item {
+	position: relative;
+
+	.dd-button {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		cursor: pointer;
+		max-width: px-to-rem( 42px );
+		margin: px-to-rem( 9px, 15px );
+		padding: 0;
+		overflow: hidden;
+		border: 0;
+		color: $dd-panel-color;
+		background: transparent;
+		font-size: 0.9em;
+		text-align: center;
+		font-weight: bold;
+		transition: .2s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+
+
+.dd-placeholder,
+.dd-empty {
+	min-height: px-to-rem( 30px );
+	background: $gray-800;
+	border: 1px dashed $gray-900;
+}
+
+.dd-empty {
+	border: 1px dashed $gray-900;
+	min-height: px-to-rem( 100px );
+	background-color: $gray-800;
+	background-position: 0 0, 30px 30px;
+}
+
+.dd-dragel {
+	position: absolute;
+	pointer-events: none;
+	z-index: $zindex-dropdown;
+	cursor: grabbing;
+
+	.dd-handle {
+		box-shadow: 2px 4px 6px 0 rgba($black, .1);
+	}
+}
+
+* + .dd-item,
+* + .dd-list,
+* + .dd-placeholder,
+* + .dd-empty {
+	margin-top: px-to-rem( 15px );
+}
+
+.dd-item > .dd-list {
+	margin-top: px-to-rem( 8px );
+
+	* + .dd-item {
+		margin-top: px-to-rem( 8px );
+	}
+}
+
+// Offsets
+.divider + .dd {
+	margin-top: px-to-rem( 15px );
+}
+
+@each $color, $value in $theme-colors {
+	.dd-item-#{$color} {
+		> .dd-handle {
+			color: color-yiq($value);
+			background: $value;
+			border-color: darken($value, 10%);
+		}
+
+		> .dd-button {
+			color: color-yiq($value);
+		}
+	}
+}

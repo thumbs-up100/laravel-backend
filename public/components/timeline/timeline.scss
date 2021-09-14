@@ -1,0 +1,168 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$timeline-border-color: $gray-500;
+$timeline-icon-border-color: $timeline-border-color;
+$timeline-icon-bg: $gray-800;
+
+// Base
+.timeline {
+	position: relative;
+}
+
+.timeline-item {
+	position: relative;
+	z-index: 1;
+}
+
+.timeline-item-icon {
+	display: none;
+}
+
+[data-auto-timeline] {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.timeline-ready {
+	visibility: visible;
+	opacity: 1;
+}
+
+* + .timeline-item {
+	margin-top: 30px;
+}
+
+// Media
+@include media-breakpoint-up( md ) {
+	.timeline {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 20px;
+			transform: translateX(-50%);
+			border-left: 2px solid $timeline-border-color;
+		}
+	}
+
+	.timeline-item {
+		padding-left: 55px;
+	}
+
+	.timeline-item-icon {
+		position: absolute;
+		top: -2px;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+		background-color: $timeline-icon-bg;
+	}
+}
+
+@include media-breakpoint-up( lg ) {
+	[data-auto-timeline] {
+		&::before {
+			left: 50%;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.timeline-item {
+			display: inline-block;
+			width: 100%;
+		}
+
+		.timeline-right {
+			float: right;
+			width: 50%;
+			padding-left: 40px;
+
+			&:nth-child( 2 ) {
+				margin-top: 50px;
+			}
+		}
+
+		.timeline-left {
+			float: left;
+			width: 50%;
+			padding-left: 0;
+			padding-right: 40px;
+		}
+
+		.timeline-item-icon {
+			left: -19px;
+		}
+
+		.timeline-left {
+			.timeline-item-icon {
+				left: auto;
+				right: -19px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	[data-auto-timeline] {
+		.timeline-item-icon {
+			top: 20px;
+		}
+	}
+
+	* + .timeline-item {
+		margin-top: 50px;
+	}
+}
+
+// Modifiers
+.timeline-simple {
+	.timeline-item + .timeline-item {
+		margin-top: 0;
+	}
+
+	.timeline-item {
+		padding: px-to-rem( 20px, 20px, 20px, 15px );
+	}
+
+	// Media
+	@include media-breakpoint-up( md ) {
+		&::before {
+			left: 30px;
+		}
+		.timeline-item {
+			padding-left: 65px;
+		}
+		.timeline-item-icon {
+			top: 13px;
+			left: 10px;
+		}
+		.timeline-item + .timeline-item {
+			.timeline-item-icon {
+				top: 13px;
+			}
+		}
+	}
+}
+
+// Colors
+@each $color, $value in $theme-colors {
+	.timeline-item-icon-#{$color} {
+		background-color: $value;
+		color: color-yiq( $value );
+	}
+}

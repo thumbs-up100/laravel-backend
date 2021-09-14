@@ -1,0 +1,29 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+@include media-breakpoint-up( md ) {
+	.btn-sidebar {
+		display: none;
+	}
+}
+
+@include media-breakpoint-down( sm ) {
+	.mobile-sidebar {
+		position: fixed;
+		top: 60px;
+		bottom: 0;
+		right: 0;
+		width: 300px;
+		z-index: $zindex-fixed;
+		transform: translateX(101%);
+		transition: transform .25s ease-in-out;
+
+		&.active {
+			transform: translateX(0);
+		}
+	}
+}

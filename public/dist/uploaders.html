@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html class="rd-navbar-sidebar-active" lang="en">
+  <head>
+    <title>Uploaders</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Template Monster Admin Template">
+    <meta property="og:description" content="brevis, barbatus clabulares aliquando convertam de dexter, peritus capio. devatio clemens habitio est.">
+    <meta property="og:image" content="http://digipunk.netii.net/images/radar.gif">
+    <meta property="og:url" content="http://digipunk.netii.net">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="components/base/base.css">
+    <script src="components/base/script.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar">
+            <div class="navbar-panel">
+              <div class="navbar-panel-inner">
+                <div class="navbar-panel-cell flex-grow-1">
+                  <div class="navbar-search" id="navbar-search"> 
+                    <input class="navbar-search-input" type="text" placeholder="Search"/>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell navbar-toggle-search-cell"> 
+                  <button class="navbar-toggle navbar-toggle-search mdi-magnify" title="Search" data-multi-switch='{"targets":".navbar-panel","scope":"#navbar-search","isolate":"[data-multi-switch]"}'></button>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-menu" title="Sidebar" data-sidebar-switch="data-sidebar-switch" data-multi-switch='{"targets":".sidebar","scope":".sidebar, [data-sidebar-switch]","isolate":"[data-multi-switch]:not([data-sidebar-switch])"}'></button>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-envelope" title="Chat" data-multi-switch='{"targets":"#subpanel-chat","scope":"#subpanel-chat","isolate":"[data-multi-switch]"}'></button>
+                  <div class="navbar-subpanel" id="subpanel-chat">
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <h4>Chat</h4>
+                      </div>
+                      <div class="navbar-subpanel-body scroller scroller-vertical" style="max-height: 400px;">
+                        <div class="media media-cloud group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body">
+                            <h5 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud flex-row-reverse group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body media-body-right-caret">
+                            <h5 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-02-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body">
+                            <h5 class="media-heading offline">Sara Marshall <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                        <div class="media media-cloud flex-row-reverse group-15">
+                          <div class="media-item"><img class="rounded" src="images/users/user-03-50x50.jpg" width="50" height="50" alt=""/></div>
+                          <div class="media-body media-body-right-caret">
+                            <h5 class="media-heading online">Tom Jorgensen <small>- 12:30am</small>
+                            </h5>
+                            <div class="media-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="navbar-subpanel-footer">
+                        <div class="input-group form-group">
+                          <input class="form-control" type="text" placeholder="Enter your message here"/>
+                          <div class="input-group-append">
+                            <button class="btn btn-primary">Send</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell">
+                  <button class="navbar-toggle linearicons-alarm" title="Notifications" data-multi-switch='{"targets":"#subpanel-notifications","scope":"#subpanel-notifications","isolate":"[data-multi-switch]"}'></button>
+                  <div class="navbar-badge badge badge-danger badge-pill">1</div>
+                  <div class="navbar-subpanel" id="subpanel-notifications"> 
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <h4>Notifications</h4>
+                      </div>
+                      <div class="navbar-subpanel-body scroller scroller-vertical">
+                        <div class="group-5">
+                                      <div class="alert alert-dismissible alert-primary alert-darker alert-sm" role="alert"><span class="alert-icon fa-telegram"></span><span>Message</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-secondary alert-sm" role="alert"><span class="alert-icon fa-warning"></span><span>Warning</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-danger alert-sm" role="alert"><span class="alert-icon fa-remove"></span><span>Error</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                                      <div class="alert alert-dismissible alert-success alert-sm" role="alert"><span class="alert-icon fa-thumbs-up"></span><span>Success</span>
+                                        <button class="close" type="button" data-dismiss="alert" aria-label="Close"><span class="fa-close" aria-hidden="true"></span></button>
+                                      </div>
+                        </div>
+                      </div>
+                      <div class="navbar-subpanel-footer"><a class="btn btn-primary btn-sm" href="alerts.html">See more</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-panel-cell">
+                  <div class="navbar-toggle navbar-user" title="User Menu" data-multi-switch='{"targets":"#subpanel-user-menu","scope":"#subpanel-user-menu","isolate":"[data-multi-switch]"}'><img class="rounded" src="images/users/user-09-60x60.jpg" alt=""/></div>
+                  <div class="navbar-subpanel" id="subpanel-user-menu">
+                    <div class="navbar-subpanel-inner">
+                      <div class="navbar-subpanel-header">
+                        <div class="h3">Alice</div>
+                      </div>
+                      <div class="navbar-subpanel-body p-0 scroller scroller-vertical">
+                        <div class="list-group list-group-flush"><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-user"></span></div>
+                              <div class="media-body">
+                                <h5>My Profile</h5>
+                              </div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-envelope-o"></span></div>
+                              <div class="media-body">
+                                <h5>My Messages</h5>
+                              </div>
+                              <div class="badge badge-warning">12</div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-rocket"></span></div>
+                              <div class="media-body">
+                                <h5>My Activities</h5>
+                              </div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-desktop"></span></div>
+                              <div class="media-body">
+                                <h5>My Tasks</h5>
+                              </div>
+                              <div class="badge badge-success">05</div>
+                            </div></a><a class="list-group-item rounded-0" href="#">
+                            <div class="media align-items-center">
+                              <div class="pr-2"><span class="fa-line-chart"></span></div>
+                              <div class="media-body">
+                                <h5>Billing</h5>
+                              </div>
+                            </div></a></div>
+                      </div>
+                      <div class="navbar-subpanel-footer p-2">
+                        <div class="d-flex align-items-center justify-content-between"><a class="btn btn-sm btn-danger" href="#">Sign Out</a><a class="btn btn-sm btn-success" href="#">Upgrade Plan</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-sidebar-wrap">
+              <div class="navbar-sidebar-panel">
+                <button class="navbar-toggle-sidebar linearicons-menu" data-navigation-switch="data-navigation-switch"></button>
+                <div class="navbar-logo"><a class="navbar-logo-link" href="index.html"><img class="navbar-logo-default" src="images/logo-272x84.png" width="136" alt="PART"/></a></div>
+              </div>
+              <div class="navbar-sidebar scroller scroller-vertical">
+                <div class="tabs tabs-horizontal-left">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-1" role="tab" aria-selected="false" title="Menu"><span class="linearicons-icons"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-2" role="tab" aria-selected="false" title="Tools"><span class="linearicons-cog"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-3" role="tab" aria-selected="false" title="System"><span class="linearicons-cart"></span></a></li>
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-4" role="tab" aria-selected="true" title="Elements"><span class="linearicons-copy"></span></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade" id="menu-1" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="index.html" title="Dashboard"><span class="navbar-navigation-text">Dashboard</span></a>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="calendar.html" title="Calendar"><span class="navbar-navigation-text">Calendar</span></a>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html" title="Documentation"><span class="navbar-navigation-text">Documentation</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#bootstrap-components" title="Bootstrap Components"><span class="navbar-navigation-text">Bootstrap Components</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#button" title="Button"><span class="navbar-navigation-text">Button</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#badge" title="Badge"><span class="navbar-navigation-text">Badge</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#code" title="Code"><span class="navbar-navigation-text">Code</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#media" title="Media Object"><span class="navbar-navigation-text">Media Object</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#card" title="Card"><span class="navbar-navigation-text">Card</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#table" title="Table"><span class="navbar-navigation-text">Table</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#progress" title="Progress"><span class="navbar-navigation-text">Progress</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#close" title="Close"><span class="navbar-navigation-text">Close</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#pagination" title="Pagination"><span class="navbar-navigation-text">Pagination</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#alert" title="Alert"><span class="navbar-navigation-text">Alert</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dropdown" title="Dropdown"><span class="navbar-navigation-text">Dropdown</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#nav" title="Nav"><span class="navbar-navigation-text">Nav</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#tooltip" title="Tooltip"><span class="navbar-navigation-text">Tooltip</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#modal" title="Modal"><span class="navbar-navigation-text">Modal</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jumbotron" title="Jumbotron"><span class="navbar-navigation-text">Jumbotron</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#input" title="Input"><span class="navbar-navigation-text">Input</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#plugins" title="Plugins"><span class="navbar-navigation-text">Plugins</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#Nprogress" title="Nprogress"><span class="navbar-navigation-text">Nprogress</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#highlight" title="Highlight.js"><span class="navbar-navigation-text">Highlight.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dual-listbox" title="Dual Listbox"><span class="navbar-navigation-text">Dual Listbox</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#maxlength" title="Bootstrap Maxlength"><span class="navbar-navigation-text">Bootstrap Maxlength</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#typeahead" title="Typeahead.js"><span class="navbar-navigation-text">Typeahead.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#select2" title="Select2"><span class="navbar-navigation-text">Select2</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#spinner" title="jQuery UI Spinner"><span class="navbar-navigation-text">jQuery UI Spinner</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#time-spinner" title="Time Spinner"><span class="navbar-navigation-text">Time Spinner</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#daterangepiker" title="Date Range Picker"><span class="navbar-navigation-text">Date Range Picker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#datetimepicker" title="Bootstrap Date/Timepicker"><span class="navbar-navigation-text">Bootstrap Date/Timepicker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#tag-manager" title="Tags Manager"><span class="navbar-navigation-text">Tags Manager</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#colorpicker" title="Bootstrap Colorpicker"><span class="navbar-navigation-text">Bootstrap Colorpicker</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#maskedinput" title="jQuery Masked Input"><span class="navbar-navigation-text">jQuery Masked Input</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#ckeditor" title="CKeditor"><span class="navbar-navigation-text">CKeditor</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#summernote" title="Summernote"><span class="navbar-navigation-text">Summernote</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#markdown" title="Markdown.js"><span class="navbar-navigation-text">Markdown.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#nestable" title="Nestable jQuery Plugin"><span class="navbar-navigation-text">Nestable jQuery Plugin</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jstree" title="jsTree"><span class="navbar-navigation-text">jsTree</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#cropper" title="Cropper.js"><span class="navbar-navigation-text">Cropper.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#fileupload" title="Tower File Input"><span class="navbar-navigation-text">Tower File Input</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#easyzoom" title="EasyZoom"><span class="navbar-navigation-text">EasyZoom</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#xzoom" title="xZoom"><span class="navbar-navigation-text">xZoom</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#slick" title="Slick Slider"><span class="navbar-navigation-text">Slick Slider</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#dropzone" title="DropzoneJS"><span class="navbar-navigation-text">DropzoneJS</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#pnotify" title="PNotify"><span class="navbar-navigation-text">PNotify</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#driver" title="Driver.js"><span class="navbar-navigation-text">Driver.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#countdown" title="αCountdown"><span class="navbar-navigation-text">αCountdown</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#progress-circle" title="αCounter &amp; αProgressCircle"><span class="navbar-navigation-text">αCounter &amp; αProgressCircle</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#particles" title="Particles.js"><span class="navbar-navigation-text">Particles.js</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#lightgallery" title="Lightgallery"><span class="navbar-navigation-text">Lightgallery</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#jvectormap" title="jVectorMap"><span class="navbar-navigation-text">jVectorMap</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#flotchart" title="Flot"><span class="navbar-navigation-text">Flot</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#rd-navbar" title="RD Navbar"><span class="navbar-navigation-text">RD Navbar</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#highcharts" title="Highcharts"><span class="navbar-navigation-text">Highcharts</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="documentation.html#multiswitch" title="MultiSwitch"><span class="navbar-navigation-text">MultiSwitch</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-2" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Admin plugins"><span class="navbar-navigation-text">Admin plugins</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-panels.html" title="Admin panels"><span class="navbar-navigation-text">Admin panels</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-modals.html" title="Admin modals"><span class="navbar-navigation-text">Admin modals</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-dock.html" title="Admin Dock"><span class="navbar-navigation-text">Admin Dock</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Admin layouts"><span class="navbar-navigation-text">Admin layouts</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="navbar.html" title="Navbar"><span class="navbar-navigation-text">Navbar</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Topbar"><span class="navbar-navigation-text">Topbar</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="topbar-menu.html" title="Topbar Menu"><span class="navbar-navigation-text">Topbar Menu</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Content Body"><span class="navbar-navigation-text">Content Body</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="blank-starter.html" title="Blank Starter"><span class="navbar-navigation-text">Blank Starter</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="jumbotron.html" title="Jumbotron"><span class="navbar-navigation-text">Jumbotron</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="content-tabs.html" title="Content Tabs"><span class="navbar-navigation-text">Content Tabs</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="menu-3" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Info Panels"><span class="navbar-navigation-text">Info Panels</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="tile-widgets.html" title="Tile Widgets"><span class="navbar-navigation-text">Tile Widgets</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="panel-widgets.html" title="Panel Widgets"><span class="navbar-navigation-text">Panel Widgets</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="admin-widgets.html" title="Admin Widgets"><span class="navbar-navigation-text">Admin Widgets</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="E-commerce"><span class="navbar-navigation-text">E-commerce</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="ecommerce-dashboard.html" title="Ecommerce Dashboard"><span class="navbar-navigation-text">Ecommerce Dashboard</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="products.html" title="Products"><span class="navbar-navigation-text">Products</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="orders.html" title="Orders"><span class="navbar-navigation-text">Orders</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="customers.html" title="Customers"><span class="navbar-navigation-text">Customers</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="store-settings.html" title="Store Settings"><span class="navbar-navigation-text">Store Settings</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade active show" id="menu-4" role="tabpanel">
+                      <ul class="navbar-navigation rd-navbar-nav">
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="UI Elements"><span class="navbar-navigation-text">UI Elements</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="alerts.html" title="Alerts"><span class="navbar-navigation-text">Alerts</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="animations.html" title="Animations"><span class="navbar-navigation-text">Animations</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="buttons.html" title="Buttons"><span class="navbar-navigation-text">Buttons</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="typography.html" title="Typography"><span class="navbar-navigation-text">Typography</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="panel.html" title="Panel"><span class="navbar-navigation-text">Panel</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="progress-bars.html" title="Progress Bars"><span class="navbar-navigation-text">Progress Bars</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="tabs.html" title="Tabs"><span class="navbar-navigation-text">Tabs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="icons.html" title="Icons"><span class="navbar-navigation-text">Icons</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="grid.html" title="Grid"><span class="navbar-navigation-text">Grid</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item active"><a class="navbar-navigation-link" href="#" title="Form Elements"><span class="navbar-navigation-text">Form Elements</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="basic-inputs.html" title="Basic Inputs"><span class="navbar-navigation-text">Basic Inputs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="plugin-inputs.html" title="Plugin Inputs"><span class="navbar-navigation-text">Plugin Inputs</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="editors.html" title="Editors"><span class="navbar-navigation-text">Editors</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="treeview.html" title="Treeview"><span class="navbar-navigation-text">Treeview</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="nestable.html" title="Nestable"><span class="navbar-navigation-text">Nestable</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="image-tools.html" title="Image tools"><span class="navbar-navigation-text">Image tools</span></a>
+                            </li>
+                            <li class="navbar-navigation-item active"><a class="navbar-navigation-link" href="uploaders.html" title="Uploaders"><span class="navbar-navigation-text">Uploaders</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="notifications.html" title="Notifications"><span class="navbar-navigation-text">Notifications</span></a>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="content-sliders.html" title="Content Sliders"><span class="navbar-navigation-text">Content Sliders</span></a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Plugins"><span class="navbar-navigation-text">Plugins</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Maps"><span class="navbar-navigation-text">Maps</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="google-maps.html" title="Google Maps"><span class="navbar-navigation-text">Google Maps</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="jvector-map.html" title="jVector Map"><span class="navbar-navigation-text">jVector Map</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Charts"><span class="navbar-navigation-text">Charts</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="highcharts.html" title="Highcharts"><span class="navbar-navigation-text">Highcharts</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="flotcharts.html" title="Flotcharts"><span class="navbar-navigation-text">Flotcharts</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Tables"><span class="navbar-navigation-text">Tables</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="basic-tables.html" title="Basic Tables"><span class="navbar-navigation-text">Basic Tables</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="data-tables.html" title="Data Tables"><span class="navbar-navigation-text">Data Tables</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="pricing-tables.html" title="Pricing Tables"><span class="navbar-navigation-text">Pricing Tables</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Misc"><span class="navbar-navigation-text">Misc</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="site-tour.html" title="Site Tour"><span class="navbar-navigation-text">Site Tour</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="session-timeout.html" title="Session Timeout"><span class="navbar-navigation-text">Session Timeout</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="page-progress-loader.html" title="Page Progress Loader"><span class="navbar-navigation-text">Page Progress Loader</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Pages"><span class="navbar-navigation-text">Pages</span></a>
+                          <ul class="rd-navbar-dropdown navbar-dropdown">
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Utility"><span class="navbar-navigation-text">Utility</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="confirmation.html" title="Confirmation"><span class="navbar-navigation-text">Confirmation</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="login.html" title="Login"><span class="navbar-navigation-text">Login</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="register.html" title="Register"><span class="navbar-navigation-text">Register</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="screenlock.html" title="Screenlock"><span class="navbar-navigation-text">Screenlock</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="password-reset.html" title="Password Reset"><span class="navbar-navigation-text">Password Reset</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="coming-soon.html" title="Coming Soon"><span class="navbar-navigation-text">Coming Soon</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="404.html" title="404"><span class="navbar-navigation-text">404</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="500.html" title="500"><span class="navbar-navigation-text">500</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="#" title="Basic"><span class="navbar-navigation-text">Basic</span></a>
+                              <ul class="rd-navbar-dropdown navbar-dropdown">
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="search-results.html" title="Search Results"><span class="navbar-navigation-text">Search Results</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="profile.html" title="Profile"><span class="navbar-navigation-text">Profile</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="timeline.html" title="Timeline"><span class="navbar-navigation-text">Timeline</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="faq.html" title="FAQ"><span class="navbar-navigation-text">FAQ</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="calendar.html" title="Calendar"><span class="navbar-navigation-text">Calendar</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="messages.html" title="Messages"><span class="navbar-navigation-text">Messages</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="messages-compose.html" title="Messages Compose"><span class="navbar-navigation-text">Messages Compose</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="gallery.html" title="Gallery"><span class="navbar-navigation-text">Gallery</span></a>
+                                </li>
+                                <li class="navbar-navigation-item"><a class="navbar-navigation-link" href="printable-invoice.html" title="Printable Invoice"><span class="navbar-navigation-text">Printable Invoice</span></a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="bg-800 section-sm">
+        <div class="container-fluid">
+          <div class="row row-30">
+            <div class="col-sm-5 col-md-4 col-lg-3">
+              <h3>Dropzone.JS</h3>
+              <ul class="list-unstyled mt-3 list-md">
+                <li><span class="fa-info-circle pr-2"></span><b>Author: </b><span>Matias Meno.</span></li>
+                <li><span class="fa-info-circle pr-2"></span><b>License: </b><span>The MIT License (MIT).</span></li>
+                <li><span class="fa-info-circle pr-2"></span><b>Website: </b><a href="https://github.com/enyo/dropzone" target="_blank">https://github.com/dropzone</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-7">
+              <form class="dropzone-form" action="components/dropzone/dropzone.php" data-dropzone='{"maxFilesize":2,"maxfiles":10}'>
+                <div class="dz-message">
+                  <div class="dz-message-icon fa-cloud-upload"></div>
+                  <div class="dz-message-main-text"><strong>Drop Files</strong> <small>to upload</small>
+                  </div><span class="dz-message-sub-text">(or click)</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer-small">
+        <div class="container-fluid">
+          <p><span class="d-inline-block pr-2">PART</span>© 2019. Design by Zemez</p>
+        </div>
+      </footer>
+      <div class="sidebar scroller">
+        <div class="panel">
+          <div class="panel-header">
+            <h4 class="panel-title"><span class="panel-icon fa-trophy"></span><span>Right Sidebar Content</span></h4>
+          </div>
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ac tortor eu viverra. Etiam ipsum neque, fermentum quis sagittis nec, hendrerit id diam. Mauris a tincidunt odio. Sed porttitor ex pulvinar, tristique sapien sed, malesuada nunc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

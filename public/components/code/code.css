@@ -1,0 +1,51 @@
+code {
+	font-size: 87.5%;
+	color: #e83e8c;
+	word-break: break-word;
+}
+
+a > code {
+	color: inherit;
+}
+
+kbd {
+	padding: 0.2rem 0.4rem;
+	font-size: 87.5%;
+	color: #fff;
+	background-color: #15171c;
+	border-radius: 0.2rem;
+}
+
+kbd kbd {
+	padding: 0;
+	font-size: 100%;
+	font-weight: 700;
+}
+
+pre {
+	display: block;
+	font-size: 87.5%;
+	color: #15171c;
+}
+
+pre code {
+	font-size: inherit;
+	color: inherit;
+	word-break: normal;
+}
+
+.pre-scrollable {
+	max-height: 340px;
+	overflow-y: scroll;
+}
+
+code {
+	line-height: 1.2;
+}
+
+.code-bg {
+	padding: 0.2em 0.3em;
+	background-color: #fff;
+	border-radius: 0.625rem;
+}
+

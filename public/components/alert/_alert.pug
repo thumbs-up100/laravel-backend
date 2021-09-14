@@ -1,0 +1,12 @@
+//- Alert
+	@param {object|string} data - alert parameters or alert text
+	@param {string} data.icon - alert icon class
+	@param {boolean} data.close - enable close button
+mixin alert ( data )
+	- data = data || {};
+	.alert( role='alert', class= { 'alert-dismissible': data.close } )&attributes( attributes )
+		block
+
+		if ( data.close )
+			button.close( type='button', data-dismiss='alert', aria-label='Close' )
+				span.fa-close( aria-hidden='true' )

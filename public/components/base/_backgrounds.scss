@@ -1,0 +1,11 @@
+// gray backgrounds
+
+@each $color, $value in $grays {
+	@include bg-variant(".bg-#{$color}", $value);
+}
+
+// Image background
+.bg-image {
+	background-position: center center;
+	background-size: cover;
+}

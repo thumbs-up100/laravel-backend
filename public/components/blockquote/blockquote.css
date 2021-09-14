@@ -1,0 +1,72 @@
+.blockquote {
+	padding: 0.625rem 1.25rem;
+	font-size: 1.1rem;
+	border-left: 5px solid;
+}
+
+.blockquote-footer {
+	display: block;
+	font-size: 80%;
+	color: #414347;
+}
+
+.blockquote-footer::before {
+	content: "\2014\00A0";
+}
+
+* + .blockquote {
+	margin-top: 20px;
+}
+
+.blockquote-reverse {
+	text-align: right;
+	border-left: 0;
+	border-right: 5px solid;
+}
+
+.blockquote-thin {
+	border-width: 3px;
+}
+
+.blockquote-rounded {
+	border-radius: 11px;
+}
+
+.blockquote-primary {
+	border-color: #9e6cfd;
+}
+
+.blockquote-secondary {
+	border-color: #ff574d;
+}
+
+.blockquote-success {
+	border-color: #04cf9e;
+}
+
+.blockquote-info {
+	border-color: #3ec5ff;
+}
+
+.blockquote-warning {
+	border-color: #fac12e;
+}
+
+.blockquote-danger {
+	border-color: #ff4444;
+}
+
+.blockquote-light {
+	border-color: #35383d;
+}
+
+.blockquote-dark {
+	border-color: #15171c;
+}
+
+.md-editor blockquote {
+	padding: 0.625rem 1.25rem;
+	font-size: 1.1rem;
+	border-left: 5px solid #9e6cfd;
+}
+

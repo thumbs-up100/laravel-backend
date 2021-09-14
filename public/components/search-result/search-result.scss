@@ -1,0 +1,47 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$search-match-bg: rgba( $primary, .2 );
+
+.search-match {
+	padding: 0 0.2em;
+	background-color: $search-match-bg;
+}
+
+.search-result-meta {
+	font-size: 0.9em;
+
+	> * {
+		vertical-align: middle;
+	}
+}
+
+* + .search-result {
+	margin-top: px-to-rem( 30px );
+	padding-top: px-to-rem( 30px );
+	border-top: 1px dashed lighten( $border-color, 10% );
+}
+
+.search-result + .search-result {
+	margin-top: px-to-rem( 25px );
+	padding-top: px-to-rem( 25px );
+	border-top: 1px dashed $border-color;
+}
+
+* + .search-result-meta { margin-top: px-to-rem( 8px ); }
+.search-result * + p { margin-top: px-to-rem( 8px ); }
+.search-result-title + .search-result-meta { margin-top: px-to-rem( 10px ); }
+
+// Search aside
+.search-aside {
+	width: 100%;
+	padding: 20px 15px;
+
+	@include media-breakpoint-up(xxl) {
+		padding: px-to-rem( 40px, 30px );
+	}
+}

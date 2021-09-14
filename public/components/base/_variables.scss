@@ -1,0 +1,96 @@
+// Variables
+$white: #fff;
+$gray-100: #f2f2f2;
+$gray-200: #e0e0e0;
+$gray-300: #c9c9c9;
+$gray-400: #a5a7a9; // body-color
+$gray-500: #414347;
+$gray-600: #2d3035; // border color
+$gray-700: #292c32;
+$gray-800: #1f2227; // panel-bg
+$gray-900: #15171c;
+$black: #000;
+
+$primary: #9e6cfd;
+$secondary: #ff574d;
+$success: #04cf9e;
+$info: #3ec5ff;
+$warning: #fac12e;
+$danger: #ff4444;
+$light: #35383d;
+$dark: $gray-900;
+
+
+
+// The yiq lightness value
+$yiq-contrasted-threshold:  210;
+
+// Body
+$body-color: $gray-400;
+$body-bg: $gray-900;
+
+// Fonts
+$font-family-base: 'Muli', sans-serif;
+$font-size-base: px-to-rem( 16px );
+$line-height-base: 1.49;
+$line-height-lg: 1.1;
+$line-height-sm: 1.7;
+
+$font-family-sec: 'Poppins', sans-serif;
+
+$h1-font-size: px-to-rem( 45px );
+$h2-font-size: px-to-rem( 33px );
+$h3-font-size: px-to-rem( 24px );
+$h4-font-size: px-to-rem( 21px );
+$h5-font-size: px-to-rem( 18px );
+$h6-font-size: px-to-rem( 16px );
+
+$h1-line-height: px-to-rem( 56px );
+$h2-line-height: px-to-rem( 42px );
+$h3-line-height: px-to-rem( 30px );
+$h4-line-height: px-to-rem( 26px );
+$h5-line-height: px-to-rem( 24px );
+$h6-line-height: px-to-rem( 24px );
+
+$headings-font-weight: 400;
+$headings-color: $white;
+
+// Components
+$border-color: $gray-600;
+$border-radius: px-to-rem( 10px );
+$box-shadow-1: 0px 1px 6px rgba(28, 29, 39, 0.15);
+
+// Buttons + Forms
+$input-btn-padding-y: px-to-rem( 12px );
+$input-btn-padding-x: px-to-rem( 20px );
+
+// Custom control
+$custom-control-indicator-size : px-to-rem( 25px );
+$custom-control-indicator-border-width: px-to-rem( 1px );
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1600px
+);
+
+// Grid containers
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px
+);
+
+// Z-index master list
+$zindex-dropdown:       10;
+$zindex-sticky:         11;
+$zindex-popover:        12;
+$zindex-tooltip:        13;
+$zindex-fixed:          14;
+$zindex-modal-backdrop: 15;
+$zindex-modal:          16;

@@ -1,0 +1,24 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$close-font-size: $font-size-base;
+$close-color: inherit;
+$close-text-shadow: none;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/close";
+
+// Alert context
+.alert {
+	.close {
+		margin: $alert-padding-y $alert-padding-x;
+		padding: 0;
+		font-size: inherit;
+		line-height: 1;
+		color: inherit;
+		transition: .3s;
+	}
+}

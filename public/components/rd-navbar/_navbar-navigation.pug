@@ -1,0 +1,34 @@
+//- Main Navigation
+mixin navigation( menu, type )
+	if( !type )
+		.tabs.tabs-horizontal-left
+			ul.nav.nav-tabs( role='tablist' )
+				each item in menu
+					li.nav-item
+						a.nav-link( class= { active: item.active }, data-toggle='tab', href= '#'+ item.link, role='tab', aria-selected= item.active ? 'true' : 'false', title= item.title )
+							span( class= item.icon || 'linearicons-icons' )
+
+			.tab-content
+				each item in menu
+					.tab-pane.fade( id= item.link, class= { active: item.active, show: item.active }, role='tabpanel' )
+						+navigation( item.submenu, 'submenu' )
+
+	else if( type === 'submenu' )
+		ul.navbar-navigation.rd-navbar-nav&attributes( attributes )
+			each item in menu
+				li.navbar-navigation-item( class= { active: item.active } )
+					a.navbar-navigation-link( href= item.link, title= item.title )
+						span.navbar-navigation-text= item.title
+
+					if( item.dropdown )
+						+navigation( item.dropdown, 'dropdown' )
+
+	else if( type === 'dropdown' )
+		ul.rd-navbar-dropdown.navbar-dropdown
+			each item in menu
+				li.navbar-navigation-item( class= { active: item.active } )
+					a.navbar-navigation-link( href= item.link, title= item.title )
+						span.navbar-navigation-text= item.title
+
+					if( item.dropdown )
+						+navigation( item.dropdown, 'dropdown' )

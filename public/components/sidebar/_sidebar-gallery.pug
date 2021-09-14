@@ -1,0 +1,42 @@
+.sidebar.scroller.scroller-vertical
+	.p-4
+		.row.row-15
+			.col-12
+				h3 Upload New Image
+				hr
+				.input-group.form-group
+					.input-group-prepend
+						label.input-group-text( for='basic-addon11' )
+							span.fa-pencil
+					input#basic-addon11.form-control( type='text', name='title', placeholder='Title' )
+				.mt-2
+					textarea.form-control( rows='3', placeholder='Description' )
+			.col-12
+				.tower-file
+					input#demo1.tower-file-input( type='file', multiple )
+					.group-10
+						label.btn.btn-primary( for='demo1' )
+							span Select
+						button.tower-file-clear.btn.btn-secondary.align-top( type='button' ) Clear
+			.col-12
+				h3.list-block-title Labels
+				.list-block
+					.list-block-item.d-flex.justify-content-between
+						a( href='#' )
+							span Clients
+						span.badge.badge-pill.badge-primary 6
+
+					.list-block-item.d-flex.justify-content-between
+						a( href='#' )
+							span Contractors
+						span.badge.badge-pill.badge-success 8
+
+					.list-block-item.d-flex.justify-content-between
+						a( href='#' )
+							span Employees
+						span.badge.badge-pill.badge-info 11
+
+					.list-block-item.d-flex.justify-content-between
+						a( href='#' )
+							span Suppliers
+						span.badge.badge-pill.badge-warning 13

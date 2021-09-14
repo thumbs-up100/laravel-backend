@@ -1,0 +1,29 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins/group";
+
+// Base styles
+.tm-tag {
+	.tm-tag-remove {
+		color: inherit;
+		margin-left: px-to-rem( 4px );
+		opacity: 0.75;
+		transition: .2s;
+
+		&:hover {
+			text-decoration: none;
+			opacity: 1;
+		}
+	}
+}
+
+.tag-manager-container {
+	@include group( 5px );
+}
+
+* + .tag-manager-container {
+	margin-top: px-to-rem( 3px );
+}

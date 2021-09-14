@@ -1,0 +1,22 @@
+// Navbar logo
+.navbar-logo {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navbar-logo-link {
+	display: block;
+}
+
+.navbar-logo-default,
+.navbar-logo-light {
+	margin: 0;
+}
+
+// Media
+@include media-breakpoint-up( xl ) {
+	.navbar-logo {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}

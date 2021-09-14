@@ -1,0 +1,68 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+$sortable-bg: transparent;
+$sortable-border-color: $gray-600;
+
+// List sortable
+.list-sortable {
+	list-style: none;
+	padding-left: 0;
+
+	> li {
+		position: relative;
+		padding: px-to-rem( 20px );
+		border-left: 3px solid;
+		padding-right: 60px;
+		background: $sortable-bg;
+	}
+
+	.sortable-drag {
+		position: absolute;
+		top: px-to-rem( 21px );
+		right: px-to-rem( 25px );
+		font-size: px-to-rem( 21px );
+		line-height: 1;
+		cursor: pointer;
+
+		&:before {
+			content: '\f44e';
+			font-family: 'Material Design Icons';
+		}
+	}
+}
+
+.sortable-completed {
+	.sortable-drag {
+		&:before {
+			content: '\f24c';
+		}
+	}
+}
+
+// List sortable title
+.list-sortable-title {
+	padding: px-to-rem( 20px );
+}
+
+.list-sortable-title + .list-sortable,
+.list-sortable + .list-sortable-title,
+.list-sortable + .list-sortable {
+	border-top: 1px solid $sortable-border-color;
+}
+
+.list-sortable + .list-sortable-title {
+	margin-top: 0;
+}
+
+// Colors
+@each $color, $value in $theme-colors {
+	.list-sortable {
+		.list-sortable-item-#{$color} {
+			border-color: $value;
+		}
+	}
+}

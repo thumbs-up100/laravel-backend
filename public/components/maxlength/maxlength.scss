@@ -1,0 +1,14 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Base
+.bootstrap-maxlength {
+	top: 0 !important;
+	left: 50% !important;
+	bottom: auto !important;
+	transform: translate(-50%, -50%);
+	margin-top: 0;
+}

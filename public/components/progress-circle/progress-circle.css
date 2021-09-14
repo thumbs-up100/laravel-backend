@@ -1,0 +1,40 @@
+.progress-circle-wrap {
+	position: relative;
+	display: inline-block;
+}
+
+.progress-counter-wrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.progress-circle .bg,
+.progress-circle .fg {
+	stroke-width: 14px;
+	fill: transparent;
+}
+
+.progress-circle .bg {
+	stroke: #fff;
+}
+
+.progress-circle .fg {
+	stroke: #2d3035;
+}
+
+.progress-title {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+* + .progress-title {
+	margin-top: 0.25rem;
+}
+

@@ -1,0 +1,39 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Widget counter simple
+.scroller {
+	scrollbar-width: thin;
+	scrollbar-color: rgba($dark,1) rgba($dark,.1);
+
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgba( $dark, .5);
+	}
+
+	.mobile &,
+	&:hover {
+		&::-webkit-scrollbar {
+			width: 3px;
+			height: 3px;
+		}
+	}
+
+	&.scroller-vertical {
+		overflow-y: auto;
+		overflow-y: overlay;
+	}
+
+	&.scroller-horizontal {
+		overflow-x: auto;
+		overflow-x: overlay;
+	}
+}

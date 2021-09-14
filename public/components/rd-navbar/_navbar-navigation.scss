@@ -1,0 +1,237 @@
+// Main navigation
+.navbar-navigation,
+.navbar-dropdown {
+	padding: 0;
+	font-size: 18px;
+}
+
+.navbar-navigation {
+	color: $navbar-link-color;
+	
+	> .navbar-navigation-item + .navbar-navigation-item{
+		margin-top: 15px;
+	}
+}
+
+.navbar-dropdown {
+	padding-top: 10px;
+	display: none;
+	font-size: 15px;
+	color: $navbar-link-color;
+
+	.navbar-navigation-link {
+		position: relative;
+		font-size: px-to-rem( 14px );
+		padding-right: px-to-rem( 30px );
+		background: transparent;
+		color: $navbar-link-color;
+		box-shadow: none;
+		
+		&:hover {
+			background: transparent;
+			color: $navbar-dropdown-link-hover-color;
+		}
+	}
+	
+	.navbar-navigation-item.active {
+		> .navbar-navigation-link {
+			background: transparent;
+			color: $navbar-dropdown-link-hover-color;
+
+			&:before {
+				background: $navbar-dropdown-link-hover-color;
+			}
+		}
+	}
+
+
+	.navbar-navigation-icon {
+		font-size: 10px;
+		color: $navbar-sidebar-hover-color;
+	}
+
+	.rd-navbar-submenu-toggle {
+		top: 2px;
+	}
+
+	.navbar-dropdown {
+		padding-top: 0;
+		.navbar-navigation-link {
+			padding-left: px-to-rem( 15px );
+			padding-right: px-to-rem( 5px );
+
+			&:before {
+				position: absolute;
+				content: '';
+				top: 12px;
+				left: 0;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $navbar-link-color;
+				transition: $navbar-transition;
+			}
+
+			&:hover {
+				&:before {
+					background: $navbar-dropdown-link-hover-color;
+				}
+			}
+		}
+	}
+}
+
+.navbar-navigation-title,
+.navbar-navigation-link {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-navigation-title {
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	color: rgba( $navbar-sidebar-color, .6 );
+}
+
+.navbar-navigation-link {
+	transition: .15s;
+	color: $navbar-link-color;
+	line-height: px-to-rem( 30px );
+	padding-right: px-to-rem( 30px );
+
+	&:hover, &.active {
+		cursor: pointer;
+		color: $navbar-sidebar-hover-color;
+	}
+}
+
+.navbar-navigation-item.active {
+	> .navbar-navigation-link {
+		color: $navbar-sidebar-hover-color;
+	}
+}
+
+* + .navbar-navigation-item-title {
+	margin-top: 20px;
+}
+
+.navbar-navigation-icon {
+	flex-shrink: 0;
+	padding-right: 10px;
+	line-height: 1;
+	font-size: 17px;
+}
+
+.navbar-navigation-title-icon {
+	width: 0;
+	padding: 0;
+	opacity: 0;
+	visibility: hidden;
+	color: rgba( $navbar-sidebar-color, .3 );
+}
+
+.navbar-navigation-text {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.rd-navbar-submenu-toggle {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	transform: rotate( 0deg );
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	font-size: 17px;
+	line-height: 1;
+	transition: background .15s;
+	color: $navbar-link-color;
+
+	&::before {
+		content: '\f504';
+		position: relative;
+		font-family: 'Material Design Icons';
+		transition: transform .2s ease-in-out;
+	}
+
+	&:hover {
+		color: $navbar-link-hover-color;
+		cursor: pointer;
+	}
+}
+
+.rd-navbar-submenu {
+	position: relative;
+
+	&.opened {
+		> .rd-navbar-submenu-toggle::before {
+			transform: rotate( 135deg );
+		}
+
+		> .rd-navbar-dropdown {
+			display: block;
+		}
+	}
+}
+
+
+// Media
+@include media-breakpoint-up( xl ) {
+	.navbar-navigation-title,
+	.rd-navbar-submenu-toggle {
+		transition: $navbar-transition;
+	}
+
+	.navbar-navigation-link {
+		transition: $navbar-transition, color .15s, background .15s;
+	}
+
+	.navbar-navigation-icon,
+	.navbar-navigation-text {
+		transition: $navbar-transition, color 0s, background 0s;
+	}
+
+	.navbar-navigation-icon {
+		min-width: 0;
+		text-align: center;
+	}
+
+	* + .navbar-navigation-item-title {
+		margin-top: 40px;
+	}
+
+	html:not(.navbar-sidebar-active) .navbar-sidebar-wrap:not(:hover) {
+		.navbar-navigation-text {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.navbar-navigation-title,
+		.navbar-navigation-link {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+
+		.navbar-navigation-icon {
+			padding-left: 0;
+			padding-right: 0;
+			min-width: 50px;
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.rd-navbar-submenu-toggle {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.navbar-dropdown {
+			display: none;
+		}
+	}
+}

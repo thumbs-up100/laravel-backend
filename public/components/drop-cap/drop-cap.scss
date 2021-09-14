@@ -1,0 +1,34 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Base
+.drop-cap::first-letter {
+	float: left;
+	padding: px-to-rem( 5px );
+	margin-right: px-to-rem( 5px );
+	font-family: 'Droid Serif', serif;
+	font-size: 3em;
+	font-weight: 800;
+	line-height: .7;
+	border-radius: px-to-rem( 6px );
+}
+
+.drop-cap-fill::first-letter {
+	margin-right: px-to-rem( 10px );
+}
+
+// Color themes
+@each $theme, $color in $theme-colors {
+	.drop-cap-#{$theme} {
+		&::first-letter {
+			color: $color;
+		}
+
+		&.drop-cap-fill::first-letter {
+			color: color-yiq( $color );
+			background-color: $color;
+		}
+	}
+}

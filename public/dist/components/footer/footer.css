@@ -1,0 +1,1 @@
+.footer-small {	padding: 3.125rem 0rem;	background-color: transparent;	transition: ease-in-out .2s;}@media (min-width: 1200px) {	.footer-small {		position: absolute;		bottom: 0;		left: 60px;	}	.navbar-sidebar-active .footer-small {		left: 270px;	}}

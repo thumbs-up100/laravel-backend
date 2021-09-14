@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+	.btn-sidebar {
+		display: none;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.mobile-sidebar {
+		position: fixed;
+		top: 60px;
+		bottom: 0;
+		right: 0;
+		width: 300px;
+		z-index: 14;
+		transform: translateX(101%);
+		transition: transform .25s ease-in-out;
+	}
+	.mobile-sidebar.active {
+		transform: translateX(0);
+	}
+}
+

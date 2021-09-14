@@ -1,0 +1,12 @@
+mixin session-modal
+	#session-modal.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+					h3.modal-title Your Session is About to Expire!
+					button.close( data-dismiss='modal' ): span ×
+				.modal-body
+					h5 Redirecting in #[span( data-session-timer ) 0] seconds
+				.modal-footer
+					button.btn.btn-primary( data-session-logout ) Logout
+					button.btn.btn-success( data-session-stay ) Stay Connected

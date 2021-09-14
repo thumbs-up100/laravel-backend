@@ -1,0 +1,70 @@
+// Subpanel (opened by navbar toggle in panel)
+.navbar-subpanel {
+	position: fixed;
+	top: 67px;
+	right: 0;
+	left: 0;
+	transform: translateY( 20px ) scale( .9 );
+	display: flex;
+	max-height: calc( 100vh - 50px );
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s ease-in-out;
+	box-shadow: $box-shadow;
+	background: $navbar-panel-inner-bg;
+	color: $body-color;
+
+	&.active {
+		transform: translateY( 0 ) scale( 1 );
+		visibility: visible;
+		opacity: 1;
+	}
+
+	> * {
+		flex-grow: 1;
+	}
+}
+
+.navbar-subpanel-inner {
+	display: flex;
+	flex-direction: column;
+
+	> * {
+		padding: 0 20px;
+	}
+
+	> *:first-child {
+		padding-top: 20px;
+	}
+
+	> *:last-child {
+		padding-bottom: 20px;
+	}
+
+	> * + * {
+		margin-top: 15px;
+	}
+}
+
+.navbar-subpanel-body {
+	flex: 1 1 auto;
+}
+
+
+// Media
+@include media-breakpoint-up( sm ) {
+	.navbar-subpanel {
+		position: absolute;
+		top: calc(100% + 20px);
+		right: 0;
+		left: auto;
+		width: 300px;
+		border-radius: $border-radius;
+	}
+}
+
+@include media-breakpoint-up( xl ) {
+	.navbar-subpanel {
+		width: 360px;
+	}
+}

@@ -1,0 +1,63 @@
+.sidebar.sidebar-lg.scroller.scroller-vertical
+	.p-4
+		h3 Find Customer
+		hr
+		.row.row-15.align-items-end
+			.col-12.col-md-4.col-lg-12
+				.input-group.form-group
+					.input-group-prepend
+						label.input-group-text( for='basic-addon11' )
+							span.fa-user
+					input#basic-addon11.form-control( type='text', name='id', placeholder='Customer ID#' )
+			.col-12.col-md-4.col-lg-12
+				.input-group.form-group
+					.input-group-prepend
+						label.input-group-text( for='basic-addon12' )
+							span.fa-user
+					input#basic-addon12.form-control( type='text', name='cusName', placeholder='Customer Name' )
+			.col-12.col-md-4.col-lg-12
+				.input-group.form-group
+					.input-group-prepend
+						label.input-group-text( for='basic-addon13' )
+							span.fa-envelope
+					input#basic-addon13.form-control( type='email', name='cusEmail', placeholder='Customer Email' )
+			.col-12.col-md-6.col-lg-12
+				p Search Country
+				select.form-control.mt-2
+					option( value='0', selected='selected' ) Filter by Location
+					option( value='1' ) United States
+					option( value='2' ) Europe
+					option( value='3' ) Asia
+					option( value='4' ) India
+			.col-12.col-md-6.col-lg-12
+				p Search Company
+				select.form-control.mt-2
+					option( value='0', selected='selected' ) Filter by Company
+					option( value='1' ) Apple
+					option( value='2' ) Sony
+					option( value='3' ) Envato
+					option( value='4' ) Microsoft
+					option( value='5' ) Google
+			.col-12.col-md-4.col-lg-12
+				.row.row-10
+					.col-12
+						p Registration Date
+					.col-12
+						.input-group
+							.input-group-prepend
+								span.input-group-text
+									span.fa-calendar
+							input.form-control( type='text', name='datetime', data-datetimepicker!={ widgetPositioning: { horizontal: 'right' } } )
+					.col-12
+						.input-group
+							.input-group-prepend
+								span.input-group-text
+									span.fa-calendar
+							input.form-control( type='text', name='datetime', data-datetimepicker!={ widgetPositioning: { horizontal: 'right' } } )
+			.col-12
+				hr
+				.group-10
+					button.btn.btn-primary( type='submit' ) Search
+					.d-inline-block
+						+checkbox Save Search
+	

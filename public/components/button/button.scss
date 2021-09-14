@@ -1,0 +1,89 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$enable-shadows: false;
+$btn-box-shadow: 0 0 0 transparent;
+
+$btn-font-size: px-to-rem( 13px );
+$btn-line-height: px-to-rem( 20px );
+$btn-font-weight: 600;
+$btn-border-radius: px-to-rem( 6px );
+$btn-padding-y: px-to-rem( 10px );
+$btn-padding-x: px-to-rem( 20px );
+
+$btn-font-size-sm: $btn-font-size;
+$btn-line-height-sm: $btn-line-height;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-padding-y-sm: px-to-rem( 7px );
+$btn-padding-x-sm: px-to-rem( 10px );
+
+$btn-font-size-md: $btn-font-size;
+$btn-line-height-md: $btn-line-height;
+$btn-border-radius-md: $btn-border-radius;
+$btn-padding-y-md: px-to-rem( 14px );
+$btn-padding-x-md: $btn-padding-x;
+
+$btn-font-size-lg: $btn-font-size;
+$btn-line-height-lg: $btn-line-height;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-padding-y-lg: px-to-rem( 17px );
+$btn-padding-x-lg: $btn-padding-x;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/button-group";
+
+// Base styles
+.btn {
+	transition: .2s;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.btn-icon:not(:only-child) {
+	padding-right: 0.4em;
+}
+
+// Button Sizes
+.btn-md {
+	@include button-size($btn-padding-y-md, $btn-padding-x-md, $btn-font-size-md, $btn-line-height-md, $btn-border-radius-md);
+}
+
+// Modifiers
+.btn-rounded {
+	@include border-radius($rounded-pill, 0);
+}
+
+.btn.disabled {
+	pointer-events: none;
+}
+
+// Color themes
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		@include button-variant($value, $value);
+	}
+}
+
+$enable-gradients: true;
+@each $color, $value in $theme-colors {
+	.btn-#{$color}.btn-gradient {
+		@include button-variant($value, $value);
+	}
+}
+
+.btn-outline-light,
+.btn-outline-dark {
+	color: $white;
+}
+
+// Offsets
+h5 + .btn-block {
+	margin-top: px-to-rem( 10px );
+}
+.btn-block + .btn-block {
+	margin-top: px-to-rem( 10px );
+}

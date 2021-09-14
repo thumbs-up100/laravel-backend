@@ -1,0 +1,1 @@
+.divider {	margin: 0;}.divider-dashed {	border-top-style: dashed;}.divider-bold {	border-top-width: 5px;}.divider-primary {	border-color: #9e6cfd;}p + .divider {	margin-top: 0.8125rem;}h4 + .divider {	margin-top: 0.9375rem;}.search-aside * + .divider-bold {	margin-top: 0.9375rem;}

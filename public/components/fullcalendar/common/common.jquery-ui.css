@@ -1,0 +1,21 @@
+.ui-widget .fc-disabled-day {
+	background-image: none;
+}
+
+.fc-popover > .ui-widget-header + .ui-widget-content {
+	border-top: 0;
+}
+
+.ui-widget .fc-event {
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.ui-widget td.fc-axis {
+	font-weight: normal;
+}
+
+.fc-time-grid .fc-slats .ui-widget-content {
+	background: none;
+}

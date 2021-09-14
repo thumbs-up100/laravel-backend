@@ -1,0 +1,27 @@
+.icon-box {
+	display: block;
+	padding: 0.9375rem 1.25rem;
+	color: #a5a7a9;
+	border: 3px dashed #c9c9c9;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.icon-box:hover, .icon-box:focus, .icon-box.active {
+	border-color: #9e6cfd;
+}
+
+.icon-box:hover .icon-box-icon, .icon-box:focus .icon-box-icon, .icon-box.active .icon-box-icon {
+	color: #9e6cfd;
+}
+
+.icon-box * + p {
+	margin-top: 0.5rem;
+}
+
+.icon-box-icon {
+	font-size: 2.5rem;
+	line-height: 1;
+	transition: .2s;
+}
+

@@ -1,0 +1,36 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Reset default styles
+.highcharts-background {
+	fill: transparent;
+}
+
+// Basic styles
+.highcharts-container {
+	width: 100%;
+	height: 250px;
+
+	@include media-breakpoint-up(md) {
+		&-lg {
+			height: 400px;
+		}
+	}
+}
+
+// Double highcharts
+.highcharts-container-double-detail {
+	height: 250px;
+
+	@include media-breakpoint-up(md) {
+		height: 400px;
+	}
+}
+
+// Legend points
+.highcharts-legend-item .highcharts-point {
+	pointer-events: none;
+}

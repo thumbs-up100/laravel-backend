@@ -1,0 +1,42 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$sidebar-bg: $gray-800;
+
+.sidebar {
+	position: fixed;
+	top: 67px;
+	bottom: 0;
+	right: 0;
+	transform: translateX( 101% );
+	z-index: $zindex-fixed;
+	width: 280px;
+	transition: .2s ease-in-out;
+	background: $sidebar-bg;
+	border-left: 1px solid $gray-600;
+	overflow: hidden;
+	overflow-y: scroll;
+
+	&.active {
+		transform: translateX( 0 );
+	}
+}
+
+@include media-breakpoint-up( xl ) {
+	.sidebar {
+		top: 160px;
+
+		.rd-navbar-stuck & {
+			top: 70px;
+		}
+	}
+}
+
+// Modifiers
+.sidebar-lg {
+	width: 320px;
+}

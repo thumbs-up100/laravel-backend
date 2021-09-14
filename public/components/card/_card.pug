@@ -1,0 +1,8 @@
+//- Card
+	@param {object|string} data - alert parameters or alert text
+	@param {string} data.icon - alert icon class
+	@param {boolean} data.close - enable close button
+mixin card ( data )
+	- data = data || {};
+	.card&attributes( attributes )
+		block

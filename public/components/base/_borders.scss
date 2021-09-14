@@ -1,0 +1,22 @@
+// Border
+//@each $breakpoint in map-keys($grid-breakpoints) {
+//	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//	@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+//		@each $prop in (top, left, right, bottom) {
+//			.border-#{$infix}#{$prop} {
+//				border-#{$prop}: $border-width solid $border-color !important;
+//			}
+//		}
+//	}
+//}
+
+@each $breakpoint in map-keys( $grid-breakpoints ) {
+	$infix: breakpoint-infix( $breakpoint, $grid-breakpoints );
+	@include media-breakpoint-up( $breakpoint, $grid-breakpoints ) {
+		@each $prop in ( top, left, right, bottom ) {
+			.border#{$infix}-#{$prop} {
+				border-#{$prop}: $border-width solid $border-color !important;
+			}
+		}
+	}
+}

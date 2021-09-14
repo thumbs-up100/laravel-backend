@@ -1,0 +1,68 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+// Variables
+$table-bg-level: 0;
+$table-border-level: -1;
+
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/tables";
+
+// Base
+.table {
+	margin-bottom: 0;
+
+	thead, tfoot {
+		th {
+			font-family: $font-family-sec;
+			font-size: px-to-rem( 12px );
+			text-transform: uppercase;
+			letter-spacing: .07em;
+			font-weight: 500;
+			padding: px-to-rem( 16px, 12px );
+		}
+	}
+
+	&:not(.table-bordered) {
+		th {
+			border-top: none;
+		}
+	}
+	
+	tbody {
+		td {
+			font-size: px-to-rem( 16px );
+			color: $white;
+		}
+	}
+}
+
+// Modifies
+.table-vertical-align {
+	td, th {
+		vertical-align: middle;
+	}
+}
+
+.table-align-1 {
+	th:nth-child( 1 ),
+	td:nth-child( 1 ){
+		text-align: center;
+	}
+}
+
+// Data table context
+.data-table {
+	width: 100% !important;
+}
+
+// table color
+@each $color, $value in $theme-colors {
+	@include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
+
+	.table-#{$color} {
+		color: color-yiq( $value );
+	}
+}

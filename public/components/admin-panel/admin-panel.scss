@@ -1,0 +1,140 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins/group";
+
+//variables
+$admin-panel-color-bg: $gray-300;
+$admin-panel-color-border-color: rgba( $black, .2 );
+$admin-panel-color-border-color-hover: rgba( $black, .35 );
+
+// Base
+.admin-panel-buttons {
+	display: flex;
+	@include groupX( 10px );
+}
+
+.admin-panel-switch {
+	display: none;
+}
+
+// TODO Переделать
+@include media-breakpoint-down( xs ) {
+	.admin-panel {
+		.panel-header {
+			position: relative;
+		}
+
+		.panel-title,
+		.nav-pills {
+			transition: opacity .25s, visibility .25s;
+		}
+
+		&.active {
+			.admin-panel-buttons {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.panel-title,
+			.nav-pills,
+			.nav-tabs {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+
+	.admin-panel-buttons {
+		position: absolute;
+		left: px-to-rem( 15px );
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .25s, visibility .25s;
+	}
+
+	.admin-panel-switch {
+		display: block;
+		margin-left: 15px;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+@include media-breakpoint-up( sm ) {
+	* + .admin-panel-buttons {
+		padding-left: px-to-rem( 15px );
+	}
+}
+
+.admin-panel-button {
+	min-width: 16px;
+	border: none;
+	transition: opacity .25s;
+	background: none;
+	color: inherit;
+
+	&:hover {
+		opacity: .6;
+	}
+}
+
+.admin-panel-group {
+	display: flex;
+	justify-content: flex-end;
+	@include group( 10px );
+}
+
+.admin-panel-color {
+	width: 25px;
+	height: 25px;
+	border: 2px solid $admin-panel-color-border-color;
+	background: $admin-panel-color-bg;
+	transition: .25s;
+
+	&:hover {
+		cursor: pointer;
+		border-color: $admin-panel-color-border-color-hover;
+	}
+}
+
+// Panel Modifiers
+.admin-panel-collapsed {
+	[data-panel="fullscreen"] {
+		pointer-events: none;
+		opacity: .3;
+	}
+}
+
+.panel.admin-panel-fullscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: $zindex-fixed;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	height: 100vh;
+	overflow: auto;
+
+	[data-panel="remove"],
+	[data-panel="collapse"] {
+		display: none;
+	}
+
+	.panel-body {
+		flex-grow: 1;
+	}
+}
+
+// Color schemes
+@each $theme, $color in $theme-colors {
+	.admin-panel-color-#{$theme} {
+		background-color: $color;
+	}
+}

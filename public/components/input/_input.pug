@@ -1,0 +1,35 @@
+//- Checkbox
+	@param {string} data.id - id label
+	@param {string} data.name - name input
+mixin checkbox( data )
+	-
+		data = data || {};
+		data.id = data.id || randomStr( 8 );
+	.custom-control.custom-checkbox&attributes( attributes )
+		input.custom-control-input( type='checkbox', id= data.id, name= data.name, checked= data.checked )
+		label.custom-control-label( for= data.id )
+			block
+
+//- Radio
+	@param {string} data.id - id label
+	@param {string} data.name - name input
+mixin radio( data )
+	-
+		data = data || {};
+		data.id = data.id || randomStr( 8 );
+	.custom-control.custom-radio&attributes( attributes )
+		input.custom-control-input( type='radio', id= data.id, name= data.name )
+		label.custom-control-label( for= data.id )
+			block
+
+//- Switch
+	@param {string} data.id - id label
+	@param {string} data.name - name input
+mixin switch ( data )
+	-
+		data = data || {};
+		data.id = data.id || randomStr( 8 );
+	.custom-control.custom-switch&attributes( attributes )
+		input.custom-control-input( type='checkbox', id= data.id, name= data.name )
+		label.custom-control-label( for= data.id )
+			block

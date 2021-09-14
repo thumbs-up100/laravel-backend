@@ -1,0 +1,28 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+//variables
+$footer-padding:  px-to-rem( 50px, 0);
+$footer-bg: transparent;
+
+// Footer small
+.footer-small {
+	padding: $footer-padding;
+	background-color: $footer-bg;
+	transition: ease-in-out .2s;
+}
+
+@include media-breakpoint-up( xl ) {
+	.footer-small {
+		position: absolute;
+		bottom: 0;
+		left: 60px;
+
+		.navbar-sidebar-active & {
+			left: 270px;
+		}
+	}
+}

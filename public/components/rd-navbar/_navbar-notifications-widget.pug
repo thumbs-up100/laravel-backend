@@ -1,0 +1,23 @@
+include ../alert/_alert
+
+.navbar-subpanel-inner
+	.navbar-subpanel-header
+		h4 Notifications
+
+	.navbar-subpanel-body.scroller.scroller-vertical
+		.group-5
+			+alert({ close: true }).alert-primary.alert-darker.alert-sm
+				span.alert-icon.fa-telegram
+				span Message
+			+alert({ close: true }).alert-secondary.alert-sm
+				span.alert-icon.fa-warning
+				span Warning
+			+alert({ close: true }).alert-danger.alert-sm
+				span.alert-icon.fa-remove
+				span Error
+			+alert({ close: true }).alert-success.alert-sm
+				span.alert-icon.fa-thumbs-up
+				span Success
+
+	.navbar-subpanel-footer
+		a.btn.btn-primary.btn-sm( href='alerts.html' ) See more

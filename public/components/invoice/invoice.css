@@ -1,0 +1,72 @@
+@media print {
+	.page, html, body {
+		padding: 0 !important;
+		background: #fff !important;
+		color: #000 !important;
+	}
+	.page-header,
+	.topbar {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+	.panel {
+		background: #fff !important;
+	}
+	.data-table, .table {
+		background: #ffffff !important;
+		color: #000 !important;
+	}
+	.data-table td, .data-table th, .table td, .table th {
+		color: #000 !important;
+		border-color: #000 !important;
+	}
+	img {
+		filter: brightness(0%);
+	}
+	.page-invoice *,
+	.page-invoice .text-success,
+	.page-invoice .text-primary {
+		color: #000000 !important;
+	}
+	.page-invoice .panel-header,
+	.page-invoice > .panel-footer {
+		display: none;
+	}
+	.page-invoice .col-lg-4 {
+		flex-basis: 33.3%;
+		padding: 0 7px;
+	}
+	.page-invoice .panel-header,
+	.page-invoice .panel-body {
+		padding: 5px 8px;
+		background: #fff;
+	}
+	.page-invoice .table {
+		margin-bottom: 0;
+	}
+	.page-invoice .table td, .page-invoice .table th {
+		padding: .3rem;
+		font-size: 12px;
+	}
+	.page-invoice h1 {
+		font-size: 24px;
+	}
+	.page-invoice h3 {
+		font-size: 16px;
+	}
+	.page-invoice h5, .page-invoice .h5 {
+		font-size: 14px;
+	}
+	.page-invoice .text-lg-left {
+		text-align: left;
+	}
+	.page-invoice .text-lg-right {
+		text-align: right;
+	}
+	.page-invoice .list-unstyled {
+		font-size: 12px;
+	}
+}
+

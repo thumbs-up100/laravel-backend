@@ -1,0 +1,31 @@
+.sidebar {
+	position: fixed;
+	top: 67px;
+	bottom: 0;
+	right: 0;
+	transform: translateX(101%);
+	z-index: 14;
+	width: 280px;
+	transition: .2s ease-in-out;
+	background: #1f2227;
+	border-left: 1px solid #2d3035;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.sidebar.active {
+	transform: translateX(0);
+}
+
+@media (min-width: 1200px) {
+	.sidebar {
+		top: 160px;
+	}
+	.rd-navbar-stuck .sidebar {
+		top: 70px;
+	}
+}
+
+.sidebar-lg {
+	width: 320px;
+}

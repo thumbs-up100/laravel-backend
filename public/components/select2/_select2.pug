@@ -1,0 +1,29 @@
+//- Select2 Multiple
+	@param {string} data.name - name of select2
+	@param {string} data.placeholder - placeholder of select2
+	@param {string} data.theme - class of select2 and dropdown theme
+	@param {array} data.options - array of options
+mixin select2-multiple( data )
+	select.select2( name= data.name, multiple, data-placeholder= data.placeholder, data-dropdown-class= data.theme, class= data.theme )
+		each option in data.options
+			option= option
+
+//- Select2 Search
+	@param {string} data.name - name of select2
+	@param {string} data.placeholder - placeholder of select2
+	@param {string} data.theme - class of select2 and dropdown theme
+	@param {array} data.options - array of options
+mixin select2-search( data )
+	select.select2( name= data.name, data-minimum-results-search='2', data-placeholder= data.placeholder, data-dropdown-class= data.theme, class= data.theme )
+		each option in data.options
+			option= option
+
+//- Select2
+	@param {string} data.name - name of select2
+	@param {string} data.placeholder - placeholder of select2
+	@param {string} data.theme - class of select2 and dropdown theme
+	@param {array} data.options - array of options
+mixin select2( data )
+	select.select2( name= data.name, data-placeholder= data.placeholder, data-dropdown-class= data.theme, class= data.theme )
+		each option in data.options
+			option= option

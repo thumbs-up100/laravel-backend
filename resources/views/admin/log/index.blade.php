@@ -69,9 +69,8 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="pages" style="margin-top: 30px;">
-                    {{ $lists->links() }}
-                </div>
+
+                @include('admin.pagination', ['paginator' => $lists])
             </div>
         </div>
     </div>

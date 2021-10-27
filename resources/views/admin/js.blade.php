@@ -2,8 +2,8 @@
 {{--<script src="/components/base/script.js"></script>--}}
 {{--<script src="/admin/js/jquery.min.js?v=2.1.4"></script>--}}
 {{--<script src="/admin/js/vue.js"></script>--}}
-<script src="/admin/js/admin.js"></script>
-<script src="/admin/js/laypage/laypage.js"></script>
+<script src="/resources/js/admin.js"></script>
+<script src="/resources/js/laypage/laypage.js"></script>
 
 @yield('js')
 <script>

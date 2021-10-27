@@ -58,7 +58,6 @@ class Handler extends ExceptionHandler
                 return $reporter->prodReport();
             }
         }
-        dd(route('admin::err404'));
         if (!request()->route()) {
             return redirect(route('admin::err404'));
         } else if (!env('APP_DEBUG') && stripos(request()->route()->getName(), 'admin') !== false) {

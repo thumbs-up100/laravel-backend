@@ -40,8 +40,9 @@ class MenuController extends Controller
         $action = $request->get('action');
         $this->formNames[] = 'created_at';
         $condition = $request->only($this->formNames);
-
+        $pid = 0;
         if (isset($condition['pid'])) {
+            $pid = $condition['pid'];
             $condition['pid'] = ['=', $condition['pid']];
         } else {
             if ($action !== 'search') {
@@ -50,6 +51,9 @@ class MenuController extends Controller
         }
 
         $data = MenuRepository::list($perPage, $condition);
+        $data->appends([
+            'pid' => $pid,
+        ])->links();
 
         $this->breadcrumb[] = ['title' => '菜单列表', 'url' => ''];
         if(empty($data))

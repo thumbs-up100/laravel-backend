@@ -15,12 +15,24 @@
                             <div class="col-12">
                                 <div class="group-10">
                                     @foreach(App\Repository\Admin\MenuRepository::group() as $k => $v)
-                                        <div class="layui-form-item" style="margin-top: 30px">
+                                        @php
+                                            $checked = true;
+                                            $groupIds = array_column($v->toArray(), 'id');
+                                            foreach ($groupIds as $_v) {
+                                                if (!in_array($_v, $rolePermissions)) {
+                                                    $checked = false;break;
+                                                }
+                                            }
+                                        @endphp
+                                        <div class="layui-form-item" style="margin-top: 30px" id="group-{{ $k }}">
                                             <div class="d-inline-block">
                                                 <div class="custom-control custom-checkbox">
                                                     <input class="custom-control-input" type="checkbox"
                                                            id="lmibpdpv{{ $loop->iteration }}"
                                                            value="{{ $loop->iteration }}" lay-filter="group"
+                                                           @if($checked) checked @endif
+                                                           onclick="parentChecked(this)"
+                                                           data-index="{{ $k }}"
                                                            lay-skin="primary"/>
                                                     <label class="custom-control-label"
                                                            for="lmibpdpv{{ $loop->iteration }}">{{ $k ? $k : '未分组' }}</label>
@@ -29,7 +41,7 @@
                                         </div>
 
                                         <div class="layui-form-item" style="margin-left: 50px"
-                                             data-group="{{ $loop->iteration }}">
+                                             data-group="{{ $loop->iteration }}" id="group-child-{{ $k }}">
                                             @foreach($v as $menu)
                                                 <div class="d-inline-block" style="margin-top: 30px;">
                                                     <div class="custom-control custom-checkbox">
@@ -37,7 +49,9 @@
                                                                id="child{{ $menu->id }}"
                                                                name="permission[{{ $menu->id }}]"
                                                                value="{{ $menu->name }}"
-                                                               @if($rolePermissions->pluck('id')->contains($menu->id)) checked @endif />
+                                                               onclick="childChecked(this)"
+                                                               data-index="{{ $k }}"
+                                                               @if(in_array( $menu->id, $rolePermissions)) checked @endif />
                                                         <label class="custom-control-label"
                                                                for="child{{ $menu->id }}">{{ $menu->name }}</label>
                                                     </div>
@@ -133,14 +147,20 @@
                 return false;
             });
 
-            form.on('checkbox(group)', function (data) {
-                console.log('aaa');
-                var checked = data.elem.checked;
-                $("div[data-group=" + data.value + "]").find('input[type=checkbox]').each(function (i, obj) {
-                    obj.checked = checked;
+            let parentChecked = (_elem) => {
+                let index = $(_elem).attr('data-index');
+                $('#group-child-' + index + ' input[type=checkbox]').prop('checked', $(_elem).prop('checked'));
+            }
+            let childChecked = (_elem) => {
+                let index = $(_elem).attr('data-index');
+                let checked = true;
+                $('#group-child-' + index + ' input[type=checkbox]').each((i, item) => {
+                    if (!$(item).prop('checked')) {
+                        checked = false;
+                    }
                 });
-                form.render('checkbox');
-            });
+                $('#group-' + index + ' input[type=checkbox]').prop('checked', checked);
+            }
 
         </script>
     @endsection

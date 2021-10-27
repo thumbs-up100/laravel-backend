@@ -21,7 +21,6 @@ return [
 
     'editRole' => 'edit_role',
     'privileges' => 'privileges',
-    'editRole' => 'edit_role',
     'createRole' => 'create_role',
     'current' => 'privileges-current_roles',
     'roleList' => 'role_list',

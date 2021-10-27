@@ -134,10 +134,11 @@ class RoleController extends Controller
     {
         $this->breadcrumb[] = ['title' => '分配权限', 'url' => ''];
         $role = RoleRepository::find($id);
+        $ids = array_column($role->permissions->toArray(), 'id');
         return view('admin.role.permission', [
             'id' => $id,
             'breadcrumb' => $this->breadcrumb,
-            'rolePermissions' => $role->permissions,
+            'rolePermissions' => $ids,
             'role' => $role,
         ]);
     }

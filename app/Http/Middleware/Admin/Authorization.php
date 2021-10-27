@@ -22,7 +22,8 @@ class Authorization
         $user = Auth::guard($guard)->user();
         if (!$user) return redirect()->guest(route('admin::login'));
 
-        $route = Route::currentRouteName();
+//        $route = Route::currentRouteName();
+        $route = $request->route()->getName();
         $permission = Menu::where('route', $route)->first();
         if (!in_array($user->id, config('light.superAdmin')) && (!$permission || !$user->can($permission->name))) {
             if ($request->expectsJson()) {

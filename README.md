@@ -30,7 +30,7 @@ git clone git_repository_url
 cd laravel-backend
 composer install
 ```
-```
+
 新建一份环境配置，并配置好数据库等相关配置:
 ```
 cp .env.example .env

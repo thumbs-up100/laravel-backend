@@ -45,5 +45,3 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-## 完善中...
-

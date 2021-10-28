@@ -1,8 +1,10 @@
 # laravel-backend
  [![PHP Version](https://img.shields.io/badge/php-%3E%3D7.2-8892BF.svg)](http://www.php.net/)
 
-## 项目简介
-`laravel-backend`是一个轻量级的`CMS`系统，也可以作为一个通用的后台管理框架使用。`laravel-backend`集成了用户管理、权限管理、日志管理、菜单管理等后台管理框架的通用功能等`CMS`系统中常用的功能。
+## About 
+ `laravel-backend`是一个轻量级的`CMS`系统，基于`Laravel 8.x`开发。
+ 开箱即用，拥有丰富`web`组件，button，checkbox，uploader，images handle等。
+ 拥有用户管理、权限管理、菜单管理等后台管理框架的通用功能等。
 
 `laravel-backend`基于`Laravel 8.x`开发
 
@@ -44,4 +46,13 @@ php artisan migrate --seed
 ```
 php artisan serve
 ```
-
+### 访问
+```
+http://127.0.0.1:8000/admin
+初始化数据之后用户名和密码都是:admin
+```
+### 更多丰富的组件可以通过访问下面地址查看
+```
+http://127.0.0.1:8000/dist/index.html
+```
+![Image text](https://github.com/thumbs-up100/laravel-backend/blob/master/public/images/part.png)

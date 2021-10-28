@@ -2,9 +2,9 @@
  [![PHP Version](https://img.shields.io/badge/php-%3E%3D7.2-8892BF.svg)](http://www.php.net/)
 
 ## About 
- -`laravel-backend`是一个轻量级的`CMS`系统，基于`Laravel 8.x`开发。
- -开箱即用，拥有丰富`web`组件，button，checkbox，uploader，images handle等。
- -拥有用户管理、权限管理、菜单管理等后台管理框架的通用功能等。
+ `laravel-backend`是一个轻量级的`CMS`系统，基于`Laravel 8.x`开发。
+ 开箱即用，拥有丰富`web`组件，button，checkbox，uploader，images handle等。
+ 拥有用户管理、权限管理、菜单管理等后台管理框架的通用功能等。
 
 ## 系统环境
 `linux/windows & nginx/apache/iis & mysql 5.7+ & php 7.2+`

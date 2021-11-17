@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a08f32791753c548d180bbfa9fd6c57",
+    "content-hash": "30b97e7de76f66f9ea0f73a720196cb5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7373,23 +7373,17 @@
         },
         {
             "name": "kitloong/laravel-migrations-generator",
-            "version": "v5.0.1",
+            "version": "v5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kitloong/laravel-migrations-generator.git",
-                "reference": "9f0f00bb37e4965091697a1ace3792efb1b7cb1b"
+                "reference": "836f6342af64c45ffaa213497b057becbbfa6987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kitloong/laravel-migrations-generator/zipball/9f0f00bb37e4965091697a1ace3792efb1b7cb1b",
-                "reference": "9f0f00bb37e4965091697a1ace3792efb1b7cb1b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/kitloong/laravel-migrations-generator/zipball/836f6342af64c45ffaa213497b057becbbfa6987",
+                "reference": "836f6342af64c45ffaa213497b057becbbfa6987",
+                "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "~2.4|^3.0",
@@ -7439,7 +7433,7 @@
             ],
             "support": {
                 "issues": "https://github.com/kitloong/laravel-migrations-generator/issues",
-                "source": "https://github.com/kitloong/laravel-migrations-generator/tree/v5.0.1"
+                "source": "https://github.com/kitloong/laravel-migrations-generator/tree/v5.1.0"
             },
             "funding": [
                 {
@@ -7447,7 +7441,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-09-29T13:33:48+00:00"
+            "time": "2021-11-04T06:42:15+00:00"
         },
         {
             "name": "laravel/sail",

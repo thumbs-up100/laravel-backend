@@ -29,7 +29,7 @@
 git clone git_repository_url
 cd laravel-backend
 ```
-在`/storage/framework/`下创建目录`view`、`sessions`、`cahce`后，安装：
+在`/storage/framework/`下创建目录`views`、`sessions`、`cahce`后，安装：
 ```
 composer install
 ```
